@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/get_target_sgpa"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:layout_marginTop="5dp"
+        android:hint="Enter Target SGPA"
+        android:digits="1234567890."
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Enter target SGPA"
+        app:met_maxCharacters="5"
+        android:maxLength="5"
+        app:met_baseColor="@color/primaryColorMedium"
+        app:met_primaryColor="@color/primaryColorMedium"
+        app:met_errorColor="#f00"/>
+</RelativeLayout>

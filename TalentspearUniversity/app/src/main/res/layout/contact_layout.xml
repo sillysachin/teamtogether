@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/cardMarginVertical"
+        android:layout_marginLeft="@dimen/cardMarginHorizontal"
+        android:layout_marginRight="@dimen/cardMarginHorizontal"
+        android:layout_marginTop="@dimen/cardMarginVertical"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="22dp"
+            android:paddingStart="22dp"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_post_items">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/primaryColorDark"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="fill"
+                android:text="@string/user_icon"
+                android:textSize="18sp"
+                android:id="@+id/contact_name"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/primaryColorDark"
+                android:layout_below="@+id/contact_name"
+                android:layout_marginTop="10dp"
+                android:id="@+id/view" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/briefcase_icon"
+                android:textColor="@color/primaryColor"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_gravity="fill"
+                android:id="@+id/contact_designation"
+                android:layout_below="@+id/view"
+                android:textSize="16sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/graduate_icon"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/primaryColor"
+                android:paddingBottom="6dp"
+            android:textSize="16sp"
+            android:layout_gravity="fill"
+            android:id="@+id/contact_qualification"
+            android:layout_below="@+id/contact_designation"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/mail_icon"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/primaryColor"
+                android:id="@+id/contact_email"
+                android:layout_gravity="fill"
+                android:paddingBottom="6dp"
+                android:textSize="16sp"
+                android:layout_below="@+id/contact_qualification"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/contact_email"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="100"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/mobile_icon"
+                android:layout_weight="85"
+                android:padding="9dp"
+                android:background="@color/primaryColor"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="17sp"
+                android:id="@+id/contact_phone"
+                 />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/add_contact_icon"
+                    android:layout_weight="15"
+                    android:padding="9dp"
+                    android:background="@color/primaryColorDark"
+                    android:gravity="center"
+                    android:layout_gravity="end"
+                    android:textSize="17sp"
+                    android:id="@+id/contact_add"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

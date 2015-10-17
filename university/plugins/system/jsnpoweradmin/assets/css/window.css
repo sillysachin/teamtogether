@@ -1,0 +1,199 @@
+
+/* ============================== Bootstrap style Popup window ============================== */
+.jsn-ui-window-overlay {
+    opacity: 0.8;
+	filter: alpha(opacity=80);
+    background: #333;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+.jsn-ui-window-overlay.state-loading .indicator {
+    background: #000000 url("../images/dark-loader.gif") no-repeat scroll center center;
+	width: 48px;
+	height: 48px;
+	position: absolute;
+    top: 50%;
+    right: 50%;
+    bottom: 50%;
+    left: 50%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.jsn-ui-window {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: medium none #AAAAAA;
+    border-radius: 4px 4px 4px 4px;
+    left: 100px;
+    overflow: hidden;
+    padding: 2px;
+    position: absolute;
+    top: 100px;
+    z-index: 9999;
+}
+.jsn-ui-window.state-loading {
+    visibility: hidden;
+}
+.jsn-ui-window.state-dragging, .jsn-ui-window.state-active {
+    visibility: visible;
+}
+.jsn-ui-window.state-dragging {
+    opacity: 0.7;
+}
+.jsn-ui-window.state-dragging .window-toolbar, .jsn-ui-window.state-dragging .window-body, .jsn-ui-window.state-processing .window-toolbar, .jsn-ui-window.state-processing .window-body {
+    visibility: hidden;
+}
+.jsn-ui-window.state-processing .window-wrapper {
+    background: url("../images/loader.gif") no-repeat scroll center center transparent;
+}
+.jsn-ui-window .window-wrapper {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.jsn-ui-window .window-header {
+    background: none repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #CCCCCC;
+    border-bottom-left-radius: 0;
+    border-color: white white #CCCCCC;
+    font-size: 18px;
+    padding: 5px 15px;
+    position: relative;
+    text-decoration: none;
+}
+.jsn-ui-window .window-header:after {
+    clear: both;
+}
+:root .jsn-ui-window .window-header {
+    filter: none;
+}
+.jsn-ui-window .window-header .btn-close {
+	display: none;
+}
+.jsn-ui-window .window-header h3 {
+    color: #FFFFFF;
+    font: bold 1em/26px arial;
+    margin: 0;
+    padding: 0 0 0 5px;
+}
+.jsn-ui-window .window-toolbar {
+    background-color: #F5F5F5;
+    background-image: none;
+    border-radius: 0 0 6px 6px;
+    border-top: 1px solid #DDDDDD;
+    border-width: 1px 0 0;
+    box-shadow: 0 1px 0 #FFFFFF inset;
+    margin: 0;
+    padding: 5px 15px;
+    position: relative;
+    text-align: left;
+}
+.jsn-ui-window .window-toolbar:after {
+    border-bottom: 1px solid #F9F9F9;
+    border-top: 1px solid #F0F0F0;
+    bottom: -3px;
+    content: " ";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+.jsn-ui-window .toolbar-title {
+    color: #333333;
+    font: 18px Arial,Helvetica,sans-serif;
+    margin: 10px;
+    padding: 0;
+}
+.jsn-ui-window .header-title {
+    color: #404040;
+    float: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    position: relative;
+}
+.jsn-ui-window .window-toolbar .toolbar-buttons {
+    float: right;
+}
+.jsn-ui-window .window-toolbar .toolbar-buttons button {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #0064CD;
+    background-image: -moz-linear-gradient(center top , #049CDB, #0064CD);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 3px;
+    padding: 4px 10px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    vertical-align: middle;
+}
+.jsn-ui-window .window-toolbar .toolbar-buttons button:nth-child(2) {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-transition: all 0.1s linear 0s;
+    background-color: #E6E6E6;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #FFFFFF 25%, #E6E6E6);
+    background-repeat: no-repeat;
+    border-color: #CCCCCC #CCCCCC #BBBBBB;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: normal;
+    overflow: visible;
+    padding: 5px 14px 6px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+.jsn-ui-window .window-toolbar .toolbar-buttons button.primary {
+    background-color: #0064CD;
+    background-image: -moz-linear-gradient(center top , #049CDB, #0064CD);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.jsn-ui-window .window-toolbar .toolbar-buttons button:hover {
+    background-position: 0 -15px;
+    text-decoration: none;
+}
+.jsn-ui-window .window-body {
+    overflow: hidden;
+    position: relative;
+}
+.jsn-ui-window.window-confirm .window-body, .jsn-ui-window.window-message .window-body {
+    color: #333333;
+    font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+    font-size: 1.1em;
+    line-height: 70px;
+    text-align: center;
+}
+.jsn-ui-window .ui-window-searchbar-wrapper{
+	float: right;	
+}

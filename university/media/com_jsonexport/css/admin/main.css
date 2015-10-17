@@ -1,0 +1,56 @@
+/** Fix toolbar margins **/
+#ember-toolbar {
+  margin-left: -20px;
+  margin-right: -20px; }
+
+/** Move images up a little **/
+.css-images__list {
+  margin-top: -30px; }
+
+/** Fix default row margin left **/
+.row {
+  margin-left: 0px !important; }
+
+.zero-margin-left {
+  margin-left: 0px !important; }
+
+/** phisical/digital product options **/
+.css-sidebar__options .controls {
+  margin-left: 0px !important;
+  float: right; }
+  .css-sidebar__options .controls input {
+    width: 40px; }
+
+.form-horizontal.sidebar .controls {
+  margin-left: 95px; }
+
+.image-actions {
+  display: inline;
+  position: relative;
+  margin-left: -105px;
+  margin-right: 70px;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */ }
+  .image-actions:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* For IE8 and earlier */ }
+  .image-actions a {
+    cursor: pointer; }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+.input-append .add-on, .input-prepend .add-on {
+  height: 20px !important;
+  line-height: 20px !important; }
+
+#toolbar-help .popover {
+  width: 190px; }

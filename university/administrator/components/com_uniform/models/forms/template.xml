@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field 
+			name="template_id" type="hidden" default="0" 
+			label="JSN_UNIFORM_TEMPLATE_ID" 
+		/>
+		<field
+			name="form_id"
+			type="text"
+			label="JSN_UNIFORM_FORM_ID"
+			description="JSN_UNIFORM_FORM_ID_DES"
+			class="inputbox"
+			size="110"
+			/>
+		<field
+			name="template_from"
+			type="text"
+			label="JSN_UNIFORM_TEMPLATE_FROM"
+			description="JSN_UNIFORM_TEMPLATE_FROM_DES"
+			class="input-xxlarge"
+			rows="4"
+			cols="110"/>
+		<field name="template_reply_to" type="text" label="JSN_UNIFORM_TEMPLATE_REPLY_TO" description="JSN_UNIFORM_TEMPLATE_REPLY_TO_DES" class="input-xxlarge" rows="4" cols="110"/>
+		<field name="template_subject" type="text" label="JSN_UNIFORM_TEMPLATE_SUBJECT" description="JSN_UNIFORM_TEMPLATE_SUBJECT_DES" class="input-xxlarge" rows="4" cols="110"/>
+		<field name="template_message" type="editor" label="JSN_UNIFORM_TEMPLATE_MESSAGE" description="JSN_UNIFORM_TEMPLATE_MESSAGE_DES" filter="JComponentHelper::filterText" width="542px" height="280px" hide="readmore,pagebreak,image,article,uniform" required="true" /> 
+	</fieldset>
+</form>

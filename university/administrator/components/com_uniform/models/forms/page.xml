@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	 <fieldset name="form_page">
+		  <field name="page_id" type="hidden" />
+		  <field name="page_title" type="hidden" />
+		  <field name="form_id" type="hidden" />
+		  <field name="page_content" type="hidden" />
+		  <field name="page_template" type="hidden" />
+	 </fieldset>
+</form>

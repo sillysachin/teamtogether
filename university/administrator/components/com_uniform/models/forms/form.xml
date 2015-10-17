@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="form-design">
+        <field name="form_id" type="hidden" />
+        <field name="form_title" class="jsn-input-xlarge-fluid" type="text" required="true"  label="JSN_UNIFORM_FORM_TITLE" />
+        <field name="form_description" class="jsn-input-xlarge-fluid" type="textarea" rows="5" label="JSN_UNIFORM_FORM_DESC" />
+        <field name="form_content" type="hidden" />
+        <field name="form_layout" type="hidden" />
+        <field name="form_settings" default="Next" type="hidden" />
+        <field
+                name="form_submitter"
+                type="list"
+                label="JSN_UNIFORM_FORM_SUBMITTER"
+                description="JSN_UNIFORM_FORM_SUBMITTER_DES"
+                rows="4"
+                cols="110"/>
+        <field name="form_post_action" type="list" default="0">
+            <option value="0">JSN_UNIFORM_NO_ACTION</option>
+            <option value="1">JSN_UNIFORM_REDIRECT_TO_URL</option>
+            <option value="2">JSN_UNIFORM_REDIRECT_TO_MENU_ITEM</option>
+            <option value="3">JSN_UNIFORM_SHOW_ARTICLE</option>
+            <option value="4">JSN_UNIFORM_SHOW_CUSTOM_MESSAGE</option>
+        </field>
+        <field name="form_state" type="list" class="form-field-select" label="JSTATUS"  size="1" default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+        <field name="form_edit_submission" type="jsnradio" default="0" >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="form_captcha" type="list" default="0">
+            <option value="0">JSN_UNIFORM_CAPTCHA_NO</option>
+            <option value="1">JSN_UNIFORM_CAPTCHA_RE_CAPTCHA</option>
+            <option value="2">JSN_UNIFORM_CAPTCHA_SECURIMAGE</option>
+        </field>
+        <field name="form_access" type="usergroup"
+               default="0"
+               description="JSN_UNIFORM_GROUP_EDIT_SUBMISSION_DES"
+               label="JSN_UNIFORM_GROUP_EDIT_SUBMISSION"
+               size="10"
+                />
+        <field name="form_notify_submitter" type="checkbox" value="1"/>
+        <field name="form_type" type="list" class="jsn-input-fluid" label="JSN_UNIFORM_TYPE">
+            <option value="1">JSN_UNIFORM_TYPE_SINGLE_PAGE</option>
+            <option value="2">JSN_UNIFORM_TYPE_MULTIPLE_PAGES</option>
+        </field>
+    </fieldset>
+</form>

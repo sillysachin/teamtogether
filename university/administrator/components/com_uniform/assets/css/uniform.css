@@ -1,0 +1,1277 @@
+/**
+ * @author JoomlaShine.com Team
+ * @copyright JoomlaShine.com
+ * @link joomlashine.com
+ * @package
+ * @version $Id:
+ * @license GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html
+*/
+.jsn-bootstrap * {
+    word-wrap: break-word;
+}
+
+.icon-48-uniform-forms {
+    background-image: url("../images/icons-48/icon-finder.png");
+}
+
+.icon-48-uniform-submission {
+    background-image: url("../images/icons-48/icon-file.png");
+}
+
+.icon-48-uniform-config {
+    background-image: url("../images/icons-48/icon-cog.png");
+}
+
+.icon-48-uniform-launchpad {
+    background-image: url("../images/icons-48/icon-off.png");
+}
+
+.icon-48-uniform-about {
+    background-image: url("../images/icons-48/icon-star.png");
+}
+
+.icon-32-next {
+    background-image: url("../images/icons-32/icon-right.png");
+}
+
+.icon-32-previous {
+    background-image: url("../images/icons-32/icon-left.png");
+}
+
+.icon-32-new-disable {
+    background-image: url("../images/icons-32/icon-32-new.png");
+    background-position: 0 -32px;
+}
+
+.icon-32-duplicate-disable {
+    background-image: url("../images/icons-32/icon-32-copy.png");
+    background-position: 0 -32px;
+}
+
+.jsn-master .jsn-bootstrap .btn.btn-icon [class^="icon-"], .jsn-master .jsn-bootstrap .btn.btn-icon [class*=" icon-"] {
+    margin: 0;
+}
+
+.jsn-master .jsn-bootstrap .center {
+    text-align: center;
+}
+
+.jsn-page-list .jsn-bootstrap table.table-popup tbody tr:hover,
+.jsn-page-list .jsn-bootstrap table.jsn-uniform-modal-view tbody tr:hover {
+    cursor: pointer;
+}
+
+.jsn-master .jsn-bootstrap .jsn-tabs {
+    position: static;
+}
+
+#jsn-clipboard-button {
+    margin-top: -10px;
+}
+
+.jsn-master .jsn-icon24.jsn-icon-xls {
+    background-image: url("../images/icons-24/xls_file.png") !important;
+}
+
+.jsn-master .jsn-icon24.jsn-icon-csv {
+    background-image: url("../images/icons-24/csv_file.png") !important;
+}
+
+.jsn-master .jsn-bootstrap .placeholder {
+    color: #aaa;
+}
+
+.jsn-modal iframe {
+    overflow: auto;
+}
+
+.jsn-lock-screen {
+    bottom: 0;
+    display: none;
+    left: 0;
+    opacity: 0.2;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/*==================== SUBMISSIONS MANAGER ====================*/
+#submissions-list table .data_created_at,
+#submissions-list table .data_created_by,
+#submissions-list table .data_browser,
+#submissions-list table .data_country,
+#submissions-list table .data_ip {
+    width: 100px;
+}
+
+#submissions-list table .data_os {
+    width: 130px;
+}
+
+#submissions-list .jsn-bglabel {
+    padding: 100px 50px;
+    font-size: 24px;
+    color: #666;
+}
+
+#submission-fields-list {
+    min-height: 300px;
+    position: absolute;
+    width: 320px;
+}
+
+#form_field {
+    width: 100%;
+    float: left;
+}
+
+.nofield {
+    color: #CC0000;
+    float: left;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+#form_field.jsn-items-list {
+    border: 1px solid #CCCCCC;
+    height: 150px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 5px;
+}
+
+.pane-sliders {
+    position: static;
+}
+
+#form_field label,
+#form_field input,
+#submission-fields-list label,
+#submission-fields-list input {
+    float: none;
+    margin: 0 5px 0 0;
+}
+
+#submission-fields-list .popover-content {
+    padding: 0;
+}
+
+#submission-fields-list .jsn-items-list {
+    height: 300px;
+    border: none;
+    overflow: auto;
+}
+
+#submission-fields-list .jsn-item,
+#form_field .jsn-item {
+    padding: 5px;
+}
+
+#submission-fields-list .field-disabled,
+#form_field .field-disabled {
+    cursor: default;
+}
+
+#submission-fields-list hr,
+#form_field hr {
+    margin: 10px 0;
+}
+
+#submission-fields-list .form-actions {
+    border-top: 1px solid #ccc;
+    margin: 0;
+}
+
+#submission-fields-list .form-actions .btn {
+    float: none;
+}
+
+/*==================== SUBMISSION SETINGS ====================*/
+
+#submission-settings .submission-data h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#submission-settings .submission-data dt {
+    font-size: 14px;
+    color: #000;
+}
+
+#submission-settings .submission-data dd {
+    margin: 5px 0px 15px 0;
+}
+
+#submission-settings .submission-data .thumbnail {
+    display: inline-block;
+}
+
+#submissions-list img,
+#submission-settings .submission-data .thumbnail > img {
+    max-height: 200px;
+}
+
+#submission-settings .submission-content {
+    position: relative;
+}
+
+#submission-settings .jsn-page-actions {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+#submission-settings .jsn-form-bar {
+    z-index: 1;
+    position: relative;
+}
+
+/*==================== MENU ITEM SETINGS AND MODULE SETTINGS ====================*/
+#element-box div.pane-slider fieldset.panelform {
+    padding: 10px 15px;
+    margin: 0;
+}
+
+#element-box #jsn-form-icon-warning > select {
+    display: inline-block;
+}
+
+#element-box #jsn-form-icon-warning > span,
+#element-box #jsn-form-icon-warning > a {
+    display: inline-block;
+    margin: 5px 5px;
+}
+
+#element-box #jform_request_form_id option,
+#element-box #jform_params_form_id option {
+    background: none repeat scroll 0 0 #FFFFDD;
+    color: #000000;
+}
+
+.jsn-master.tmpl-bluestork fieldset.adminform label,
+.jsn-master.tmpl-bluestork fieldset.adminform input,
+.jsn-master.tmpl-bluestork fieldset.adminform textarea,
+.jsn-master.tmpl-bluestork fieldset.adminform select,
+.jsn-master.tmpl-bluestork fieldset.adminform button {
+    float: left;
+}
+
+/*==================== FORM MANAGER ====================*/
+.jsn-master .jsn-bootstrap .alert.jsn-message-edition h4 {
+    margin: 10px 0;
+    color: #C09853;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+/*==================== FORM DESIGN ====================*/
+.jsn-master .jsn-bootstrap input[type="file"] {
+    height: 26px;
+}
+
+#form-design .jsn-page {
+    width: 782px;
+    margin: 0 auto 20px;
+}
+
+#form-design .page-title {
+    padding-right: 55px;
+    display: inline-block;
+}
+
+#form-design .page-title h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#form-design .page-title .jsn-iconbar {
+    top: -10px;
+}
+
+#form-design .jsn-page-pagination {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #ccc;
+}
+
+#form-design .page-edit-form {
+    padding: 5px 0;
+}
+#form-design-content .jsn-element-content h1,
+#form-design-content .jsn-element-content h2,
+#form-design-content .jsn-element-content h3,
+#form-design-content .jsn-element-content h4,
+#form-design-content .jsn-element-content h5,
+#form-design-content .jsn-element-content h6 {
+    padding: 0;
+    margin: 0;
+}
+
+#form-design-content .jsn-element-content hr {
+    margin: 10px 0;
+}
+
+#form-design-content .jsn-element-content p {
+    margin: 0;
+}
+
+#form-design-content .jsn-element-content .control-group {
+    margin-bottom: 0;
+}
+
+#form-design-content .jsn-element-content .control-label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#form-design-content .jsn-element-content .jsn-columns-container {
+    margin-bottom: 10px;
+}
+
+#form-design-content .jsn-element-content .required {
+    color: red;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#form-design-content .jsn-element-content .icon-question-sign {
+    margin-left: 5px;
+}
+
+#container-select-style {
+    position: absolute;
+    min-height: 300px;
+}
+
+#visualdesign-options {
+    position: absolute;
+    display: none;
+    z-index: 1000;
+    width: 500px;
+    min-height: 300px;
+}
+
+#submission-fields-list .popover,
+#container-select-style .popover,
+#visualdesign-toolbox .popover,
+#visualdesign-options .popover {
+    width: 100%;
+}
+
+#visualdesign-options textarea {
+    resize: none;
+}
+
+#theme_action {
+    margin-left: 10px;
+    width: 148px;
+}
+
+img.imgSelect2 {
+    padding-right: 6px;
+    vertical-align: text-bottom;
+}
+
+#visualdesign-options .group.limit {
+    /*
+    margin-top: 15px;
+    border-top: 1px solid #ccc;*/
+}
+
+.jsn-master .jsn-bootstrap .jsn-form-bar .control-group #add-theme-select,
+.jsn-master .jsn-bootstrap .jsn-form-bar .control-group #form-select {
+    float: left;
+}
+
+.jsn-master .jsn-bootstrap .jsn-form-bar .control-group label.label-color-scheme {
+    float: left;
+    margin-top: 3px;
+}
+
+#visualdesign-options .group.limit .control-group {
+    margin: 0 3px;
+}
+
+#visualdesign-options .group.limit .control-group:first-child {
+    margin-left: 0;
+}
+
+#visualdesign-options .icon-question-sign {
+    margin-left: 5px;
+}
+
+#visualdesign-options-values .items-list {
+    height: 150px;
+}
+
+#visualdesign-options-values {
+    position: relative;
+}
+
+#visualdesign-options-values #items-list-save, #visualdesign-options-values #items-list-cancel {
+    display: none;
+}
+
+#visualdesign-options-values #items-list-edit-content textarea {
+    height: 150px;
+    overflow: auto;
+}
+
+.jsn-master .jsn-bootstrap .jsn-date-list-value .jsn-items-list {
+    height: 130px;
+}
+
+.jsn-master .jsn-bootstrap .jsn-inline {
+    display: inline;
+}
+
+.jsn-master .jsn-bootstrap .jsn-sortable-disable .ui-state-default:hover,
+.jsn-master .jsn-bootstrap .jsn-sortable-disable .ui-state-edit:hover {
+    cursor: default;
+}
+
+.jsn-master .jsn-bootstrap .btn-toolbar button {
+    font-size: 13px;
+}
+
+.jsn-master .jsn-bootstrap .jsn-sortable-disable .settings-footer {
+    padding: 10px;
+}
+
+.jsn-master .jsn-bootstrap .currency-value,
+.jsn-master .jsn-bootstrap .currency-cents {
+    float: left;
+}
+
+.jsn-master .jsn-bootstrap .currency-cents {
+    margin-left: 15px;
+}
+
+.jsn-master .jsn-bootstrap .currency-cents:before {
+    content: ".";
+    display: block;
+    width: 5px;
+    position: absolute;
+    margin-left: -9px;
+    margin-top: 5px;
+}
+
+.jsn-master .jsn-bootstrap .currency-cents .controls-inner input {
+    margin: 0;
+}
+
+.jsn-master .jsn-bootstrap .currency-value .jsn-help-block-inline,
+.jsn-master .jsn-bootstrap .currency-cents .jsn-help-block-inline {
+    font-size: 13px;
+    display: inline-block;
+    float: left;
+    margin-top: 5px;
+}
+
+.jsn-master .jsn-bootstrap .currency-value .jsn-help-block-inline {
+    margin-left: 30px;
+}
+
+.jsn-master .jsn-bootstrap #select_style_field .controls span {
+    margin-left: 3px;
+}
+
+.ui-autocomplete {
+    max-height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#jsn-custom-date {
+    padding-left: 155px;
+}
+
+#jsn-custom-date-field {
+    width: 208px;
+}
+#jsn-columns-likert,
+#jsn-name-default-titles,
+#jsn-address-default-country {
+    margin-left: 10px;
+}
+
+.jsn-allow-other label {
+    display: inline-block;
+}
+
+.jsn-allow-other input.jsn-input-small-fluid {
+    margin-left: 5px;
+}
+
+.jsn-master .jsn-bootstrap .form-search .jsn-group-field input,
+.jsn-master .jsn-bootstrap .form-inline .jsn-group-field input,
+.jsn-master .jsn-bootstrap .form-horizontal .jsn-group-field input,
+.jsn-master .jsn-bootstrap .form-search .jsn-group-field textarea,
+.jsn-master .jsn-bootstrap .form-inline .jsn-group-field textarea,
+.jsn-master .jsn-bootstrap .form-horizontal .jsn-group-field textarea,
+.jsn-master .jsn-bootstrap .form-search .jsn-group-field select,
+.jsn-master .jsn-bootstrap .form-inline .jsn-group-field select,
+.jsn-master .jsn-bootstrap .form-horizontal .jsn-group-field select,
+.jsn-master .jsn-bootstrap .form-search .jsn-group-field .help-inline,
+.jsn-master .jsn-bootstrap .form-inline .jsn-group-field .help-inline,
+.jsn-master .jsn-bootstrap .form-horizontal .jsn-group-field .help-inline,
+.jsn-master .jsn-bootstrap .form-search .jsn-group-field .uneditable-input,
+.jsn-master .jsn-bootstrap .form-inline .jsn-group-field .uneditable-input,
+.jsn-master .jsn-bootstrap .form-horizontal .jsn-group-field .uneditable-input,
+.jsn-master .jsn-bootstrap .form-search .jsn-group-field .input-prepend,
+.jsn-master .jsn-bootstrap .form-inline .jsn-group-field .input-prepend,
+.jsn-master .jsn-bootstrap .form-horizontal .jsn-group-field .input-prepend,
+.jsn-master .jsn-bootstrap .form-search .jsn-group-field .input-append,
+.jsn-master .jsn-bootstrap .form-inline .jsn-group-field .input-append,
+.jsn-master .jsn-bootstrap .form-horizontal .jsn-group-field .input-append {
+    margin-bottom: 9px;
+}
+
+/*========== TOOLBOX ==========*/
+#visualdesign-options-values .extraShowTitle .form-inline .control-group  .controls > .radio:first-child {
+    padding-top: 0;
+}
+
+.jsn-master .jsn-bootstrap .jsn-phone-perfix {
+    margin-left: 4px;
+}
+
+#visualdesign-toolbox {
+    position: absolute;
+    display: none;
+    z-index: 1000;
+    width: 600px;
+    min-height: 300px;
+}
+
+#visualdesign-toolbox fieldset {
+    margin-bottom: 15px;
+}
+
+#visualdesign-toolbox legend {
+    margin-bottom: 10px;
+}
+
+#visualdesign-toolbox .btn {
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+#visualdesign-toolbox .jsn-icon16.icon-formfields {
+    background-image: url(../images/icons-16/icons-16-form-fields.png) !important;
+    vertical-align: middle;
+    float: left;
+}
+
+#visualdesign-options-values #jsn-field-name .jsn-items-list,
+#visualdesign-options-values #jsn-name-default-titles .jsn-items-list,
+#visualdesign-options-values #jsn-field-address .jsn-items-list,
+#visualdesign-options-values #jsn-address-default-country .jsn-items-list {
+    height: 200px;
+}
+
+#visualdesign-options-values #jsn-field-name .jsn-items-list .jsn-item,
+#visualdesign-options-values #jsn-name-default-titles.jsn-items-list .jsn-item,
+#visualdesign-options-values #jsn-address-default-country .jsn-items-list .jsn-item,
+#visualdesign-options-values #jsn-field-address .jsn-items-list .jsn-item {
+    width: 100%;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-checkboxes {
+    background-position: -0px -0px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-single-line-text {
+    background-position: -16px -0px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-email {
+    background-position: -32px -0px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-file-upload {
+    background-position: -0px -16px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-date {
+    background-position: -16px -16px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-static-heading {
+    background-position: -32px -16px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-website {
+    background-position: -0px -32px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-paragraph-text {
+    background-position: -16px -32px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-static-content {
+    background-position: -32px -32px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-address {
+    background-position: -0px -48px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-dropdown {
+    background-position: -16px -48px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-name {
+    background-position: -32px -48px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-choices {
+    background-position: -0px -64px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-number {
+    background-position: -16px -64px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-country {
+    background-position: -32px -64px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-horizontal-ruler {
+    background-position: -0px -80px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-list {
+    background-position: -16px -80px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-phone {
+    background-position: -32px -80px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-currency {
+    background-position: 0px -96px;
+    width: 16px;
+    height: 16px;
+}
+
+#visualdesign-toolbox .icon-formfields.jsn-icon-password {
+    background-position: -16px -96px;
+    width: 16px;
+    height: 16px;
+}
+#visualdesign-toolbox .icon-formfields.jsn-icon-google-maps{
+    background-position: -32px -96px;
+    width: 16px;
+    height: 16px;
+}
+#visualdesign-toolbox .icon-formfields.jsn-icon-likert{
+    background-position: -1px -117px;
+    width: 16px;
+    height: 16px;
+}
+.control-list-action {
+    min-height: 400px;
+    position: absolute;
+    width: 400px;
+    z-index: 99999;
+}
+
+.control-list-action .popover {
+    width: 100%;
+}
+
+.control-list-action .popover .jsn-items-list {
+    height: 260px;
+    overflow: auto;
+}
+
+.control-list-action .popover #accordion_content,
+.control-list-action .popover .popover-content {
+    height: 345px;
+}
+
+.control-list-action .popover #accordion_content .ui-accordion-content {
+    padding: 0px;
+}
+
+#visualdesign-options-values .jsn-items-list .jsn-action-active {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#jsn-action-hide .ui-state-default:hover {
+    cursor: default;
+}
+
+#visualdesign-options-values .jsn-items-list .jsn-iconbar-trigger:hover .jsn-action-active,
+#visualdesign-options-values .jsn-items-list .jsn-iconbar-trigger.ui-state-edit .jsn-action-active {
+    display: none;
+}
+
+/*==================== FORM ACTION ====================*/
+.email-addresses,
+.email-submitters {
+    margin-right: 50px;
+}
+
+/*#email div.ui-state-default {
+    padding: 5px;
+    cursor: default;
+}*/
+#btn_email_submit,
+#btn_email_list {
+    float: right;
+}
+
+#emailAddresses .ui-state-edit button {
+    margin-left: 5px;
+}
+
+#emailAddresses .ui-state-edit .jsn-iconbar {
+    display: none;
+}
+
+#emailAddresses div.jsn-iconbar-trigger:hover {
+    cursor: default;
+}
+
+#emailAddresses .input-editemail .control-group {
+    margin-bottom: 0px;
+}
+
+#emailAddresses .input-editemail .jsn-input-fluid {
+    width: 55%;
+}
+
+#emailAddresses div.ui-state-edit:hover span {
+    display: none;
+}
+
+#addMoreEmail {
+    display: none;
+    background-color: #f4f4f4;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+#addMoreEmail.jsn-form-bar .control-group {
+    margin: 0 2px;
+}
+
+#emailSubmitters div.ui-state-default label.checkbox {
+    margin: 0;
+}
+
+/* end */
+/* View Config*/
+#jsnconfig-form-action-url-field,
+#jsnconfig-form-action-menu-field,
+#jsnconfig-form-action-article-field,
+#jsnconfig-form-action-message-field {
+    display: none;
+}
+
+.redirect-to-url #jsnconfig-form-action-url-field {
+    display: block;
+}
+
+.redirect-to-menu #jsnconfig-form-action-menu-field {
+    display: block;
+}
+
+.show-article #jsnconfig-form-action-article-field {
+    display: block;
+}
+
+.show-message #jsnconfig-form-action-message-field {
+    display: block;
+}
+
+.jsn-bootstrap #jsnconfig-email-notification-field .form-label {
+    float: left;
+    padding-top: 5px;
+}
+
+.jsn-bootstrap label.jsn-horizon-header {
+    padding-top: 25px;
+}
+
+#jsn-apply-folder-loading {
+    display: none;
+    position: absolute;
+}
+
+#message-verify {
+    margin-top: 5px;
+}
+
+/* End view config*/
+/*==================== EMAIL SETTINGS ====================*/
+.control-list-fields .popover  .popover-content {
+    padding: 0;
+}
+
+.control-list-fields .popover  .popover-content .field-seach {
+    background-color: #EEE;
+    padding: 5px 0px 0px 10px;
+}
+
+.control-list-fields .popover  .popover-content .jsn-items-list .ui-state-default {
+    padding: 5px 5px;
+}
+
+.control-list-fields .popover  .popover-content .jsn-items-list .ui-state-default:hover {
+    cursor: default;
+}
+
+.template-msg-content {
+    float: left;
+}
+
+button#btn-select-field-message {
+    float: left;
+    margin-left: 3px;
+}
+
+.control-list-fields {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    width: 250px;
+    min-height: 300px;
+}
+
+.control-list-fields .popover {
+    width: 100%;
+}
+
+.control-list-fields .popover .jsn-items-list {
+    border-left: none;
+    border-right: none;
+    height: 200px;
+    overflow: auto;
+}
+
+.control-list-fields .popover-title {
+    margin: 0;
+}
+
+.ui-dialog .ui-dialog-content {
+    overflow: hidden;
+}
+
+.jsn-master #attach-file  .jsn-items-list {
+    border: 1px solid #CCCCCC;
+    height: 70px;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 5px;
+    width: 530px;
+}
+
+/* editor plugin */
+.jsn-uniform-plg-editor-container .setting ul {
+    list-style: none outside none;
+}
+
+.jsn-uniform-plg-editor-container .setting label {
+    display: block;
+    float: left;
+    margin: 5px 0;
+    max-width: 100px;
+    min-width: 80px;
+    padding: 0 5px 0 0;
+}
+
+/* Date Time*/
+.ui-timepicker-div .ui-widget-header {
+    margin-bottom: 8px;
+}
+
+.ui-timepicker-div dl {
+    text-align: left;
+}
+
+.ui-timepicker-div dl dt {
+    height: 25px;
+    margin-bottom: -25px;
+}
+
+.ui-timepicker-div dl dd {
+    margin: 0 10px 10px 65px;
+}
+
+.ui-timepicker-div td {
+    font-size: 90%;
+}
+
+.ui-tpicker-grid-label {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ui-timepicker-rtl {
+    direction: rtl;
+}
+
+.ui-timepicker-rtl dl {
+    text-align: right;
+}
+
+.ui-timepicker-rtl dl dd {
+    margin: 0 65px 10px 10px;
+}
+
+/* New Css*/
+.jsn-bootstrap .span-move-column {
+    background: none repeat scroll 0 0 #ECECEC;
+    cursor: move;
+}
+
+.jsn-master .jsn-action-page-container span.jsn-prefix {
+    color: #cccccc;
+}
+
+/*
+.jsn-bootstrap .row-detail {
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+    display: block;
+    line-height: 20px;
+    padding: 4px;
+    transition: all 0.2s ease-in-out 0s;
+}
+*/
+.jsn-bootstrap #template-msg .toggle-editor {
+    float: none;
+}
+
+.jsn-master .jsn-bootstrap #form-design-content.form-horizontal .jsn-element-content  .control-label {
+    width: 140px;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-size: 14px;
+}
+
+/*#visualdesign-toolbox.jsn-bootstrap  ul.jsn-items-list li{
+    margin: 10px;
+    list-style: none;
+}*/
+#jsn-config-form .jsn-language-item input[type="checkbox"] {
+    float: none;
+}
+
+#options-basic .btn-group {
+    display: none;
+}
+
+.jsn-elementselector .jsn-fieldset-filter .pull-right {
+    position: relative;
+}
+
+.jsn-master .jsn-reset-search {
+    top: 6px;
+}
+
+.control-list-fields.jsn-bootstrap .jsn-elementselector .jsn-items-list li {
+    width: 100%;
+    border: 1px solid transparent;
+}
+
+.control-list-fields.jsn-bootstrap .jsn-elementselector .jsn-items-list li:hover {
+    cursor: pointer;
+    background-color: #FCF8E3;
+    border: 1px solid #FBEED5;
+    transition: background 0.3s ease-out 0s;
+}
+
+.control-list-fields.jsn-bootstrap .jsn-elementselector .jsn-fieldset-filter {
+    margin: 5px 0px;
+}
+
+.CodeMirror {
+    border: 1px solid #E7E7E7;
+    font-size: 13px;
+}
+
+.jsn-master .jsn-bootstrap #form-container .jsn-element-container  .jsn-element-content a {
+    color: #025A8D;
+}
+#editor-xtd-buttons .modal-button,
+.jsn-bootstrap #uni-form .btn-toolbar,
+#options #moduleOptions .btn-toolbar,
+#module-form #myTabContent  .btn-toolbar,
+.jsn-bootstrap #template-msg .btn-toolbar {
+    display: none;
+}
+
+/* Google Maps */
+
+/** General */
+.google_maps .buttonize {
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #222;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px 1em;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#008595), to(#02748c));
+    background: -moz-linear-gradient(top, #008595, #02748c);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #008595, endColorstr = #02748c);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#008595, endColorstr=#02748c)";
+}
+
+.google_maps .buttonize a:hover {
+    text-decoration: none;
+}
+
+.google_maps .gradient {
+    background: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eaeaea));
+    background: -moz-linear-gradient(top, #fff, #eaeaea);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #ffffff, endColorstr = #eaeaea);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#eaeaea)";
+}
+
+#visualdesign-options-values .map {
+    width: 100%;
+    height: 400px;
+}
+
+.google_maps .streetview {
+    width: 100%;
+    height: 300px;
+}
+
+.google_maps .lt {
+    float: left;
+}
+
+.google_maps .rt {
+    float: right;
+}
+
+.google_maps .txt-shadow-w {
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.google_maps .txt-shadow-b {
+    text-shadow: 1px 1px 1px #222;
+}
+
+.rounded {
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+}
+
+.google_maps .shadow {
+    -moz-box-shadow: 0px 2px 4px #999;
+    -webkit-box-shadow: 0px 2px 4px #999;
+    box-shadow: 0px 2px 4px #999;
+}
+
+.google_maps .item {
+    padding: 1em;
+    margin: 0 0 2em;
+}
+
+/** Benchmark */
+.google_maps div.benchmark {
+    clear: both;
+    overflow: auto;
+    color: #fff;
+    background: #02748c;
+    padding: 1em;
+    margin: 0 0 1em;
+}
+
+.google_maps div.benchmark .benchmark-result {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 1em 0 0;
+    line-height: 35px;
+}
+
+.google_maps div.benchmark .benchmark-iteration {
+    font-weight: bold;
+    margin: 0;
+}
+
+.google_maps div.benchmark .benchmark-title {
+    margin: 0;
+}
+
+/** Syntax highlighter */
+.google_maps pre.prettyprint {
+    background: #f4f4f4;
+    padding: 1.5em;
+    border: none;
+    margin: 0 0 1em;
+}
+
+.google_maps .summary {
+    font-size: 1.3em;
+    cursor: pointer;
+    color: #EE2C74;
+}
+
+.google_maps .ui-dialog-vevent .summary {
+    margin: 0.5em 0 0 0;
+    display: block;
+}
+
+.google_maps .ui-dialog-vevent .dtstart {
+    display: none;
+}
+
+.google_maps .ui-dialog-vevent .website {
+    margin: 0 0 1em;
+}
+
+.google_maps img {
+    max-width: none;
+}
+
+#visualdesign-options-values .google-toolbar {
+    position: absolute;
+    right: -15px;
+    bottom: 3px;
+}
+
+#visualdesign-options-values .gm-style-iw {
+    overflow: visible !important;
+    -webkit-scrollbar:visible !important;
+}
+#option-formatWidth-select{
+    height: 28px;
+}
+.gm-style-iw label.control-label{
+    width: 74px;
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+    padding-right: 5px;
+}
+.google-maps-info{
+    width: 310px;
+    padding-bottom: 15px;
+}
+#form-design-content .google_maps .gm-style-iw .thumbnail img{
+    max-width: 105px;
+    max-height: 70px;
+    float: right;
+}
+#form-design-content .google_maps .gm-style-iw {
+    max-width: 350px;
+    max-height: 200px;
+}
+
+#visualdesign-options-values .jsn-google-active{
+    background-color: #000000 !important;
+}
+#visualdesign-options-values .jsn-google-active .google_maps{
+    opacity: 0.8;
+}
+#form-container .ui-state-edit .jsn-iconbar{
+    display: block;
+    background-color: #F4F4F4;
+}
+#submissions-list .jsn-bootstrap strong,
+#submission-settings.jsn-bootstrap strong
+{
+    margin-right: 5px;
+}
+.jsn-bootstrap .text-center {
+    text-align: center;
+}
+.jsn-bootstrap .row-fluid .span6{
+    width: 47.619%;
+}
+#form-container .jsn-column-content .ui-state-edit .google_maps{
+    width: 100%;
+    height: 300px;
+    background: #eeeeee;
+}
+ .google_maps .gm-style-iw>div {
+    overflow: visible !important;
+}
+.jsn-search-google-maps {
+    position: relative;
+}
+.wysiwyg-dialog-modal-div #wysiwyg-addImage fieldset input, .wysiwyg-dialog-modal-div #wysiwyg-addImage fieldset textarea,.wysiwyg-dialog-modal-div #wysiwyg-addImage  fieldset select,.wysiwyg-dialog-modal-div #wysiwyg-addImage  fieldset img,.wysiwyg-dialog-modal-div #wysiwyg-addImage  fieldset button{
+    float: none;
+}
+.google_maps .gm-style-cc{
+    display: none;
+}
+
+.emailsettings .mce-tinymce.mce-container.mce-panel{
+    width: 543px;
+}
+.emailsettings iframe#jform_template_message_ifr{
+    height: 170px !important;
+}
+.daterangepicker select.yearselect{
+    width: 45% !important;
+}
+.daterangepicker select.monthselect{
+    width: 65% !important;
+}
+.wysiwyg-dialog-modal-div .wysiwyg-dialog-content #wysiwyg-addImage .form-row{
+    width: 415px;
+}

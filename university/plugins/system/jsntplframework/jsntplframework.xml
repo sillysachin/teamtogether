@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>plg_system_jsntplframework</name>
+	<version>2.2.1</version>
+	<creationDate>08/02/2014</creationDate>
+	<author>JoomlaShine.com</author>
+	<authorEmail>admin@joomlashine.com</authorEmail>
+	<authorUrl>www.joomlashine.com</authorUrl>
+	<copyright>Copyright (C) 2012 JoomlaShine.com. All Rights Reserved.</copyright>
+	<license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<description>PLG_SYSTEM_JSNTPLFRAMEWORK_XML_DESCRIPTION</description>
+	<scriptfile>installer.php</scriptfile>
+
+	<files>
+		<filename plugin="jsntplframework">jsntplframework.php</filename>
+		<filename>index.html</filename>
+		<filename>jsntplframework.defines.php</filename>
+		<filename>installer.php</filename>
+		<folder>assets</folder>
+		<folder>language</folder>
+		<folder>libraries</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_jsntplframework.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_jsntplframework.sys.ini</language>
+		<language tag="bg-BG">language/bg-BG/bg-BG.plg_system_jsntplframework.ini</language>
+		<language tag="bg-BG">language/bg-BG/bg-BG.plg_system_jsntplframework.sys.ini</language>
+		<language tag="da-DK">language/da-DK/da-DK.plg_system_jsntplframework.ini</language>
+		<language tag="da-DK">language/da-DK/da-DK.plg_system_jsntplframework.sys.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.plg_system_jsntplframework.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.plg_system_jsntplframework.sys.ini</language>
+		<language tag="el-GR">language/el-GR/el-GR.plg_system_jsntplframework.ini</language>
+		<language tag="el-GR">language/el-GR/el-GR.plg_system_jsntplframework.sys.ini</language>
+		<language tag="es-ES">language/es-ES/es-ES.plg_system_jsntplframework.ini</language>
+		<language tag="es-ES">language/es-ES/es-ES.plg_system_jsntplframework.sys.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.plg_system_jsntplframework.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.plg_system_jsntplframework.sys.ini</language>
+		<language tag="hr-HR">language/hr-HR/hr-HR.plg_system_jsntplframework.ini</language>
+		<language tag="hr-HR">language/hr-HR/hr-HR.plg_system_jsntplframework.sys.ini</language>
+		<language tag="it-IT">language/it-IT/it-IT.plg_system_jsntplframework.ini</language>
+		<language tag="it-IT">language/it-IT/it-IT.plg_system_jsntplframework.sys.ini</language>
+		<language tag="ja-JP">language/ja-JP/ja-JP.plg_system_jsntplframework.ini</language>
+		<language tag="ja-JP">language/ja-JP/ja-JP.plg_system_jsntplframework.sys.ini</language>
+		<language tag="nl-NL">language/nl-NL/nl-NL.plg_system_jsntplframework.ini</language>
+		<language tag="nl-NL">language/nl-NL/nl-NL.plg_system_jsntplframework.sys.ini</language>
+		<language tag="pl-PL">language/pl-PL/pl-PL.plg_system_jsntplframework.ini</language>
+		<language tag="pl-PL">language/pl-PL/pl-PL.plg_system_jsntplframework.sys.ini</language>
+		<language tag="pt-BR">language/pt-BR/pt-BR.plg_system_jsntplframework.ini</language>
+		<language tag="pt-BR">language/pt-BR/pt-BR.plg_system_jsntplframework.sys.ini</language>
+		<language tag="ru-RU">language/ru-RU/ru-RU.plg_system_jsntplframework.ini</language>
+		<language tag="ru-RU">language/ru-RU/ru-RU.plg_system_jsntplframework.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="update-check" type="hidden" default="0" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

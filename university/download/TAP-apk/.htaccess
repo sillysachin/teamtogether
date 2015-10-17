@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^tap\-app\.notifoid\.net$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.tap\-app\.notifoid\.net$
+RewriteRule ^/?$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=net\.notifoid\.mcetapnotifier" [R=301,L]
+

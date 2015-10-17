@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<filter>
+    <fieldset name="filters" addfieldpath="/plugins/system/jsnframework/libraries/joomlashine/itemlist/elements/fields">
+        <field name="filter_search" type="textsearch" position="left" label="" />
+        <field name="filter_state" type="state" position="right" label="" />
+    </fieldset>
+</filter>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fields name="params"
+		addfieldpath="/administrator/components/com_poweradmin/models/fields">
+		<fieldset name="basic" label="JSN_POWERADMIN_CONFIG_ADMINBAR">
+			<field name="enable_adminbar" type="radio" default="1"
+				description="JSN_POWERADMIN_CONFIG_ENABLE_ADMINBAR_DESC" label="JSN_POWERADMIN_CONFIG_ENABLE_ADMINBAR">
+				<option value="0" class="radio">JNo</option>
+				<option value="1" class="radio">JYes</option>
+			</field>
+
+			<field name="pinned_bar" type="radio" default="1"
+				description="JSN_POWERADMIN_CONFIG_SET_PINNED_BAR_DESC" label="JSN_POWERADMIN_CONFIG_SET_PINNED_BAR">
+				<option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>
+
+			<field name="logo_file" type="media" default="components/com_poweradmin/assets/images/logo-jsnpoweradmin.png"
+				description="JSN_POWERADMIN_CONFIG_LOGO_FILE_DESC" label="JSN_POWERADMIN_CONFIG_LOGO_FILE">
+			</field>
+
+			<field name="logo_link" type="text" default="http://www.joomlashine.com/joomla-extensions/jsn-poweradmin.html"
+				description="JSN_POWERADMIN_CONFIG_LOGO_LINK_DESC" label="JSN_POWERADMIN_CONFIG_LOGO_LINK">
+			</field>
+
+			<field name="allow_uninstall" type="radio" default="1"
+				description="JSN_POWERADMIN_CONFIG_ENABLE_UNINSTALL_MENU_DESC" label="JSN_POWERADMIN_CONFIG_ENABLE_UNINSTALL_MENU">
+				<option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>
+
+			<field name="admin_session_timer_infinite" type="radio"
+				default="0" description="JSN_POWERADMIN_CONFIG_SESSION_INFINITE_DESC"
+				label="JSN_POWERADMIN_CONFIG_SESSION_INFINITE">
+				<option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>
+
+			<field name="admin_session_timeout_warning" type="text"
+				default="1" description="JSN_POWERADMIN_CONFIG_SESSION_TIMEOUT_WARNING_DESC"
+				label="JSN_POWERADMIN_CONFIG_SESSION_TIMEOUT_WARNING" />
+
+			<field name="admin_session_timeout_warning_disabled" type="checkbox"
+				value="1" description="JSN_POWERADMIN_CONFIG_DISABLE_TIMEOUT_WARNING_DESC"
+				label="JSN_POWERADMIN_CONFIG_DISABLE_TIMEOUT_WARNING" />
+
+			<field name="history_count" type="text" default="30"
+				description="JSN_POWERADMIN_CONFIG_HISTORY_COUNT_DESC" label="JSN_POWERADMIN_CONFIG_HISTORY_COUNT" />
+
+			<field name="search_result_num" type="text" default="10"
+				description="JSN_POWERADMIN_CONFIG_SEARCH_RESULTS_COUNT_DESC" label="JSN_POWERADMIN_CONFIG_SEARCH_RESULTS_COUNT" />
+
+			<field name="search_trashed" type="radio" default="0"
+				description="JSN_POWERADMIN_CONFIG_SEARCH_TRASHED_DESC" label="JSN_POWERADMIN_CONFIG_SEARCH_TRASHED">
+				<option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>
+
+			<field name="search_coverage" type="checkboxes" default="all"
+				description="JSN_POWERADMIN_CONFIG_SEARCH_COVERAGES_DESC" label="JSN_POWERADMIN_CONFIG_SEARCH_COVERAGES">
+				<option value="articles">JSN_POWERADMIN_COVERAGE_ARTICLES</option>
+				<option value="categories">JSN_POWERADMIN_COVERAGE_CATEGORIES</option>
+				<option value="modules">JSN_POWERADMIN_COVERAGE_MODULES</option>
+				<option value="plugins">JSN_POWERADMIN_COVERAGE_PLUGINS</option>
+				<option value="templates">JSN_POWERADMIN_COVERAGE_TEMPLATES</option>
+				<option value="menus">JSN_POWERADMIN_COVERAGE_MENUS</option>				
+				<option value="components">JSN_POWERADMIN_COVERAGE_COMPONENTS</option>
+				<option value="users">JSN_POWERADMIN_COVERAGE_USERS</option>				
+			</field>
+			
+			<field name="search_coverage_order" type="hidden" default="articles,categories,components,modules,plugins,menus,adminmenus,templates,users" />
+		</fieldset>
+		<fieldset name="site-manager" label="JSN_POWERADMIN_CONFIG_SITEMANAGER">
+			<field name="show_help_on_first_run" type="radio" default="1"
+				description="JSN_POWERADMIN_SHOW_HELP_ON_FIRST_RUN_DESC" label="JSN_POWERADMIN_SHOW_HELP_ON_FIRST_RUN">
+				<option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <section name="configuration" label="JSN_UNIFORM_CONFIGURATION_HEADER">
+        <group name="configs" label="JSN_UNIFORM_GLOBAL_PARAMETERS" icon="cog" script="uniform/configuration">
+            <tab name="form-default-settings" label="JSN_UNIFORM_FORMS">
+                <fieldset label="JSN_UNIFORM_GLOBAL_GENERAL">
+                    <field name="load_bootstrap_css" type="jsnradio" default="0" filter="int"
+                           label="JSN_UNIFORM_LOAD_BOOTSTRAP_CSS"
+                           description="JSN_UNIFORM_LOAD_BOOTSTRAP_CSS_DES">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                    </field>
+                    <field name="folder_upload" type="uploadFolder" class="jsn-input-large-fluid"
+                           default="images/jsnuniform/" label="JSN_UNIFORM_GENERAL_FOLDER_UPLOAD"
+                           description="JSN_UNIFORM_SET_THE_FOLDER_TO_STORE"/>
+                    <field name="disable_show_copyright" type="jsnradio" default="1" filter="int"
+                           label="JSN_UNIFORM_DISABLE_SHOW_COPYRIGHT"
+                           description="JSN_UNIFORM_DISABLE_SHOW_COPYRIGHT_DES">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                    </field>
+                </fieldset>
+                <fieldset label="JSN_UNIFORM_DEFAULT_FORM_SETTINGS">
+                    <field name="form_action" type="jsnselectbox" default="0" label="JSN_UNIFORM_ALERT_FORM_SUBMITSSION"
+                           description="JSN_UNIFORM_SELECT_THE_ACTION_TO_TAKE_AFTER" filter="int">
+                        <option value="0">JSN_UNIFORM_NO_ACTION</option>
+                        <option value="1">JSN_UNIFORM_REDIRECT_TO_URL</option>
+                        <option value="2">JSN_UNIFORM_REDIRECT_TO_MENU_ITEM</option>
+                        <option value="3">JSN_UNIFORM_SHOW_ARTICLE</option>
+                        <option value="4">JSN_UNIFORM_SHOW_CUSTOM_MESSAGE</option>
+                    </field>
+                    <field name="form_action_url" type="jsntext" label="JSN_UNIFORM_URL" class="jsn-input-large-fluid"/>
+                    <field name="form_action_menu" type="jsninputselect" label="JSN_UNIFORM_MENU_ITEM"
+                           class="jsn-input-large-fluid"/>
+                    <field name="form_action_article" type="jsninputselect" label="JSN_UNIFORM_ARTICLE"
+                           class="jsn-input-large-fluid"/>
+                    <field name="form_action_message" type="jsntextarea" filter="html" label="JSN_UNIFORM_CUSTOM_MESSAGE"
+                           class="jsn-input-large-fluid" rows="10"/>
+                    <field name="email_notification" type="emailnotification"/>
+                    <action label="JAPPLY" task="configuration.save" track="1" ajax="1" />
+                </fieldset>
+
+            </tab>
+        </group>
+
+        <group name="msgs" label="JSN_UNIFORM_MESSAGES" icon="comment">
+            <fieldset name="JSN_UNIFORM_MESSAGES">
+                <field name="messagelist" type="messagelist">
+                    <option value="MESSAGE_SCREEN_FORMS">JSN_UNIFORM_MENU_FORMS_TEXT</option>
+                    <option value="MESSAGE_SCREEN_FORM">JSN_UNIFORM_MENU_FORM_TEXT</option>
+                    <option value="MESSAGE_SCREEN_SUBMISSIONS">JSN_UNIFORM_MENU_SUBMISSIONS_TEXT</option>
+                    <option value="MESSAGE_SCREEN_SUBMISSION">JSN_UNIFORM_MENU_SUBMISSION_TEXT</option>
+                    <option value="MESSAGE_SCREEN_CONFIGURATION">JSN_UNIFORM_MENU_CONFIGURATION_TEXT</option>
+                    <option value="MESSAGE_SCREEN_ABOUT">JSN_UNIFORM_MENU_ABOUT_TEXT</option>
+                </field>
+                <action label="JAPPLY" task="configuration.save"/>
+            </fieldset>
+        </group>
+
+        <group name="langs" label="JSN_UNIFORM_LANGUAGES" icon="globe">
+            <fieldset name="JSN_UNIFORM_LANGUAGES">
+                <field name="languagemanager" type="languagemanager"/>
+                <action label="JAPPLY" task="configuration.save"/>
+            </fieldset>
+        </group>
+    </section>
+
+    <section name="maintenance" label="JSN_UNIFORM_MAINTENANCE_HEADER">
+        <group name="data" label="JSN_EXTFW_CONFIG_DATA" icon="database">
+            <tab name="data-sample-installation" label="JSN_EXTFW_CONFIG_SAMPLE_DATA_INSTALLATION">
+                <fieldset name="installsample">
+                    <field
+                            name="installsample" type="installsample" task="data.installSample"
+                            download-url="http://www.joomlashine.com/joomla-extensions/jsn-uniform-sample-data-j30.zip"
+                            warning-message="JSN_UNIFORM_SAMPLE_DATA_INSTALL_SUGGESTION"
+                            confirm-message="JSN_UNIFORM_SAMPLE_DATA_PLEASE_CHECK_I_AGREE_INSTALL_SAMPLE_DATA"
+                            />
+                </fieldset>
+            </tab>
+            <tab name="data-back-restore" label="JSN_EXTFW_CONFIG_DATA_BACKUP_RESTORE">
+                <fieldset name="databackup">
+                    <field name="databackup" type="databackup" task="data.backup">
+                        <option label="JSN_UNIFORM_DATABASE" type="tables"></option>
+                        <option label="JSN_UNIFORM_FOLDER_BACKUP" type="files"></option>
+                    </field>
+                </fieldset>
+
+                <fieldset name="datarestore">
+                    <field name="datarestore" type="datarestore" task="data.restore"/>
+                </fieldset>
+            </tab>
+        </group>
+        <group name="permissions" label="JSN_UNIFORM_PERMISSIONS" icon="lock">
+            <fieldset name="JSN_UNIFORM_PERMISSIONS">
+                <field name="permissions" type="permissions" class="inputbox" filter="rules" validate="rules"
+                       component="com_uniform" section="component"/>
+                <action label="JAPPLY" task="configuration.save"/>
+            </fieldset>
+        </group>
+    </section>
+</config>

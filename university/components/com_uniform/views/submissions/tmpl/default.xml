@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="JSN_UNIFORM_VIEW_SUBMISSIONS" option="JSN_UNIFORM_VIEW_SUBMISSIONS">
+        <message>
+            <![CDATA[JSN_UNIFORM_VIEW_SUBMISSIONS]]>
+        </message>
+    </layout>
+    <fields name="params">
+        <fieldset name="basic" label="JSN_UNIFORM_DISPLAY_OPTIONS" addfieldpath="/administrator/components/com_uniform/elements">
+                <field name="form_id" type="jsnsubmissions" section="com_uniform" default="0"
+                       label="JSN_UNIFROM_SELECT_FORM" description="JSN_UNIFORM_SELECT_FORM_TO_SUBMISSION_TIP"/>
+                <field name="form_field" type="jsnfield" section="com_uniform" label="JSN_UNIFORM_FORM_FIELDS"
+                       description="JSN_UNIFORM_FORM_FIELDS_TIP"/>
+                <field name="show_data_filter" type="jsnradio" label="JSN_UNIFORM_SHOW_DATA_FILTER" default="1"
+                       description="JSN_UNIFORM_SHOW_DATA_FILTER_DES">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="show_date_filter" type="jsnradio" default="1"
+                       label="JSN_UNIFORM_SHOW_DATE_FILTER"
+                       description="JSN_UNIFORM_SHOW_DATE_FILTER_DES"
+                        >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="show_field_selector" type="jsnradio" default="1"
+                       label="JSN_UNIFORM_SHOW_FIELD_SELECTOR"
+                       description="JSN_UNIFORM_SHOW_FIELD_SELECTOR_DES"
+                        >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="show_submission_data_detail" type="jsnradio" label="JSN_UNIFORM_SHOW_SUBMISSION_DATA_DETAIL" default="1"
+                       description="JSN_UNIFORM_SHOW_SUBMISSION_DATA_DETAIL_DES">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+        </fieldset>
+    </fields>
+</metadata>

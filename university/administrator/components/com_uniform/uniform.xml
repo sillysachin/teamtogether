@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>UniForm</name>
+	<version>3.0.3</version>
+	<creationDate>03/04/2014</creationDate>	
+	<author>JoomlaShine.com</author>
+	<authorEmail>support@joomlashine.com</authorEmail>
+	<authorUrl>http://www.joomlashine.com</authorUrl>
+	<copyright>Copyright (c) 2012 - JoomlaShine.com</copyright>
+	<license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>	
+	<description>JSN UniForm PRO STANDARD – A very simple solution to build forms for your Joomla website.</description>
+	<scriptfile>subinstall.php</scriptfile>
+	<subinstall>
+		<extension type="module" folder="site" client="site" dir="site/modules/mod_uniform" name="mod_uniform" publish="1" title="JSN UniForm Module" lock="1" />
+		<extension type="plugin" folder="content" client="site" dir="plugins/content/uniform" name="uniform" publish="1" lock="1" />
+		<extension type="plugin" folder="editors-xtd" client="site" dir="plugins/editors-xtd/uniform" name="uniform" publish="1" lock="1" />
+		<extension type="plugin" folder="system" client="site" name="jsnframework" identified_name="ext_framework" title="JSN Extension Framework System Plugin" publish="1" lock="1" />
+	</subinstall>
+	<files folder="site">		
+		<filename>controller.php</filename>		
+		<filename>index.html</filename>
+		<filename>uniform.php</filename>
+        <filename>router.php</filename>
+		<folder>controllers</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>	
+		<folder>libraries</folder>			
+		<folder>models</folder>
+		<folder>assets</folder>
+		<folder>views</folder>
+	</files>	
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">database/mysql/install.mysql.sql</file>			
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">database/mysql/uninstall.mysql.sql</file>			
+		</sql>
+	</uninstall>
+	<uninstallfile>uninstall.uniform.php</uninstallfile>
+    <languages folder="admin">
+        <language tag="bg-BG">language/site/bg-BG/bg-BG.com_uniform.ini</language>
+        <language tag="bg-BG">language/site/bg-BG/bg-BG.mod_uniform.ini</language>
+        <language tag="bg-BG">language/site/bg-BG/bg-BG.mod_uniform.sys.ini</language>
+
+        <language tag="da-DK">language/site/da-DK/da-DK.com_uniform.ini</language>
+        <language tag="da-DK">language/site/da-DK/da-DK.mod_uniform.ini</language>
+        <language tag="da-DK">language/site/da-DK/da-DK.mod_uniform.sys.ini</language>
+
+        <language tag="de-DE">language/site/de-DE/de-DE.com_uniform.ini</language>
+        <language tag="de-DE">language/site/de-DE/de-DE.mod_uniform.ini</language>
+        <language tag="de-DE">language/site/de-DE/de-DE.mod_uniform.sys.ini</language>
+
+        <language tag="en-GB">language/site/en-GB/en-GB.com_uniform.ini</language>
+        <language tag="en-GB">language/site/en-GB/en-GB.mod_uniform.ini</language>
+        <language tag="en-GB">language/site/en-GB/en-GB.mod_uniform.sys.ini</language>
+
+        <language tag="fr-FR">language/site/fr-FR/fr-FR.com_uniform.ini</language>
+        <language tag="fr-FR">language/site/fr-FR/fr-FR.mod_uniform.ini</language>
+        <language tag="fr-FR">language/site/fr-FR/fr-FR.mod_uniform.sys.ini</language>
+
+        <language tag="en-GB">language/site/hr-HR/hr-HR.com_uniform.ini</language>
+        <language tag="en-GB">language/site/hr-HR/hr-HR.mod_uniform.ini</language>
+        <language tag="en-GB">language/site/hr-HR/hr-HR.mod_uniform.sys.ini</language>
+
+        <language tag="en-GB">language/site/it-IT/it-IT.com_uniform.ini</language>
+        <language tag="en-GB">language/site/it-IT/it-IT.mod_uniform.ini</language>
+        <language tag="en-GB">language/site/it-IT/it-IT.mod_uniform.sys.ini</language>
+
+        <language tag="ja-JP">language/site/ja-JP/ja-JP.com_uniform.ini</language>
+        <language tag="ja-JP">language/site/ja-JP/ja-JP.mod_uniform.ini</language>
+        <language tag="ja-JP">language/site/ja-JP/ja-JP.mod_uniform.sys.ini</language>
+
+        <language tag="nl-NL">language/site/nl-NL/nl-NL.com_uniform.ini</language>
+        <language tag="nl-NL">language/site/nl-NL/nl-NL.mod_uniform.ini</language>
+        <language tag="nl-NL">language/site/nl-NL/nl-NL.mod_uniform.sys.ini</language>
+
+        <language tag="pl-PL">language/site/pl-PL/pl-PL.com_uniform.ini</language>
+        <language tag="pl-PL">language/site/pl-PL/pl-PL.mod_uniform.ini</language>
+        <language tag="pl-PL">language/site/pl-PL/pl-PL.mod_uniform.sys.ini</language>
+
+        <language tag="pt-BR">language/site/pt-BR/pt-BR.com_uniform.ini</language>
+        <language tag="pt-BR">language/site/pt-BR/pt-BR.mod_uniform.ini</language>
+        <language tag="pt-BR">language/site/pt-BR/pt-BR.mod_uniform.sys.ini</language>
+
+        <language tag="pt-BR">language/site/sr-RS/sr-RS.com_uniform.ini</language>
+        <language tag="pt-BR">language/site/sr-RS/sr-RS.mod_uniform.ini</language>
+        <language tag="pt-BR">language/site/sr-RS/sr-RS.mod_uniform.sys.ini</language>
+    </languages>
+	<administration>		
+		<menu link="option=com_uniform" option="com_uniform" img="components/com_uniform/assets/images/icons-16/icon-uniform.png" alt="JSN_UNIFORM_MENU_TEXT">JSN_UNIFORM_MENU_TEXT</menu>
+		<submenu>
+			<menu link="option=com_uniform&amp;view=forms" view="forms" img="components/com_uniform/assets/images/icons-16/icon-forms.png" alt="JSN_UNIFORM_MENU_FORMS_TEXT">JSN_UNIFORM_MENU_FORMS_TEXT</menu>
+			<menu link="option=com_uniform&amp;view=submissions" view="submissions" img="components/com_uniform/assets/images/icons-16/icon-submissions.png" alt="JSN_UNIFORM_MENU_SUBMISSIONS_TEXT">JSN_UNIFORM_MENU_SUBMISSIONS_TEXT</menu>
+			<menu link="option=com_uniform&amp;view=configuration" view="configuration" img="components/com_uniform/assets/images/icons-16/icon-cog.png" alt="JSN_UNIFORM_MENU_CONFIGURATION_TEXT">JSN_UNIFORM_MENU_CONFIGURATION_TEXT</menu>
+			<menu link="option=com_uniform&amp;view=about" view="about" img="components/com_uniform/assets/images/icons-16/icon-about.png" alt="JSN_UNIFORM_MENU_ABOUT_TEXT">JSN_UNIFORM_MENU_ABOUT_TEXT</menu>
+		</submenu>
+		<files folder="admin">			
+			<filename>access.xml</filename>
+			<filename>bootstrap.php</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>dependency.php</filename>
+			<filename>index.html</filename>
+			<filename>jsninstaller.php</filename>
+			<filename>uniform.defines.php</filename>
+			<filename>uniform.php</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>database</folder>
+			<folder>elements</folder>
+			<folder>helpers</folder>
+			<folder>language</folder>
+			<folder>libraries</folder>
+			<folder>models</folder>						
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+        <languages folder="admin">
+            <language tag="bg-BG">language/admin/bg-BG/bg-BG.com_uniform.ini</language>
+            <language tag="bg-BG">language/admin/bg-BG/bg-BG.com_uniform.sys.ini</language>
+            <language tag="bg-BG">language/admin/bg-BG/bg-BG.plg_content_uniform.ini</language>
+            <language tag="bg-BG">language/admin/bg-BG/bg-BG.plg_content_uniform.sys.ini</language>
+            <language tag="bg-BG">language/admin/bg-BG/bg-BG.plg_editors-xtd_uniform.ini</language>
+            <language tag="bg-BG">language/admin/bg-BG/bg-BG.plg_editors-xtd_uniform.sys.ini</language>
+
+            <language tag="da-DK">language/admin/da-DK/da-DK.com_uniform.ini</language>
+            <language tag="da-DK">language/admin/da-DK/da-DK.com_uniform.sys.ini</language>
+            <language tag="da-DK">language/admin/da-DK/da-DK.plg_content_uniform.ini</language>
+            <language tag="da-DK">language/admin/da-DK/da-DK.plg_content_uniform.sys.ini</language>
+            <language tag="da-DK">language/admin/da-DK/da-DK.plg_editors-xtd_uniform.ini</language>
+            <language tag="da-DK">language/admin/da-DK/da-DK.plg_editors-xtd_uniform.sys.ini</language>
+
+            <language tag="de-DE">language/admin/de-DE/de-DE.com_uniform.ini</language>
+            <language tag="de-DE">language/admin/de-DE/de-DE.com_uniform.sys.ini</language>
+            <language tag="de-DE">language/admin/de-DE/de-DE.plg_content_uniform.ini</language>
+            <language tag="de-DE">language/admin/de-DE/de-DE.plg_content_uniform.sys.ini</language>
+            <language tag="de-DE">language/admin/de-DE/de-DE.plg_editors-xtd_uniform.ini</language>
+            <language tag="de-DE">language/admin/de-DE/de-DE.plg_editors-xtd_uniform.sys.ini</language>
+
+            <language tag="en-GB">language/admin/en-GB/en-GB.com_uniform.ini</language>
+            <language tag="en-GB">language/admin/en-GB/en-GB.com_uniform.sys.ini</language>
+            <language tag="en-GB">language/admin/en-GB/en-GB.plg_content_uniform.ini</language>
+            <language tag="en-GB">language/admin/en-GB/en-GB.plg_content_uniform.sys.ini</language>
+            <language tag="en-GB">language/admin/en-GB/en-GB.plg_editors-xtd_uniform.ini</language>
+            <language tag="en-GB">language/admin/en-GB/en-GB.plg_editors-xtd_uniform.sys.ini</language>
+
+            <language tag="fr-FR">language/admin/fr-FR/fr-FR.com_uniform.ini</language>
+            <language tag="fr-FR">language/admin/fr-FR/fr-FR.com_uniform.sys.ini</language>
+            <language tag="fr-FR">language/admin/fr-FR/fr-FR.plg_content_uniform.ini</language>
+            <language tag="fr-FR">language/admin/fr-FR/fr-FR.plg_content_uniform.sys.ini</language>
+            <language tag="fr-FR">language/admin/fr-FR/fr-FR.plg_editors-xtd_uniform.ini</language>
+            <language tag="fr-FR">language/admin/fr-FR/fr-FR.plg_editors-xtd_uniform.sys.ini</language>
+
+            <language tag="ja-JP">language/admin/hr-HR/hr-HR.com_uniform.ini</language>
+            <language tag="ja-JP">language/admin/hr-HR/hr-HR.com_uniform.sys.ini</language>
+            <language tag="ja-JP">language/admin/hr-HR/hr-HR.plg_content_uniform.ini</language>
+            <language tag="ja-JP">language/admin/hr-HR/hr-HR.plg_content_uniform.sys.ini</language>
+            <language tag="ja-JP">language/admin/hr-HR/hr-HR.plg_editors-xtd_uniform.ini</language>
+            <language tag="ja-JP">language/admin/hr-HR/hr-HR.plg_editors-xtd_uniform.sys.ini</language>
+
+            <language tag="ja-JP">language/admin/it-IT/it-IT.com_uniform.ini</language>
+            <language tag="ja-JP">language/admin/it-IT/it-IT.com_uniform.sys.ini</language>
+            <language tag="ja-JP">language/admin/it-IT/it-IT.plg_content_uniform.ini</language>
+            <language tag="ja-JP">language/admin/it-IT/it-IT.plg_content_uniform.sys.ini</language>
+            <language tag="ja-JP">language/admin/it-IT/it-IT.plg_editors-xtd_uniform.ini</language>
+            <language tag="ja-JP">language/admin/it-IT/it-IT.plg_editors-xtd_uniform.sys.ini</language>
+
+            <language tag="ja-JP">language/admin/ja-JP/ja-JP.com_uniform.ini</language>
+            <language tag="ja-JP">language/admin/ja-JP/ja-JP.com_uniform.sys.ini</language>
+            <language tag="ja-JP">language/admin/ja-JP/ja-JP.plg_content_uniform.ini</language>
+            <language tag="ja-JP">language/admin/ja-JP/ja-JP.plg_content_uniform.sys.ini</language>
+            <language tag="ja-JP">language/admin/ja-JP/ja-JP.plg_editors-xtd_uniform.ini</language>
+            <language tag="ja-JP">language/admin/ja-JP/ja-JP.plg_editors-xtd_uniform.sys.ini</language>
+
+            <language tag="nl-NL">language/admin/nl-NL/nl-NL.com_uniform.ini</language>
+            <language tag="nl-NL">language/admin/nl-NL/nl-NL.com_uniform.sys.ini</language>
+            <language tag="nl-NL">language/admin/nl-NL/nl-NL.plg_content_uniform.ini</language>
+            <language tag="nl-NL">language/admin/nl-NL/nl-NL.plg_content_uniform.sys.ini</language>
+            <language tag="nl-NL">language/admin/nl-NL/nl-NL.plg_editors-xtd_uniform.ini</language>
+            <language tag="nl-NL">language/admin/nl-NL/nl-NL.plg_editors-xtd_uniform.sys.ini</language>
+
+            <language tag="pl-PL">language/admin/pl-PL/pl-PL.com_uniform.ini</language>
+            <language tag="pl-PL">language/admin/pl-PL/pl-PL.com_uniform.sys.ini</language>
+            <language tag="pl-PL">language/admin/pl-PL/pl-PL.plg_content_uniform.ini</language>
+            <language tag="pl-PL">language/admin/pl-PL/pl-PL.plg_content_uniform.sys.ini</language>
+            <language tag="pl-PL">language/admin/pl-PL/pl-PL.plg_editors-xtd_uniform.ini</language>
+            <language tag="pl-PL">language/admin/pl-PL/pl-PL.plg_editors-xtd_uniform.sys.ini</language>
+
+            <language tag="pt-BR">language/admin/pt-BR/pt-BR.com_uniform.ini</language>
+            <language tag="pt-BR">language/admin/pt-BR/pt-BR.com_uniform.sys.ini</language>
+            <language tag="pt-BR">language/admin/pt-BR/pt-BR.plg_content_uniform.ini</language>
+            <language tag="pt-BR">language/admin/pt-BR/pt-BR.plg_content_uniform.sys.ini</language>
+            <language tag="pt-BR">language/admin/pt-BR/pt-BR.plg_editors-xtd_uniform.ini</language>
+            <language tag="pt-BR">language/admin/pt-BR/pt-BR.plg_editors-xtd_uniform.sys.ini</language>
+
+            <language tag="pt-BR">language/admin/sr-RS/sr-RS.com_uniform.ini</language>
+            <language tag="pt-BR">language/admin/sr-RS/sr-RS.com_uniform.sys.ini</language>
+            <language tag="pt-BR">language/admin/sr-RS/sr-RS.plg_content_uniform.ini</language>
+            <language tag="pt-BR">language/admin/sr-RS/sr-RS.plg_content_uniform.sys.ini</language>
+            <language tag="pt-BR">language/admin/sr-RS/sr-RS.plg_editors-xtd_uniform.ini</language>
+            <language tag="pt-BR">language/admin/sr-RS/sr-RS.plg_editors-xtd_uniform.sys.ini</language>
+
+        </languages>
+	</administration>
+</extension>

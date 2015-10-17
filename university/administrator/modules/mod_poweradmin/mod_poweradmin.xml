@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="administrator" method="upgrade">
+	<name>mod_poweradmin</name>
+	<author>JoomlaShine.com</author>
+	<creationDate>02/18/2014</creationDate>
+	<copyright>Copyright (c) 2012 - JoomlaShine.com</copyright>
+	<license>GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<authorEmail>support@joomlashine.com</authorEmail>
+	<authorUrl>http://www.joomlashine.com</authorUrl>
+	<version>2.1.4</version>
+	<description>JSN PowerAdmin Quick Icons</description>
+
+	<files>
+		<filename module="mod_poweradmin">mod_poweradmin.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+	</files>
+</extension>

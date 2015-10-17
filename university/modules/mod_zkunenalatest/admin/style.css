@@ -1,0 +1,210 @@
+body#minwidth-body {
+	min-width: 1400px!important;
+}
+#jform_params_modelType option:disabled {
+	font-weight: bold;
+	color: #00F;
+}
+input:disabled, textarea:disabled, select:disabled:disabled {
+	color: #CCC;
+	text-decoration: line-through;
+	background-color: transparent;
+	background-image: url(z-admin.png);
+	background-repeat: repeat-x;
+	background-position: 0 -50px;
+}
+
+.panel:first-child li:last-child {
+	border: none!important;
+}
+#jform_params_info-lbl, #jform_params_assets-lbl, #invisible {
+	display: none;
+}
+.switcher-on, .switcher-off {
+	width:85px;
+	height:30px;
+	background:transparent url('switch.png') no-repeat 0 0;
+	cursor:pointer;
+	float: left;
+	margin-top: 3px;
+}
+.switcher-off {
+	background-position:-89px 0;
+}
+span.unit {
+	line-height:34px;
+}
+/* togglers */
+.button2-left {
+	margin-top: 6px;
+}
+.pane-sliders .panel {
+	border: none !important;
+}
+div.panel h3 {
+	height: 43px;
+	background: transparent url('z-admin.png') repeat-x 0 0 !important;
+	border: 1px solid #d8d8d8;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font: bold 12px/43px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+div.panel > h3 a {
+	color: #333;
+	text-shadow: 0 1px 1px #fff;
+}
+div.panel > h3 a:hover, div.panel h3.pane-toggler-down a {
+	color: #406AC0
+}
+div.panel h3.pane-toggler-down {
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #406AC0;
+}
+.pane-toggler span {
+}
+.pane-toggler-down span {
+}
+.pane-sliders .content {
+	margin: 4px auto;
+	width: 99%;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.nZambiLink {
+	float: right !important;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	margin: 11px 12px 0 10px;
+	background: transparent url('z-admin.png') repeat-x 0 -132px !important;
+}
+a:hover.nZambiLink {
+	background-position: 0 -94px !important;
+}
+/* form elements in the container */
+.panel fieldset.panelform > ul > li > label, .panel fieldset.panelform > ul > li > div > ul > li > label {
+	color: #444;
+	font-size: 11px;
+	font-weight: bold;
+	height: 24px;
+	line-height: 24px;
+	padding: 0 20px 0 10px;
+	text-align: right;
+	max-width: 30%!important;
+	min-width: 30%!important;
+}
+.panel fieldset.panelform > ul > li fieldset {
+	line-height:28px;
+}
+fieldset.panelform input {
+	height: 16px;
+	color: #333;
+	line-height: 16px;
+	padding: 4px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: 1px solid #406AC0;
+}
+fieldset.panelform input.small {
+	width: 40px;
+}
+fieldset.panelform input.tright {
+	text-align: right;
+}
+fieldset.panelform input[type=button] {
+	height: 26px;
+	line-height: 26px;
+}
+fieldset.panelform select {
+	height: 26px;
+	color: #555;
+	line-height: 24px;
+	padding: 4px;
+	font-size:11px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: 1px solid #406AC0;
+}
+fieldset.panelform select.position {
+	width: 80px!important;
+}
+fieldset.panelform textarea {
+	padding: 4px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+fieldset.panelform select[multiple=multiple] {
+	height: 150px;
+}
+.fltrt ul.adminformlist li {
+	overflow: hidden;
+	border-bottom: 1px solid #eee;
+	padding: 1px 10px;
+	margin: 0;
+}
+fieldset.panelform .label {
+	font-size: 11px;
+	font-weight: bold;
+	width: auto;
+	padding: 0 5px;
+	line-height:34px;
+}
+fieldset.panelform .desc {
+	font-size: 11px;
+	font-weight: normal;
+	width: auto;
+	padding: 10px;
+}
+div#nZambiInfo {}
+div#nZambiInfo h4 {
+	margin-bottom: 0px;
+}
+div#nZambiInfo p.infotext {
+	margin-top: 10px;
+	margin-bottom: 1px;
+}
+div#nZambiInfo p.notetext {
+	margin-top: 10px;
+	margin-bottom: 1px;
+	color: #F00;
+	background-color: #EEE;
+	padding: 6px;
+	width: 100%;
+}
+div#nZambiInfo ul#zChangeLog {
+	padding-left: 20px;
+}
+div#nZambiInfo ul#zChangeLog li {
+	font-size: 1.1em;
+	border-bottom-style: none;
+	list-style-position: outside;
+	list-style-type: disc;
+	border-bottom-width: 0px;
+	overflow: visible;
+	padding-left: 5px;
+}
+div#nZambiInfo ul#zChangeLog .new {
+	color: #900;
+}
+div#nZambiInfo a {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+div#nZambiInfo strong {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+/*UGLY HACK for Chrome which wont allow background image*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+select:disabled:disabled {
+	background-color: #C30;
+	background-image: none;
+}
+}

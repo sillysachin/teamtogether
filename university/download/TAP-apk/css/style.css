@@ -1,0 +1,121 @@
+body{
+  position:fixed;
+  margin:0px;
+  width:100%;
+  background: #f7f7f7; /* Old browsers */
+background: -moz-linear-gradient(top,  #f7f7f7 0%, #fcfcfc 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#fcfcfc)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f7f7f7 0%,#fcfcfc 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f7f7f7 0%,#fcfcfc 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f7f7f7 0%,#fcfcfc 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f7f7f7 0%,#fcfcfc 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-9 */
+
+}
+
+span{
+  padding:0px !important;
+  margin:0px !important;
+  margin-right:0px !important;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size:30px;
+  color:#01A2F3;
+  float:left;
+}
+
+#container{
+  width:150px;
+  height:50px;
+  border:2px solid #01A2F3;
+  border-radius:7px;
+  padding:5px;
+  padding-left:30px;
+  text-align:center;
+  margin:0 auto;
+  top:100px;
+  margin-top:20px;
+  position:relative;
+}
+
+#loaderText{
+  width:100%;
+  text-align:center;
+  vertical-align:middle;
+  margin:0 auto;
+  height:100%;
+  position:absolute;
+  top:12px;
+  left:50%;
+  margin-left:-30%;
+  cursor:pointer;
+}
+
+#loaderText2{
+  width:100%;
+  text-align:center;
+  vertical-align:middle;
+  margin:0 auto;
+  height:100%;
+  position:absolute;
+  top:12px;
+  left:50%;
+  margin-left:-38%;
+  z-index:90;
+  display:none;
+}
+
+#loaderText2>span{
+  /* color:#ffffff !important; */
+  /*visibility:hidden;*/
+  background: url("http://i221.photobucket.com/albums/dd22/djmid71/Untitled-1_zpsb46204f7.png");
+  background-position:-500px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat:no-repeat;
+}
+
+#loader{
+  height:60px;
+ background: #01a2f3; /* Old browsers */
+  position:absolute;
+  width:0%;
+  left:0px;
+  top:0px;
+  border-radius-left-top:7px;
+  z-index:90;
+}
+
+#finalText{
+  visibility:hidden;
+  opacity:0;
+  color:#fff;
+  width:100%;
+  height:100%;
+  text-align:center;
+  font-size:30px;
+  z-index:99;
+  position:absolute;
+  margin-left:-30px;
+  top:10px;
+  font-family:'Ubuntu Condensed', sans-serif;
+}
+#info{
+  background: rgb(19, 131, 219);
+color: white;
+height: 70px;
+margin-left: auto;
+margin-right: auto;
+width: 600px;
+font-size: 18px;
+text-align: center;
+font-family: Ubuntu Condensed;
+border-radius: 6px;
+}
+#howto{margin-top: 220px;
+bottom: 0px;
+background: rgb(47, 162, 79);
+color: white;
+border-radius: 10px;
+padding-top: 7px;
+font-family: ubuntu condensed;
+padding-left: 20px;}

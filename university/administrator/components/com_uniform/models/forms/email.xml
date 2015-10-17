@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field 
+			name="email_id" type="hidden" default="0" 
+			label="JGLOBAL_FIELD_ID_LABEL" 
+		/>
+		<field
+			name="form_id"
+			 type="hidden"
+			label="JGLOBAL_TITLE"
+			description="JFIELD_FORM_ID"
+			class="inputbox"
+			size="110"
+			/>
+			<field
+			name="user_id"
+			 type="hidden"
+			label="JGLOBAL_TITLE"
+			description="JFIELD_USER_ID"
+			class="inputbox"
+			size="110"
+			/>
+		<field
+			name="email_name"
+			type="text"
+			label="JSN_UNIFORM_EMAIL_NAME"
+			description="JSN_UNIFORM_EMAIL_NAME_DES"
+			class="inputbox"
+			size="40"/>
+			<field
+			name="email_address"
+			type="text"
+			label="JSN_UNIFORM_EMAIL_ADDRESS"
+			description="JSN_UNIFORM_EMAIL_ADDRESS_DES"
+			class="inputbox"
+			size="40"/>
+			<field
+			name="email_state"
+			type="text"
+			label="JSN_UNIFORM_EMAIL_STATE"
+			description="JSN_UNIFORM_EMAIL_STATE_DES"
+			class="inputbox"
+			size="40"/>
+		
+	</fieldset>
+        
+</form>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="2.5" type="template" client="site" method="upgrade">
+	<name>jsn_cube_pro</name>
+	<edition>PRO UNLIMITED</edition>
+	<version>3.0.0</version>
+	<creationDate>09/13/2013</creationDate>
+	<author>JoomlaShine.com</author>
+	<authorEmail>support@joomlashine.com</authorEmail>
+	<authorUrl>http://www.joomlashine.com</authorUrl>
+	<copyright>Copyright (c) 2008 - 2013 - JoomlaShine.com</copyright>
+	<license>GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<description>TPL_JSN_CUBE_PRO_XML_DESCRIPTION</description>
+	<group>jsntemplate</group>
+	<identifiedName>tpl_cube</identifiedName>
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>backups</folder>
+		<folder>ext</folder>
+		<filename>component.php</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>error.php</filename>
+		<filename>offline.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>template.checksum</filename>
+		<filename>template.defines.php</filename>
+		<filename>template_layout_adjustment.jpg</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_custom.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>gpl-2.0.txt</filename>
+	</files>
+	<positions>
+		<position>topbar</position>
+		<position>logo</position>
+		<position>top</position>
+		<position>top1</position>
+		<position>top2</position>
+		<position>mainmenu</position>
+		<position>toolbar</position>
+		<position>promo-left</position>
+		<position>promo</position>
+		<position>promo-right</position>
+		<position>content-top</position>
+		<position>left</position>
+		<position>right</position>
+		<position>innerleft</position>
+		<position>innerright</position>
+		<position>breadcrumbs</position>
+		<position>user-top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>mainbody-top</position>
+		<position>mainbody-bottom</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>user-bottom</position>
+		<position>banner</position>
+		<position>content-bottom</position>
+		<position>user5</position>
+		<position>user6</position>
+		<position>user7</position>
+		<position>footer</position>
+		<position>bottom</position>
+		<position>background</position>
+		<position>debug</position>
+		<position>stick-lefttop</position>
+		<position>stick-leftmiddle</position>
+		<position>stick-leftbottom</position>
+		<position>stick-righttop</position>
+		<position>stick-rightmiddle</position>
+		<position>stick-rightbottom</position>
+	</positions>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_jsn_cube_pro.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_jsn_cube_pro.sys.ini</language>
+		<language tag="de-DE">de-DE/de-DE.tpl_jsn_cube_pro.ini</language>
+		<language tag="de-DE">de-DE/de-DE.tpl_jsn_cube_pro.sys.ini</language>
+		<language tag="nl-NL">nl-NL/nl-NL.tpl_jsn_cube_pro.ini</language>
+		<language tag="nl-NL">nl-NL/nl-NL.tpl_jsn_cube_pro.sys.ini</language>
+		<language tag="pl-PL">pl-PL/pl-PL.tpl_jsn_cube_pro.ini</language>
+		<language tag="pl-PL">pl-PL/pl-PL.tpl_jsn_cube_pro.sys.ini</language>
+		<language tag="it-IT">it-IT/it-IT.tpl_jsn_cube_pro.ini</language>
+		<language tag="it-IT">it-IT/it-IT.tpl_jsn_cube_pro.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.tpl_jsn_cube_pro.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.tpl_jsn_cube_pro.sys.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.tpl_jsn_cube_pro.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.tpl_jsn_cube_pro.sys.ini</language>
+		<language tag="es-ES">es-ES/es-ES.tpl_jsn_cube_pro.ini</language>
+		<language tag="es-ES">es-ES/es-ES.tpl_jsn_cube_pro.sys.ini</language>
+		<language tag="hr-HR">hr-HR/hr-HR.tpl_jsn_cube_pro.ini</language>
+		<language tag="hr-HR">hr-HR/hr-HR.tpl_jsn_cube_pro.sys.ini</language>
+		<language tag="da-DK">da-DK/da-DK.tpl_jsn_cube_pro.ini</language>
+		<language tag="da-DK">da-DK/da-DK.tpl_jsn_cube_pro.sys.ini</language>
+		<language tag="bg-BG">bg-BG/bg-BG.tpl_jsn_cube_pro.ini</language>
+		<language tag="bg-BG">bg-BG/bg-BG.tpl_jsn_cube_pro.sys.ini</language>
+		<language tag="ja-JP">ja-JP/ja-JP.tpl_jsn_cube_pro.ini</language>
+		<language tag="ja-JP">ja-JP/ja-JP.tpl_jsn_cube_pro.sys.ini</language>
+		<language tag="el-GR">el-GR/el-GR.tpl_jsn_cube_pro.ini</language>
+		<language tag="el-GR">el-GR/el-GR.tpl_jsn_cube_pro.sys.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.tpl_jsn_cube_pro.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.tpl_jsn_cube_pro.sys.ini</language>
+	</languages>
+
+	<parameters>
+		<defaults>
+			<option name="templateColor" value="pink" />
+			<option name="templateStyle" value="business" />
+			<option name="templateWidth">
+				<set name="type" value="responsive" />
+				<set name="responsive[]" value="mobile" />
+			</option>
+		</defaults>
+		
+		<fieldset name="jsn-site-tools">
+			<field name="sitetoolsColors" type="jsncolorlist" label="JSN_TPLFW_SITETOOLS_COLORS" description="JSN_TPLFW_SITETOOLS_COLORS_DESC" method="replace">
+				<option value="pink">JSN_TPLFW_COLOR_PINK</option>
+				<option value="red">JSN_TPLFW_COLOR_RED</option>
+				<option value="green">JSN_TPLFW_COLOR_GREEN</option>
+				<option value="violet">JSN_TPLFW_COLOR_VIOLET</option>
+				<option value="orange">JSN_TPLFW_COLOR_ORANGE</option>
+				<option value="cyan">JSN_TPLFW_COLOR_CYAN</option>
+			</field>
+		</fieldset>
+
+		<fieldset name="jsn-style">
+			<field name="templateColor" type="list" label="JSN_TPLFW_STYLE_TEMPLATE_COLOR" description="JSN_TPLFW_STYLE_TEMPLATE_COLOR_DESC" method="replace">
+				<option value="pink">JSN_TPLFW_COLOR_PINK</option>
+				<option value="red">JSN_TPLFW_COLOR_RED</option>
+				<option value="green">JSN_TPLFW_COLOR_GREEN</option>
+				<option value="violet">JSN_TPLFW_COLOR_VIOLET</option>
+				<option value="orange">JSN_TPLFW_COLOR_ORANGE</option>
+				<option value="cyan">JSN_TPLFW_COLOR_CYAN</option>
+			</field>
+		</fieldset>
+		<field name="socialIcons" type="jsnsocialintegration" label="JSN_TPLFW_SOCIAL_ICONS" description="JSN_TPLFW_SOCIAL_ICONS_DESC" method="replace">
+			<option name="facebook" placeholder="http://www.facebook.com/your_user_name" value="http://www.facebook.com/joomlashine">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_FACEBOOK</option>
+			<option name="twitter" placeholder="http://www.twitter.com/your_user_name" value="http://www.twitter.com/joomlashine">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_TWITTER</option>
+			<option name="googleplus" placeholder="http://plus.google.com/your_user_id" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_GOOGLEPLUS</option>
+			<option name="youtube" placeholder="http://www.youtube.com/your_user_name" value="http://www.youtube.com/joomlashine">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_YOUTUBE</option>
+			<option name="pinterest" placeholder="http://www.pinterest.com/your_user_name" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_PINTEREST</option>
+			<option name="myspace" placeholder="http://www.myspace.com/your_user_name" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_MYSPACE</option>
+			<option name="flickr" placeholder="http://www.flickr.com/people/your_user_name" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_FLICKR</option>
+			<option name="dribble" placeholder="http://www.dribble.com/your_user_name" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_DRIBBLE</option>
+			<option name="stumbleupon" placeholder="http://your_user_name.stumbleupon.com" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_STUMBLEUPON</option>
+			<option name="yahoo" placeholder="ymsgr:sendim?your_user_name" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_YAHOO</option>
+			<option name="skype" placeholder="skype:your_user_name?call" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_SKYPE</option>
+			<option name="rss" placeholder="http://your_joomla_site_url/index.php?format=feed&amp;type=rss" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_RSS</option>
+		</field>
+	</parameters>
+
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/jsntplframework/libraries/joomlashine/elements">
+			<fieldset name="message" label="Warning">
+				<field name="warning" label="Warning" type="jsnframeworkcheck" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

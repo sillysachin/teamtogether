@@ -1,0 +1,4 @@
+[04-Sep-2014 16:56:42 UTC] PHP Fatal error:  Call to a member function is_logged_in() on a non-object in /home/teamssd46/public_html/tap-info/tap_notifier_login/index.php on line 2
+[14-Sep-2014 17:55:14 UTC] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in /home/teamssd46/public_html/mce/notifoid/request.php on line 23
+[14-Sep-2014 17:56:31 UTC] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in /home/teamssd46/public_html/mce/notifoid/request.php on line 23
+[07-Jun-2015 07:17:41 UTC] PHP Fatal error:  Call to undefined function validation_errors() in /home/teamssd46/public_html/mce/notifoid/resender.php on line 342

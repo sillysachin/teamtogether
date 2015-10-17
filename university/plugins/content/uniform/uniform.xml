@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content"  method="upgrade">
+    <name>JSN_UNIFORM_PLUGIN_CONTENT_TITLE</name>		
+    <version>3.0.3</version>	
+    <creationDate>03/04/2014</creationDate>
+    <author>JoomlaShine.com</author>
+    <authorEmail>admin@joomlashine.com</authorEmail>
+    <authorUrl>www.joomlashine.com</authorUrl>
+    <copyright>Copyright (C) 2012 JoomlaShine.com. All Rights Reserved.</copyright>
+    <license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <description>JSN_UNIFORM_PLUGIN_CONTENT_DES</description>
+    <files>
+	<filename plugin="uniform">uniform.php</filename>
+	<filename>index.html</filename>
+    </files>
+    <config />
+</extension>

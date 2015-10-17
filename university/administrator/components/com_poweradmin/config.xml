@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<section name="configuration" label="JSN_POWERADMIN_CONFIG">
+		<group name="configs" label="JSN_POWERADMIN_CONFIG_GLOBAL_PARAMETERS" icon="cog">
+			
+				<tab name="global-parameter-general" label="JSN_POWERADMIN_CONFIG_ADMINBAR">				    
+				<!-- GENERAL CONFIG -->
+				    <fieldset label="JSN_POWERADMIN_CONFIG_GENERAL">					    
+						<field name="enable_adminbar" type="jsnradio" default="1" filter="int" label="JSN_POWERADMIN_CONFIG_ENABLE_ADMINBAR" description="JSN_POWERADMIN_CONFIG_ENABLE_ADMINBAR_DESC">
+							<option value="0">JNO</option>
+							<option value="1">JYES</option>
+						</field>
+												
+                    </fieldset>
+                <!-- END GENERAL CONFIG -->
+                
+                <!-- MENU CONFIG -->
+                    <fieldset label="JSN_POWERADMIN_CONFIG_MENU">
+	                    <field name="logo_file" type="jsnmedia" default="administrator/components/com_poweradmin/assets/images/logo-jsnpoweradmin.png" class="jsn-input-large-fluid" editable="1" clearButton="1"
+	                                filter="int" label="JSN_POWERADMIN_CONFIG_LOGO_FILE" description="JSN_POWERADMIN_CONFIG_LOGO_FILE_DESC" selectbtnid="logo-select" selectbtnlabel="..." directory="images">                      
+	                    </field>
+	                    
+	                    <field name="logo_link" type="jsntext" default="http://www.joomlashine.com/joomla-extensions/jsn-poweradmin.html" class="jsn-input-large-fluid" 
+	                                filter="int" label="JSN_POWERADMIN_CONFIG_LOGO_LINK" description="JSN_POWERADMIN_CONFIG_LOGO_LINK_DESC">                      
+	                    </field>
+
+						<field name="logo_target" type="jsnselectbox" default="_blank"
+	                                filter="int" label="JSN_POWERADMIN_CONFIG_LOGO_LINK_TARGET" description="JSN_POWERADMIN_CONFIG_LOGO_LINK_TARGET_DESC">  
+	                                <option value="_blank">JSN_POWERADMIN_CONFIG_LOGO_LINK_TARGET_NEW_BROWSER</option>
+	                                <option value="_self">JSN_POWERADMIN_CONFIG_LOGO_LINK_TARGET_CURRENT_BROWSER</option>	                                            
+	                    </field>
+	                    
+	                    <field name="logo_slogan" type="jsntext" default="PLG_JSNADMINBAR_CONFIG_LOGO_SLOGAN_DEFAULT" defaultTranslation="1" class="jsn-input-large-fluid" 
+	                                filter="int" label="JSN_POWERADMIN_CONFIG_LOGO_SLOGAN" description="JSN_POWERADMIN_CONFIG_LOGO_SLOGAN_DESC">                      
+	                    </field>               
+	                    
+	                    <field name="allow_uninstall" type="jsnradio" default="1" filter="int" label="JSN_POWERADMIN_CONFIG_ENABLE_UNINSTALL_MENU" description="JSN_POWERADMIN_CONFIG_ENABLE_UNINSTALL_MENU_DESC">
+	                        <option value="0">JNO</option>
+	                        <option value="1">JYES</option>
+	                    </field>
+                    </fieldset>
+                <!-- END MENU CONFIG -->
+                
+                <!-- USER CONFIG -->
+                    <fieldset label="JSN_POWERADMIN_CONFIG_USER">	                    
+	                    <field name="admin_session_timeout_warning" type="jsninlinefield" default="1" class="span1 validate-positive-number" 
+	                                filter="int" label="JSN_POWERADMIN_CONFIG_SESSION_TIMEOUT_WARNING" description="JSN_POWERADMIN_CONFIG_SESSION_TIMEOUT_WARNING_DESC"
+	                                exttextTranlation="true"	                                
+	                                >                      
+	                    </field>
+	                    <field name="admin_session_timeout_warning_disabled" type="jsncheckbox"  
+	                              filter="int"  label="JSN_POWERADMIN_CONFIG_MINUTE_OR">      
+	                                <option value="1" class="checkbox jsn-configurations-checkbox">JSN_POWERADMIN_CONFIG_DISABLE_TIMEOUT_WARNING</option>                                                                      
+	                    </field>
+                    </fieldset>
+                 <!-- END USER CONFIG -->             
+                 <!-- SEARCH CONFIG -->
+                    <fieldset label="JSN_POWERADMIN_CONFIG_SEARCH_HISTORY">
+	                  
+	                    <field name="history_count" type="jsntext" default="30" class="span1 validate-positive-number" 
+	                                filter="int" label="JSN_POWERADMIN_CONFIG_HISTORY_COUNT" description="JSN_POWERADMIN_CONFIG_HISTORY_COUNT_DESC" 
+	                                exttext="JSN_POWERADMIN_CONFIG_ITEM_TEXT" exttextTranlation="true">                      
+	                    </field>
+	                    
+	                    <field name="search_result_num" type="jsntext" default="10" class="span1 validate-positive-number" 
+	                                filter="int" label="JSN_POWERADMIN_CONFIG_SEARCH_RESULTS_COUNT" description="JSN_POWERADMIN_CONFIG_SEARCH_RESULTS_COUNT_DESC" 
+	                                exttext="JSN_POWERADMIN_CONFIG_ITEM_TEXT" exttextTranlation="true">                      
+	                    </field>
+	                    
+	                    <field name="search_trashed" type="jsnradio" default="1" filter="int" label="JSN_POWERADMIN_CONFIG_SEARCH_TRASHED" description="JSN_POWERADMIN_CONFIG_SEARCH_TRASHED_DESC">
+	                        <option value="0">JNO</option>
+	                        <option value="1">JYES</option>
+	                    </field>
+	                    <fieldset label="JSN_POWERADMIN_CONFIG_GLOBAL_PARAMETERS" addfieldpath="/administrator/components/com_poweradmin/models/fields">
+		                    <field name="search_coverage" type="jsnpasearchcoverages" label="JSN_POWERADMIN_CONFIG_SEARCH_COVERAGES" description="JSN_POWERADMIN_CONFIG_SEARCH_COVERAGES_DESC">                      
+		                    </field>
+	                    </fieldset>    
+	                    <action label="JAPPLY" task="configuration.save" track="1" ajax="1" />
+                    </fieldset>               
+                 <!-- END SEARCH CONFIG -->
+				</tab>				    
+				<tab name="global-parameter-enhancement" label="JSN_POWERADMIN_CONFIG_ENHANCEMENT">
+				    <fieldset name="position_chooser_enhance-set">				    
+					    <field name="position_chooser_enhance" type="jsnradio" default="1" filter="int" label="JSN_POWERADMIN_POSITION_CHOOSER_ENHANCE" description="JSN_POWERADMIN_POSITION_CHOOSER_ENHANCE_DESC">
+	                        <option value="0">JNO</option>
+	                        <option value="1">JYES</option>
+	                        
+	                    </field>
+						<field name="custom_assets_enhance" type="jsnradio" default="1" filter="int" label="JSN_POWERADMIN_CONFIG_USE_CUSTOM_ASSETS" description="JSN_POWERADMIN_CONFIG_USE_CUSTOM_ASSETS_DESC">
+	                        <option value="0">JNO</option>
+	                        <option value="1">JYES</option>
+	                        
+	                    </field>
+	                    <action label="JAPPLY" task="configuration.save" track="1" ajax="1" />
+                    </fieldset>                    
+				</tab>
+		</group>
+		
+		<group name="langs" label="JSN_POWERADMIN_CONFIG_LANGUAGES" icon="globe">	
+            <fieldset name="lang-select-set" >     
+				<field name="languagemanager" type="languagemanager" />
+				<action label="JAPPLY" task="configuration.save" />			
+			</fieldset>
+		</group>
+		
+		<group name="permissions" label="JSN_POWERADMIN_CONFIG_PERMISSION" icon="lock" ajax="0">
+            <fieldset name="permission-set">
+                <field
+                    name="permissions" type="permissions" class="inputbox" filter="rules" validate="rules"
+                    component="com_poweradmin" section="component"
+                />
+
+                <action label="JAPPLY" task="configuration.save" />
+            </fieldset>
+        </group>
+	</section>
+		
+	
+</config>

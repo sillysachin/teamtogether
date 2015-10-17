@@ -1,0 +1,139 @@
+/**
+ * @version    $Id$
+ * @package    JSN_Framework
+ * @author     JoomlaShine Team <support@joomlashine.com>
+ * @copyright  Copyright (C) 2012 JoomlaShine.com. All Rights Reserved.
+ * @license    GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Websites: http://www.joomlashine.com
+ * Technical Support:  Feedback - http://www.joomlashine.com/contact-us/get-support.html
+ */
+ 
+/* ============================== LAUNCH PAD ============================== */
+/*#jsn-is-cpanel-confirmbox-container {
+	padding: 10px;  
+}
+#jsn-is-cpanel-confirmbox-container a {
+	margin-left: 155px;
+	margin-top: 25px;
+}
+#jsn-is-cpanel-confirmbox-container a:hover {
+	text-decoration: none;
+}*/
+#jsn-launchpad {
+	width: 500px;
+	margin: 50px auto;
+}
+#jsn-launchpad .jsn-section {
+	position: relative;
+}
+#jsn-launchpad .jsn-section .jsn-badge-large {
+	position: absolute;
+	top: 30px;
+	left: -110px;
+}
+#jsn-launchpad .jsn-section .jsn-section-content {
+	padding: 0;
+	background: none;
+	border: none;
+}
+#jsn-launchpad .jsn-section select {
+	width: 350px;
+	margin-right: 10px;
+	font-size: 14px;
+	height: 32px;
+}
+#jsn-launchpad .jsn-section.jsn-launchpad-action .btn {
+	width: 65px;
+	height: 24px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 24px;
+	margin-bottom: 9px;
+}
+
+/*#jsn-launchpad .jsn-form-option {
+	padding: 17px 15px;
+}
+#jsn-launchpad .jsn-form-option .btn {
+	width: 65px;
+	height: 24px;
+	font-size: 14px;
+	line-height: 24px;
+}
+#jsn-launchpad .jsn-form-option .btn:hover {
+	background-color: #E6E6E6;
+}*/
+/*#jsn-launchpad .jsn-form-selection {
+	position: relative;
+}*/
+/*#jsn-launchpad .jsn-form-selection .jsn-form-selectbox {
+	float: left;
+}*/
+/*#jsn-launchpad .jsn-form-selection .jsn-menutype-selection {
+	display: none;
+}
+#jsn-launchpad .jsn-form-selection #presentation_method.active {
+	color: #000;
+	background-color: #FFF;
+}
+#jsn-launchpad .jsn-form-selection .btn {
+	position: absolute;
+	right: 0;
+	bottom: 8px;
+}
+#jsn-launchpad .jsn-form-nav-button {
+	float: left;
+	margin: 3px 0;
+	display: block;
+}
+#jsn-launchpad .jsn-form-nav-button a {
+	margin: 0 3px;
+}
+#jsn-launchpad #jsn-go-link-modal {
+	display: none;
+}
+#jsn-launchpad .jsn-menutype-selection {
+	display: none;
+	margin-top: 10px;
+}*/
+/* ============================== BOX STYLES ============================== */
+/* ========== PLUGIN SYNTAX DETAILS ========== */
+/*.jsn-plugin-details {
+}
+.jsn-plugin-details ul {
+	margin: 0 0 0 5px;
+	list-style-position: inside;
+}
+.jsn-plugin-details ul li .syntax-highlight {
+	color: #009900;
+	font-weight: bold;
+}
+.jsn-plugin-details #additional-syntax {
+	margin-top: 10px;
+	padding-top: 15px;
+	border-top: 1px solid #CCC;
+}
+.jsn-plugin-details #additional-syntax .tips {
+	margin: 0;
+	padding-bottom: 5px;
+	font-size: 1.2em;
+	font-weight: bold;
+}*/
+.jsn-clipboard-input {
+	position: relative;
+}
+.jsn-clipboard-checkicon {
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-webkit-transition: opacity 1s
+}
+.jsn-clipboard-coppied {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}

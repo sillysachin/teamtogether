@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+  <name>COM_JSONEXPORT</name>
+  <!-- The following elements are optional and free of formatting constraints -->
+  <creationDate>November 2012</creationDate>
+  <author>joocode</author>
+  <authorEmail>info@joocode.com</authorEmail>
+  <authorUrl>http://www.joocode.com</authorUrl>
+  <copyright>(C) 2013 joocode. All rights reserved</copyright>
+  <license>GNU GPLv3</license>
+  <!--  The version string is recorded in the components table -->
+  <version>2014.11.14</version>
+  <!-- The description is optional and defaults to the name -->
+  <description>COM_JSONEXPORT_DESCRIPTION</description>
+  <scriptfile>install.php</scriptfile>
+  <install> <!-- Runs on install -->
+    <sql>
+      <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+    </sql>
+  </install>
+  <uninstall> <!-- Runs on uninstall -->
+    <sql>
+      <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+    </sql>
+  </uninstall>
+  <update> <!-- Runs on update; New in 2.5 -->
+    <!--<schemas>
+      <schemapath type="mysql">sql/updates/mysql</schemapath>
+    </schemas>-->
+  </update>
+
+  <!-- Site Main File Copy Section -->
+  <!-- Note the folder attribute: This attribute describes the folder
+          to copy FROM in the package to install therefore files copied
+          in this section are copied from /site/ in the package -->
+  <files folder="site">
+    <filename>controller.php</filename>
+    <filename>jsonexport.php</filename>
+  </files>
+
+  <media folder="media/com_jsonexport" destination="com_jsonexport">
+    <folder>css</folder>
+    <folder>img</folder>
+    <folder>js</folder>
+    <folder>jui</folder>
+  </media>
+
+  <administration>
+    <menu img="../media/com_jsonexport/img/jsonexport-16x16.png">COM_JSONEXPORT_MENU</menu>
+
+    <files folder="admin">
+      <filename>config.xml</filename>
+      <filename>jsonexport.php</filename>
+      <filename>controller.php</filename>
+
+      <folder>controllers</folder>
+      <folder>models</folder>
+      <folder>sql</folder>
+      <folder>tables</folder>
+      <folder>views</folder>
+    </files>
+
+    <languages folder="admin/language">
+      <language tag="en-GB">en-GB/en-GB.com_jsonexport.ini</language>
+      <language tag="en-GB">en-GB/en-GB.com_jsonexport.sys.ini</language>
+    </languages>
+  </administration>
+</extension>

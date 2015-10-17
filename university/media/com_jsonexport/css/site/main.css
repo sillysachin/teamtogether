@@ -1,0 +1,25 @@
+/** Fix toolbar margins **/
+#ember-toolbar {
+  margin-left: -20px;
+  margin-right: -20px; }
+
+/** Move images up a little **/
+.css-images__list {
+  margin-top: -30px; }
+
+/** Fix default row margin left **/
+.row {
+  margin-left: 0px!important; }
+
+.css-button__cart_quantity {
+  margin-bottom: 0px; }
+
+.no-margin-left {
+  margin-left: 0px!important; }
+
+.no-padding {
+  padding: 0px!important; }
+
+.hidden {
+  display: none;
+}

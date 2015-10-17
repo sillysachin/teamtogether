@@ -1,0 +1,75 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   JoomlaShine.com Proprietary License
+*/
+/* ========== SOCIAL - ICON ========== */
+#jsn-social-icons ul {
+	float: right;
+	margin-top: 0;
+}
+#jsn-social-icons ul li {
+	float: left;
+	list-style: none;
+	margin-left: 10px;
+}
+#jsn-social-icons ul li a {
+	display: block;
+	text-indent: -999em;
+	background-image: url(../images/icons/icons-social.png);
+	background-repeat: no-repeat;
+	width: 24px;
+	height: 24px;
+	transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	opacity: 0.7;
+}
+#jsn-social-icons ul li:hover a {
+	opacity: 1;
+}
+#jsn-social-icons ul li.facebook a {
+	background-position: 0 0;
+}
+#jsn-social-icons ul li.twitter a {
+	background-position: 0 -24px;
+}
+#jsn-social-icons ul li.youtube a {
+	background-position: 0 -72px;
+}
+#jsn-social-icons ul li.googleplus a {
+	background-position: 0 -48px;
+}
+#jsn-social-icons ul li.pinterest a {
+	background-position: 0 -96px;
+}
+#jsn-social-icons ul li.myspace a {
+	background-position: 0 -120px;
+}
+#jsn-social-icons ul li.flickr a {
+	background-position: 0 -144px;
+}
+#jsn-social-icons ul li.dribble a {
+	background-position: 0 -168px;
+}
+#jsn-social-icons ul li.stumbleupon a {
+	background-position: 0 -192px;
+}
+#jsn-social-icons ul li.yahoo a {
+	background-position: 0 -216px;
+}
+#jsn-social-icons ul li.skype a {
+	background-position: 0 -240px;
+}
+#jsn-social-icons ul li.rss a {
+	background-position: 0 -264px;
+}
+/* ========== RTL - LANGUAGE ========== */
+body.jsn-direction-rtl #jsn-social-icons ul li {
+    margin-right: 10px;
+    margin-left: 0;
+}
+body.jsn-direction-rtl #jsn-social-icons ul {
+    float: left;
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field 
+			name="field_id" type="hidden" default="0" 
+			label="JGLOBAL_FIELD_ID_LABEL" 
+		/>
+		<field
+			name="form_id"
+			 type="hidden"
+			label="JGLOBAL_TITLE"
+			description="JFIELD_FORM_ID"
+			class="inputbox"
+			size="110"
+			/>
+			
+		<field
+			name="field_type"
+			type="text"
+			label="JSN_UNIFORM_FIELD_TYPE"
+			description="JSN_UNIFORM_FIELD_TYPE_DES"
+			class="inputbox"
+			size="40"/>
+			<field
+			name="field_identifier"
+			type="text"
+			label="JSN_UNIFORM_FIELD_INDENTIFIER"
+			description="JSN_UNIFORM_FIELD_INDENTIFIER_DES"
+			class="inputbox"
+			size="40"/>
+			<field
+			name="field_title"
+			type="text"
+			label="JSN_UNIFORM_FIELD_TITLE"
+			description="JSN_UNIFORM_FIELD_TITLE_DES"
+			class="inputbox"
+			size="40"/>
+			<field
+			name="field_instructions"
+			type="text"
+			label="JSN_UNIFORM_FIELD_INSTRUCTIONS"
+			description="JSN_UNIFORM_FIELD_INSTRUCTIONS_DES"
+			class="inputbox"
+			size="40"/>
+			<field
+			name="field_position"
+			type="text"
+			label="JSN_UNIFORM_FIELD_POSITION"
+			description="JSN_UNIFORM_FIELD_POSITION_DES"
+			class="inputbox"
+			size="40"/>
+			<field
+			name="field_ordering"
+			type="text"
+			label="JSN_UNIFORM_FIELD_ORDERING"
+			description="JSN_UNIFORM_FIELD_ORDERING_DES"
+			class="inputbox"
+			size="40"/>
+			<field
+			name="field_settings"
+			type="text"
+			label="JSN_UNIFORM_SETTINGS_TYPE"
+			description="JSN_UNIFORM_SETTINGS_TYPE_DES"
+			class="inputbox"
+			size="40"/>
+		
+	</fieldset>
+        
+</form>

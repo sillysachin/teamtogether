@@ -1,0 +1,54 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   JoomlaShine.com Proprietary License
+*/
+/************************************************************************************
+ desktop layout (larger than 1200): common settings for wide desktop screen
+*************************************************************************************/
+@media only screen and (min-width: 1200px) {
+	#jsn-page,
+	#jsn-menu.jsn-menu-sticky #jsn-menu_inner,
+	#jsn-pos-topbar {
+		width: 1170px;
+	}
+	#jsn-pos-breadcrumbs {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#jsn-content.jsn-hasleft.jsn-hasright #jsn-maincontent #jsn-maincontent_inner {
+	margin-left: -29px;
+	margin-right: -29px;
+	}
+	#jsn-content.jsn-hasright #jsn-maincontent_inner,
+	#jsn-content.jsn-hasleft.jsn-hasright #jsn-maincontent.order1 #jsn-maincontent_inner {
+		margin-right: -29px;
+		margin-left: 0;
+	}
+	#jsn-content.jsn-hasleft #jsn-maincontent_inner,
+	#jsn-content.jsn-hasleft.jsn-hasright #jsn-maincontent.order3 #jsn-maincontent_inner,
+	#jsn-content.jsn-hasright .order2 #jsn-maincontent_inner,
+	#jsn-content.jsn-hasleft.jsn-hasright #jsn-maincontent.order3 #jsn-maincontent_inner {
+		margin-left: -29px;
+		margin-right: 0;
+	}
+	#jsn-maincontent.order3,
+	#jsn-content.jsn-hasleft:not([class="jsn-hasright"]) #jsn-maincontent.order2,
+	#jsn-content.jsn-hasright:not([class="jsn-hasleft"]) #jsn-maincontent.order2 {
+		padding-right: 20px;
+	}
+	#jsn-maincontent.span12[class*="order"],
+	#jsn-content.jsn-hasleft.jsn-hasright #jsn-maincontent.order2 {
+		padding: 0;
+	}
+	#jsn-maincontent.span12 #jsn-centercol.span12 {
+		padding: 0 20px;
+	}
+	#jsn-content.jsn-hasinnerleft:not([class="jsn-hasinnerright"]) #jsn-maincontent.span12 #jsn-centercol {
+		padding-right: 20px;
+	}
+	#jsn-content.jsn-hasinnerright:not([class="jsn-hasinnerleft"]) #jsn-maincontent.span12 #jsn-centercol {
+		padding-left: 20px;
+	}
+
+}

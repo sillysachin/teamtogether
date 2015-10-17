@@ -1,0 +1,38 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   JoomlaShine.com Proprietary License
+*/
+@import url(https://fonts.googleapis.com/css?family=Fondamento:regular,bold);
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#jsn-gotoplink,
+.page-header,
+.subheading-category,
+#jsn-menu a,
+#jsn-menu span,
+.componentheading,
+.contentheading {
+	font-family: Fondamento, Georgia, serif;
+}
+body.jsn-textstyle-personal h1,
+body.jsn-textstyle-personal h2,
+body.jsn-textstyle-personal h3,
+body.jsn-textstyle-personal h4,
+body.jsn-textstyle-personal h5,
+body.jsn-textstyle-personal h6,
+body.jsn-textstyle-personal ul.menu-mainmenu a,
+body.jsn-textstyle-personal ul.menu-mainmenu span,
+body.jsn-textstyle-personal .componentheading,
+body.jsn-textstyle-personal .contentheading,
+body.jsn-textstyle-personal a.link-action {
+	font-style: italic;
+}

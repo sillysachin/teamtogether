@@ -1,0 +1,144 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   JoomlaShine.com Proprietary License
+*/
+/* ============================== DEFAULT HTML ============================== */
+a {
+	color: #94415F;
+}
+/* ============================== LAYOUT ============================== */
+/* =============== LAYOUT - OVERALL PAGE =============== */
+#jsn-master {
+	background: #1C090D url(../../images/colors/pink/bg-master.jpg) center top repeat-y;
+}
+/* =============== LAYOUT - CONTENT TOP AREA =============== */
+#jsn-promo_inner {
+	background: #AB455F url(../../images/colors/pink/bg-featured.png) left bottom repeat-x;
+}
+/* ============================== TYPOGRAPHY ============================== */
+/* =============== TYPOGRAPHY - LINK STYLES =============== */
+/* ----- ACTION LINK ----- */
+.link-action {
+	border-bottom: 1px dotted #94415F;
+}
+.link-action:hover {
+	background-color: #94415F;
+}
+#jsn-promo .link-action:hover {
+	color: #94415F;
+}
+/* =============== TYPOGRAPHY - TABLE STYLES =============== */
+/* ----- COLOR HEADER TABLE ----- */
+table.style-colorheader thead th {
+	background-color: #95425F;
+}
+table.style-colorheader tbody .highlight {
+	background-color: #A34767;
+}
+table.style-colorheader tbody tr.odd .highlight {
+	background-color: #93405C;
+}
+table.style-colorheader tbody tr:hover .highlight {
+	background: #843952;
+}
+/* ----- COLOR STRIPES TABLE ----- */
+table.style-colorstripes thead th {
+	background-color: #95425F;
+}
+table.style-colorstripes thead th.highlight {
+	background-color: #662D41;
+}
+table.style-colorstripes tbody tr {
+	background-color: #C1738E;
+}
+table.style-colorstripes tbody .highlight {
+	background-color: #A34767;
+}
+table.style-colorstripes tbody tr.odd {
+	background-color: #B85C7C;
+}
+table.style-colorstripes tbody tr.odd .highlight {
+	background-color: #93405C;
+}
+table.style-colorstripes tbody tr:hover th,
+table.style-colorstripes tbody tr:hover td {
+	background-color: #B14E71;
+}
+table.style-colorstripes tbody tr:hover .highlight {
+	background-color: #843952;
+}
+table.style-colorstripes tfoot th,
+table.style-colorstripes tfoot td {
+	background-color: #95425F;
+}
+.sectiontableheader {
+	background-color: #94415F;
+}
+/* ----- GREY STRIPES TABLE ----- */
+table.style-greystripes thead th.highlight {
+	background-color: #95425F;
+}
+/* ============================== MENU ============================== */
+/* =============== MENU - MAIN MENU =============== */
+/* ----- HOVER STATE ----- */
+/* ----- ACTIVE STATE ----- */
+div.jsn-modulecontainer ul.menu-mainmenu li.active > a {
+	color: #C97E98;
+}
+/* ----- MOBILE ACTIVE STATE ----- */
+body.jsn-mobile div.jsn-modulecontainer ul.menu-mainmenu > li.active {
+	background-color: #94415F;
+}
+/* =============== MENU - TREE MENU =============== */
+/* ----- HOVER STATE ----- */
+/* ----- ACTIVE STATE ----- */
+div.jsn-modulecontainer ul.menu-treemenu li.active > a {
+	color: #94415F;
+}
+/* =============== MENU - SIDE MENU =============== */
+/* ----- ACTIVE STATE ----- */
+div.jsn-modulecontainer ul.menu-sidemenu li.active > a {
+	color: #94415F;
+}
+/* ============================== MODULE STYLES ============================== */
+/* =============== MODULE STYLES - MODULE BOXES =============== */
+/* ----- SOLIDBOX STYLE ----- */
+div.solid-2 div.jsn-modulecontainer_inner {
+	border: 1px solid #D8BABA;
+	background: #F3EBEB;
+}
+div.solid-2 h3.jsn-moduletitle {
+	color: #AC6C6C;
+	background: url(../../images/colors/pink/bg-module-lightbox-2.png) left bottom repeat-x;
+}
+/* ----- LIGHTBOX STYLE ----- */
+div.lightbox-2 h3.jsn-moduletitle {
+	color: #94415F;
+	background: url(../../images/colors/pink/bg-module-lightbox-2.png) left bottom repeat-x;
+}
+/* ----- RICHBOX STYLE ----- */
+div.richbox-2 h3.jsn-moduletitle {
+	background: url(../../images/colors/pink/bg-module-richbox-2.png) left bottom repeat-x;
+}
+/* ----- CUSTOM BOX STYLE IN SPECIFIC POSITION ----- */
+#jsn-promo div.jsn-modulecontainer h3.jsn-moduletitle {
+	color: #F2DFE4;
+}
+/* ============================== JOOMLA! DEFAULT EXTENSIONS ============================== */
+/* =============== JOOMLA! EXTENSIONS - MOD_BREADCRUMB =============== */
+span.breadcrumbs a:hover,
+.breadcrumb li a:hover,
+.breadcrumb li span:hover {
+	color: #94415F;
+}
+span.breadcrumbs span.current,
+.breadcrumb li span + span {
+	color: #94415F;
+}
+/* =============== JOOMLA! EXTENSIONS - COM_CONTENT =============== */
+/* ----- SECTION / CATEGORY BLOG LAYOUT ----- */
+/* PAGE PAGINATION */
+ul.jsn-pagination li.navigation-page span {
+	background-color: #94415F;
+}

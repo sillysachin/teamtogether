@@ -1,0 +1,421 @@
+@import "compass/css3";
+
+/** Vars and Mixins **/
+$images-dir: ;
+$base-font-size: 13px;
+$base-letter-spacing: .3px;
+$base-font-color: #0c0c0c;
+$color: #00ce79; //#fc7805;
+$grey: #c0c0c0;
+
+$col-width: 70px;
+
+@import url(http://fonts.googleapis.com/css?family=Oxygen:300,400,700);
+
+@mixin bg-ripped($color, $width:70px, $size:14px, $spacing:10px) {
+  $height: $spacing + $size;
+  $width: $width * 2;
+  $size: $size / 2;
+  
+  @include background-image(radial-gradient(circle, rgba(255,255,255,1) $size, rgba(255,255,255,0) $size, rgba(255,255,255,0)), linear-gradient(to left, $color 50%, transparent 50%, transparent));
+  background-size: $width $height;
+  background-repeat: repeat-y;
+  background-position: right top;
+}
+
+.markup {
+  @extend .clearfix;
+  position: relative;
+  display: block;
+  width: auto;
+  font-size: $base-font-size;
+  line-height: 22px;
+  padding-bottom: 10px;
+  
+  & > * {
+    margin: 0 $col-width+10 0 20px;
+    
+    &.float {
+      &.right { 
+        margin-right: 10px !important;
+      }
+    }
+    
+    & > .float {
+      &.left {
+        margin-left: -20px !important;
+      }
+      &.right {
+        margin-right: -#{$col-width} !important;
+      }
+    }
+  }
+  
+  & > p {
+    @extend %font-spaced;
+    margin-bottom: 25px;
+  }
+  
+  & > h2 {
+    @extend %font-spaced;
+    font-size: 17px;
+    font-weight: 900;
+    color: $color;
+    margin-top: 25px;
+    margin-bottom: 8px;
+  }
+  
+  & > p:first-of-type {
+    @extend %font-spaced;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    margin-top: 15px;
+    text-align: justify;
+  }
+  
+  .float {
+    margin: 10px 15px;
+    
+    &.right {
+      float: right;
+      margin: 10px 0px 10px 15px;
+    }
+
+    &.left {
+      float: left;
+      margin: 5px 15px 5px 0px;
+    }
+  }
+}
+
+.img {
+  position: relative;
+  display: block;
+  background-color: white;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    border: 1px solid $grey;
+    background-color: white;
+    padding: 2px;
+    @include opacity(1);
+    @include transition(opacity 2s);
+  }
+  
+  .overlay {
+    @extend %font-unspaced;
+    position: absolute;
+    display: block;
+    bottom: 3px;
+    left: 3px; right: 3px;
+    color: white;
+    font-size: 10px;
+    padding: 10px 15px 12px;
+    background-color: rgba(0,0,0,7/10);
+    line-height: 1.5;
+    @include transition(padding .1s ease-in-out);
+  }
+  
+  &:hover {
+    img {
+      @include opacity(65/100);
+    }
+    .overlay {
+      padding: 13px 15px 14px;
+    }
+  }
+}
+
+.highlight-wrapper {
+  @extend %font-unspaced;
+  @include background(url('#{$images-dir}bg_highlight.png') top right no-repeat, $color);
+  //background-color: $color;
+  font-size: 14px;
+  font-weight: normal;
+  color: white;
+  @include box-sizing(border-box);
+  padding: 15px;
+  
+  .highlight-button {
+    color: white;
+    background-color: yellow;
+  }
+  
+  & > .heading {
+    @extend .clearfix;
+    position: relative;
+    float: right;
+    margin-top: -23px;
+    margin-right: -18px;
+    margin-bottom: 3px;
+
+    height: auto;
+    padding: 0 10px;
+    background-color: $color;
+    font-size: 13px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    @include box-shadow(2px 2px 0px 1px darken($color, 15%));
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -7px; right: -3px;
+      border-width: 3px;
+      border-style: solid;
+      border-color: darken($color, 15%) transparent transparent darken($color, 15%);
+    }
+  }
+  
+  &.left, &.right {
+    width: 220px;
+    
+    .heading {
+      max-width: 66%;
+      margin-top: -30px;
+      margin-bottom: 5px;
+    }
+  }
+  
+  &.center {
+    @extend .clearfix;
+    margin: 0px auto 15px;
+    width: 400px;
+    font-size: 15px;
+    
+    &.float {
+      display: block;
+      width: 100%;
+      padding-right: 35px !important;
+      
+      .heading {
+        margin-right: -37px;
+      }
+    }
+  }
+  
+  &.left > .heading {
+    margin-right: 0;
+    margin-left: -21px;
+    float: left;
+
+    &:after {
+      right: auto;
+      left: 0;
+      border-color: darken($color, 15%) darken($color, 15%) transparent transparent;
+    }
+  }
+  
+  &.right > .heading {
+    margin-right: -28px;
+  }
+}
+
+.framed_text {
+  background-color: lighten(black, 98);
+  border: 1px solid $grey;
+  @include border-radius(2px);
+  @include box-sizing(border-box);
+  padding: 15px 20px 20px;
+  margin-right: $col-width + 20px;
+  @include box-shadow(2px 2px 3px -1px rgba(0,0,0, 15/100));
+  
+  &.float {
+    margin-right: 20px;
+  }
+}
+
+article {
+  .meta {
+    float: right;
+    position: absolute;
+    top: 0; right: 0; bottom: 0;
+    width: $col-width;
+    @include bg-ripped($color, $col-width);
+    
+    & > * {
+      z-index: 1;
+    }
+    
+    .index {
+      display: block;
+      position: absolute;
+      float: right;
+      top: 25px;
+      right: 20px;
+      background-color: white;
+      width: 20px;
+      border: 2px solid white;
+      overflow: hidden;
+      @include transition(width .3s ease-in-out 0s, border 1s, border-width .2s, background-color .3s ease .2s);
+      cursor: pointer;
+      z-index: 3;
+
+      .title {
+        overflow: hidden;
+        height: 0;
+        line-height: 36px;
+        width: 100%;
+        text-align: center;
+        background-color: lighten(black, 98);
+        @include transition(height .1s);
+      }
+
+      ol {
+        margin: 0; padding: 0;
+        list-style: decimal inside none;
+
+        li {
+          overflow: hidden;
+          text-indent: -200%;
+          background-color: $color;
+          margin: 3px;
+          margin-right: 6px;
+          height: 3px;
+          border-radius: 2px;
+          font-size: 0;
+          @include transition(margin-right .2s ease 0s, max-height .2s ease .2s, background-color .05s, all .4s);
+
+          &.active {
+            margin-right: 3px;
+          }
+        }
+      }
+
+      &:hover {
+        width: 370px;
+        max-height: 90%;
+        border: 3px solid darken($color, 5%);
+        border-width: 3px 0px 2px 0px;
+        @include box-shadow(0 2px 2px rgba(black, .2));
+        background-color: white;
+
+        .title {
+          height: 36px;
+        }
+
+        ol {
+          li {
+            height: auto;
+            min-height: 22px;
+            line-height: 22px;
+            max-height: 400px;
+            background-color: transparent !important;
+            text-indent: 8px;
+            font-size: 12px;
+          }
+        }
+      }
+
+      &.fixed {
+        position: fixed;
+      }
+      &.bottom {
+        position: absolute;
+        bottom: 50px;
+        top: auto !important;
+      }
+    }
+    
+    .top {
+      @include opacity(1);
+      height: 0; width: 0;
+      border: 14px solid transparent;
+      border-bottom-color: white;
+      border-radius: 3px;
+      position: absolute; bottom: 20px; right: 18px;
+
+      &:hover {
+        @include opacity(8/10); 
+        @include transition(opacity .2s ease);
+      }
+    }
+  }
+}
+
+.bottom {
+  @extend .clearfix;
+  padding: 10px 0;
+  
+  a {
+    font-size: 11px;
+    font-weight: bold;
+    color: $grey;
+    line-height: 11px;
+    text-decoration: none;
+    font-style: italic;
+  }
+  
+  & > div {
+    position: relative;
+    display: block;
+    float: left;
+    @include box-sizing(border-box);
+    width: 50%;
+    padding-right: 15%;
+    padding-left: 10px;
+  }
+  
+  .next {
+    border-left: 1px solid $grey;
+    float: right;
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 15%;
+  }
+}
+
+/** Markup **/
+body {
+  background-color: #f6f6f6;
+  font-family: 'Oxygen', sans-serif;
+  color: $base-font-color;
+}
+
+.block {
+  border-top: 3px solid $color;
+  position: relative;
+  background-color: white;
+  margin-bottom: 15px;
+  @include box-shadow(0 2px 3px -1px rgba(0,0,0, 15/100));
+  width: 610px;
+  margin: 0 auto;
+}
+
+a {
+  color: $color;
+}
+
+
+/** Helpers **/
+
+%font-spaced {
+    letter-spacing: $base-letter-spacing;
+}
+
+%font-unspaced {
+    letter-spacing: 1;
+}
+
+.clearfix {
+    &:before,
+    &:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+    &:after {
+        clear: both;
+    }
+
+    &> .left {
+        float: left;
+    }
+
+    &> .right {
+        float: right;
+    }
+}

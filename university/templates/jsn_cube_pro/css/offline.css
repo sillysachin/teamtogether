@@ -1,0 +1,348 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   JoomlaShine.com Proprietary License
+*/
+/* ============================== DEFAULT HTML ============================== */
+/* =============== DEFAULT HTML - GENERAL STYLES =============== */
+html, body {
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* =============== DEFAULT HTML - TEXT STYLES =============== */
+p, pre, blockquote, form, dl, ul, ol, fieldset, address {
+	margin: 0.35em 0 0.8em 0;
+	padding: 0;
+}
+fieldset {
+	padding: .5em;
+}
+small {
+	font-size: .85em;
+}
+sup {
+	font-size: .8em;
+	position: relative;
+	bottom: 0.3em;
+	vertical-align: baseline;
+}
+sup em {
+	color: red;
+}
+acronym, abbr {
+	border-bottom: 1px dashed;
+	letter-spacing: 1px;
+	cursor: help;
+}
+hr {
+	height: 1px;
+	border: none;
+	margin: 0.75em 0;
+	background-color: #999;
+}
+/* =============== DEFAULT HTML - HEADING STYLES =============== */
+h1 {
+	font-size: 1.4em;
+	color: #000000;
+}
+h2 {
+	font-size: 1.3em;
+	color: #000000;
+}
+h3 {
+	font-size: 1.15em;
+	color: #666;
+}
+h4 {
+	font-size: 1.1em;
+	color: #CC8033;
+}
+h5, h6 {
+	font-size: 1em;
+	font-weight: bold;
+	color: #333333;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0.8em 0 0.3em 0;
+}
+/* =============== DEFAULT HTML - LINK STYLES =============== */
+a {
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+a img {
+	border: none;
+}
+/* =============== DEFAULT HTML - LIST STYLES =============== */
+ul li {
+	margin: 0.3em 0 0.3em 1.6em;
+	padding: 0;
+}
+ol li {
+	margin: 0.3em 0 0.3em 2em;
+	padding: 0;
+}
+/* =============== DEFAULT HTML - IMAGES STYLES =============== */
+img {
+	border: none;
+}
+/* ============================== LAYOUT ============================== */
+/* =============== LAYOUT - GENERAL LAYOUT =============== */
+.clearafter:after {
+	clear: both;
+	display: block;
+	content: ".";
+	height: 0;
+	visibility: hidden;
+}
+.clearbreak {
+	clear: both;
+}
+/* =============== LAYOUT - OVERALL PAGE =============== */
+#jsn-master {
+	background-color: #EFEFEF;
+}
+#jsn-page {
+	color: #666;
+	width: 600px;
+	margin: 100px auto;
+	background-color: #fff;
+}
+#jsn-page_inner {
+	border: 1px solid #CCC;
+}
+/* =============== LAYOUT - HEADER AREA =============== */
+#jsn-header {
+	position: relative;
+	overflow: hidden;
+	padding: 0 25px;
+	border-bottom: 3px solid #000;
+}
+#jsn-logo a {
+	line-height: 100%;
+	display: inline-block;
+}
+/* =============== LAYOUT - CONTENT AREA =============== */
+#jsn-error-heading {
+	float: left;
+	width: 216px;
+	text-align: center;
+}
+#jsn-error-heading img {
+	margin-top: 145px;
+}
+#jsn-error-heading h1 {
+	margin: 18px 0;
+	color: #1470B8;
+	font-size: 7.5em;
+	line-height: 1em;
+	text-align: center;
+}
+#jsn-error-heading h1 .heading-medium,
+#jsn-error-heading h1 .heading-small {
+	display: block;
+}
+#jsn-error-heading h1 .heading-medium {
+	color: #666;
+	font-size: 0.67em;
+	line-height: 1.05em;
+	margin-bottom: 15px;
+}
+#jsn-error-heading h1 .heading-small {
+	color: #666;
+	font-size: 38px;
+	line-height: 1.4em;
+}
+#jsn-error-content {
+	float: left;
+	width: 382px;
+}
+#jsn-error-content_inner {
+	padding: 14px 12px;
+	margin: 20px 20px 30px 10px;
+	border: 1px solid #DDDDDD;
+	background-color: #F3F3F3;
+}
+#jsn-error-content h3 {
+	margin: 0;
+	padding-left: 3px;
+	font-weight: normal;
+}
+#jsn-error-content #mod-search-searchword {
+	padding: 5px;
+	width: 325px;
+	border: 1px solid #CCCCCC;
+}
+#jsn-error-content ul {
+	margin: 10px 0 15px 0;
+}
+#jsn-error-content ul li {
+	font-size: 15px;
+	line-height: 1.55em;
+	margin: 0 0 0 1.5em;
+}
+#jsn-error-content .link-button {
+	color: #333;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px 21px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #999;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image:linear-gradient(-90deg,rgb(254,254,254) 0%,rgb(229,229,229) 100%);
+	background-image:-moz-linear-gradient(-90deg,rgb(254,254,254) 0%,rgb(229,229,229) 100%); 
+	background-image:-webkit-gradient(linear,50% 0%,50% 100%,color-stop(0, rgb(254,254,254)),color-stop(1, rgb(229,229,229)));
+	background-image:-webkit-linear-gradient(-90deg,rgb(254,254,254) 0%,rgb(229,229,229) 100%);
+	background-image:-o-linear-gradient(-90deg,rgb(254,254,254) 0%,rgb(229,229,229) 100%);
+	background-image:-ms-linear-gradient(-90deg,rgb(254,254,254) 0%,rgb(229,229,229) 100%);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#fffefefe,endColorstr=#ffe5e5e5,GradientType=0)";
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#fffefefe,endColorstr=#ffe5e5e5,GradientType=0);
+	-moz-transition: 0.3s ease-out;
+	-webkit-transition: 0.3s ease-out;
+	transition: 0.3s ease-out;
+}
+#jsn-error-content .link-button:hover {
+	box-shadow: 0px 0px 3px #999;
+	-moz-box-shadow: 0px 0px 3px #999;
+	-webkit-box-shadow: 0px 0px 3px #999;
+}
+#jsn-error-content #search-form {
+	margin: 0;
+} 
+#jsn-error-content #link-goback {
+	margin: 7px;
+}
+#system-message dd.error ul {
+	text-align: center;
+	font-size: 12px;
+}
+#form-login {
+	margin-bottom: 0;
+}
+#form-login fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 14px;
+}
+#form-login fieldset p {
+	margin: 12px 0;
+}
+#form-login fieldset p label {
+	padding-left: 5px;
+}
+#form-login fieldset input.inputbox {
+	padding: 5px;
+	width: 312px;
+	margin-top: 5px;
+	border: 1px solid #CCCCCC;
+}
+#form-login fieldset input#remember {
+	padding: 0;
+	width: auto;
+	background: #FFF;
+	vertical-align: sub;
+}
+#form-login fieldset #form-login-remember {
+	margin: 16px 0 0 0;
+	text-align: right;
+}
+#form-login fieldset #form-login-remember label {
+	float: left;
+	margin: 4px 0;
+}
+.link-action {
+	color: #1470B8;
+	font-size: 14px;
+	padding: 1px 2px;
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom: 1px solid #1470B8;
+	-moz-transition: 0.3s ease-out;
+	-webkit-transition: 0.3s ease-out;
+	transition: 0.3s ease-out;
+}
+.link-action:hover {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #1470B8;
+}
+/* ============================== TEMPLATE COLOR ============================== */
+/* =============== TEMPLATE COLOR - PINK STYLES =============== */
+.jsn-color-pink #jsn-header {
+	background: #AB455F;
+}
+/* =============== TEMPLATE COLOR - RED STYLES =============== */
+.jsn-color-red #jsn-header {
+	background: #9D0D13;
+}
+/* =============== TEMPLATE COLOR - GREEN STYLES =============== */
+.jsn-color-green #jsn-header {
+	background: #587913;
+}
+/* =============== TEMPLATE COLOR - VIOLET STYLES =============== */
+.jsn-color-violet #jsn-header {
+	background: #7B4297;
+}
+/* =============== TEMPLATE COLOR - ORANGE STYLES =============== */
+.jsn-color-orange #jsn-header {
+	background: #D28D1B;
+}
+/* =============== TEMPLATE COLOR - CYAN STYLES =============== */
+.jsn-color-cyan #jsn-header {
+	background: #6C8F80;
+}
+@media only screen and (max-width: 960px),
+(max-device-width: 960px) {
+	#jsn-page {
+		width: auto;
+	}
+	#jsn-error-content_inner {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 960px),
+(min-device-width: 768px) and (max-device-width: 960px) {
+	#jsn-page {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	#jsn-error-heading {
+		width: 35%;
+	}
+	#jsn-error-content {
+		width: 63%;
+	}
+}
+@media only screen and (max-width : 767px),
+(max-device-width: 767px) {
+	#jsn-page {
+		margin: 0 10px;
+	}
+	#jsn-error-heading,
+	#jsn-error-content {
+		width: 100%;
+		float: none;
+	}
+	#jsn-error-heading img {
+		margin-top: 50px;
+	}
+}
+@media only screen and (max-width : 480px) and (orientation: portrait),
+(max-device-width: 480px) and (orientation: portrait) {
+	#jsn-page #form-login fieldset input.inputbox {
+		width: auto;
+	}
+}

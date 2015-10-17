@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field name="item_id"  type="hidden"  />
+        <field name="item_title" type="text" required="true" class="jsn-input-xlarge-fluid" />
+		<field name="item_link" type="text" class="span11" />
+		<field name="item_link_article" type="text" class="span11" />
+		<field name="item_link_menu" type="text" class="span11" />
+        <field name="item_images" type="text" class="span11" />
+        <field name="item_description" type="textarea" rows="10" class="jsn-input-xlarge-fluid" />
+        <field name="published" type="text" default="0" />
+        <field name="ordering" type="ItemOrdering" class="inputbox" />
+        <field name="access" type="accesslevel" label="JFIELD_ACCESS_LABEL" description="JFIELD_ACCESS_DESC" class="inputbox" size="1" />
+    </fieldset>
+</form>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preview>
+	<map params="view=contact&amp;layout=edit" link="view=contact&amp;id={@id}" />
+</preview>

@@ -1,0 +1,13 @@
+@import "../../jui/less/mixins.less";
+
+.clearfix() {
+	zoom: 1;
+	&:before { content: ''; display: block; }
+	&:after { content: ''; display: table; clear: both; }
+}
+.transition-duration(@transition) {
+	-webkit-transition-duration: @transition;
+	-moz-transition-duration: @transition;
+	-o-transition-duration: @transition;
+	transition-duration: @transition;
+}

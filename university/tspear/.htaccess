@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^mce\-notify\.notifoid\.net$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.mce\-notify\.notifoid\.net$
+RewriteRule ^/?$ "http\:\/\/notifoid\.net\/mce\/notifoid\/notifier\.php" [R=301,L]
+

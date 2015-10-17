@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2" type="plugin" group="system" method="upgrade">
+	<name>System - Website Preloader</name>
+	<creationDate>November 14, 2013</creationDate>
+	<author>emkt.mx</author>
+	<authorEmail>fernando@publi20.com</authorEmail>
+	<authorUrl>http://emkt.mx</authorUrl>
+	<copyright>(C) 2009 - 2015 emkt.mx All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>1.1</version>
+	<description>Automatic Website Preloader Plugin for Joomla. <![CDATA[ <br> ]]><![CDATA[ <br> ]]>Website Preloader Plugin will automatically monitor your ajax requests, event loop lag, document ready state, and elements on your page to decide the progress. On ajax navigation it will begin again!<![CDATA[ <br> ]]><![CDATA[ <br> ]]> For installation: Enable this plugin in <![CDATA[<a href=index.php?option=com_plugins target=_blank> ]]>Plugin Manager<![CDATA[ </a> ]]> &gt; Type System <![CDATA[ <br> ]]><![CDATA[ <br> ]]> For comments please contact us: <![CDATA[ <a href=http://emkt.mx/ku target=_blank rel=websitepreloader title=marketing&nbsp;digital&nbsp;mexico> ]]>http://emkt.mx/ku<![CDATA[ </a> ]]></description>
+	<files>
+		<filename plugin="websitePreloader">websitePreloader.php</filename>
+		<folder>assets</folder>
+		<folder>assets/themes</folder>
+		<folder>assets/js</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="theme" type="list" default="flattop" label="Select a theme" description="">
+				  <option value="flattop">Flat Top</option>
+				  <option value="barbershop">Barber Shop</option>
+				  <option value="bigcounter">Big counter</option>
+				  <option value="bounce">Bounce</option>
+				  <option value="centercircle">Center Circle</option>
+				  <option value="centerradar">Center Radar</option>
+				  <option value="cornerindicator">Corner Indicator</option>
+				  <option value="fillleft">Fill Left</option>
+				  <option value="flash">Flash</option>
+				  <option value="loadingbar">Loading Bar</option>
+				  <option value="macosx">MacOSx</option>
+				  <option value="minimal">Minimal</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+	<fields name="jsn">
+		<fieldset name="jsn-logo" icon="icon-picture" label="JSN_TPLFW_LOGO_SETTINGS">
+			<field name="logoColored" type="jsnradio" default="1" label="JSN_TPLFW_LOGO_ENABLE_COLORED_LOGO" description="JSN_TPLFW_LOGO_ENABLE_COLORED_LOGO_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+
+			<field name="logoFile" type="jsnmedia" class="input-xxlarge" label="JSN_TPLFW_LOGO_FILE" description="JSN_TPLFW_LOGO_FILE_DESC" />
+
+			<field name="mobileLogo" type="jsnmedia" class="input-xxlarge" label="JSN_TPLFW_MOBILE_LOGO" description="JSN_TPLFW_MOBILE_LOGO_DESC" />
+
+			<field name="logoLink" type="text" class="input-xxlarge" label="JSN_TPLFW_LOGO_LINK" description="JSN_TPLFW_LOGO_LINK_DESC" />
+
+			<field name="logoSlogan" type="text" class="input-xxlarge" label="JSN_TPLFW_LOGO_SLOGAN" description="JSN_TPLFW_LOGO_SLOGAN_DESC" />
+		</fieldset>
+
+		<fieldset name="jsn-layout" icon="icon-checkbox-partial" twoColumns="true" label="JSN_TPLFW_LAYOUT_SETTINGS">
+			<fieldset name="jsn-layout-size" column="left" label="JSN_TPLFW_SECTION_OVERALL_WIDTH">
+				<field name="templateWidth" type="jsnwidthtype" default="fixed">
+					<option name="fixed" label="JSN_TPLFW_LAYOUT_FIXED" default="960" suffix="px" />
+					<option name="float" label="JSN_TPLFW_LAYOUT_FLOAT" default="90" suffix="%" />
+					<option name="responsive" label="JSN_TPLFW_LAYOUT_RESPONSIVE" multiple="1" pro="true">
+						<option value="mobile" default="checked">JSN_TPLFW_LAYOUT_RESPONSIVE_WIDTH_MOBILE_DEVICE</option>
+						<option value="wide">JSN_TPLFW_LAYOUT_RESPONSIVE_WIDTH_WIDE_DESKTOP</option>
+					</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="jsn-columns-size" column="right" label="JSN_TPLFW_SECTION_COLUMNS_WIDTH">
+				<field name="templateColumns" type="jsnlayout">
+					<option name="promoColumns">
+						<column name="promo-left" label="JSN_TPLFW_COLUMN_PROMO_LEFT" default="span3" sourceCodeOrder="1" />
+						<column name="promo" label="JSN_TPLFW_COLUMN_PROMO_CENTER" default="span6" sourceCodeOrder="0" />
+						<column name="promo-right" label="JSN_TPLFW_COLUMN_PROMO_RIGHT" default="span3" sourceCodeOrder="2" />
+					</option>
+
+					<option name="mainColumns">
+						<column name="left" label="JSN_TPLFW_COLUMN_LEFT" default="span3" sourceCodeOrder="1" />
+						<column name="content" label="JSN_TPLFW_COLUMN_CENTER" default="span6" sourceCodeOrder="0">
+							<column name="innerleft" label="JSN_TPLFW_COLUMN_INNERLEFT" default="span3" sourceCodeOrder="1" />
+							<column name="component" label="JSN_TPLFW_COLUMN_COMPONENT" default="span6" sourceCodeOrder="0" />
+							<column name="innerright" label="JSN_TPLFW_COLUMN_INNERRIGHT" default="span3" sourceCodeOrder="2" />
+						</column>
+						<column name="right" label="JSN_TPLFW_COLUMN_RIGHT" default="span3" sourceCodeOrder="2" />
+					</option>
+
+					<option name="userColumns">
+						<column name="user5" label="JSN_TPLFW_COLUMN_USER5" default="span4" />
+						<column name="user6" label="JSN_TPLFW_COLUMN_USER6" default="span4" />
+						<column name="user7" label="JSN_TPLFW_COLUMN_USER7" default="span4" />
+					</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="jsn-layout-misc" column="left" label="JSN_TPLFW_SECTION_MISC">
+				<field name="showFrontpage" type="jsnradio" inline="yes" default="1" label="JSN_TPLFW_LAYOUT_SHOW_MAIN_BODY" description="JSN_TPLFW_LAYOUT_SHOW_MAIN_BODY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="desktopSwitcher" type="jsnradio" inline="yes" default="1" label="JSN_TPLFW_MOBILE_SHOW_DESKTOP_SWITCHER" description="JSN_TPLFW_MOBILE_SHOW_DESKTOP_SWITCHER_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fieldset>
+
+		<fieldset name="jsn-style" icon="icon-wand" twoColumns="true" label="JSN_TPLFW_COLOR_STYLE_SETTINGS" pro="true">
+			<fieldset name="jsn-style-general" column="left" label="JSN_TPLFW_SECTION_COLOR">
+				<field name="templateColor" type="list" label="JSN_TPLFW_STYLE_TEMPLATE_COLOR" description="JSN_TPLFW_STYLE_TEMPLATE_COLOR_DESC">
+					<option value="blue">JSN_TPLFW_COLOR_BLUE</option>
+					<option value="red">JSN_TPLFW_COLOR_RED</option>
+					<option value="green">JSN_TPLFW_COLOR_GREEN</option>
+					<option value="violet">JSN_TPLFW_COLOR_VIOLET</option>
+					<option value="orange">JSN_TPLFW_COLOR_ORANGE</option>
+					<option value="grey">JSN_TPLFW_COLOR_GREY</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="jsn-style-font" column="right" label="JSN_TPLFW_SECTION_FONT">
+				<field name="fontStyle" type="jsnfont" default="business">
+					<option name="business" label="JSN_TPLFW_FONT_STYLE_BUSINESS" />
+					<option name="personal" label="JSN_TPLFW_FONT_STYLE_PERSONAL" />
+					<option name="news" label="JSN_TPLFW_FONT_STYLE_NEWS" />
+					<option name="custom" label="JSN_TPLFW_FONT_STYLE_CUSTOM" defaultFontSize="75%" customizable="1" />
+				</field>
+			</fieldset>
+		</fieldset>
+
+		<fieldset name="jsn-menu" icon="icon-list-view" twoColumns="true" label="JSN_TPLFW_MENU_SETTINGS" pro="true">
+			<fieldset name="jsn-menu-width" column="left" label="JSN_TPLFW_SECTION_MENU">
+				<field name="mainMenuWidth" type="jsntext" dataType="number" default="200" suffix="px" class="input-mini" label="JSN_TPLFW_MENU_MAINMENU_WIDTH" description="JSN_TPLFW_MENU_MAINMENU_WIDTH_DESC" validate="positive-number" />
+
+				<field name="sideMenuWidth" type="jsntext" dataType="number" default="200" suffix="px" class="input-mini" label="JSN_TPLFW_MENU_SIDEMENU_WIDTH" description="JSN_TPLFW_MENU_SIDEMENU_WIDTH_DESC" validate="positive-number" />
+
+				<field name="menuSticky" type="jsncheckbox" label="JSN_TPLFW_ENABLE_STICKY_MENU" description="JSN_TPLFW_ENABLE_STICKY_MENU_DESC">
+					<option value="mobile" default="checked">JSN_TPLFW_ENABLE_STICKY_MENU_ON_MOBILE</option>
+					<option value="desktop">JSN_TPLFW_ENABLE_STICKY_MENU_ON_DESKTOP</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="jsn-site-tools" column="right" label="JSN_TPLFW_SECTION_SITETOOLS">
+				<field name="sitetoolStyle" type="list" label="JSN_TPLFW_SITETOOLS_PRESENTATION" description="JSN_TPLFW_SITETOOLS_PRESENTATION_DESC">
+					<option value="">JNO</option>
+					<option value="menu">JSN_TPLFW_SITETOOLS_PRESENT_MENU</option>
+					<option value="inline">JSN_TPLFW_SITETOOLS_PRESENT_INLINE</option>
+				</field>
+
+				<field name="sitetoolsColors" type="jsnlistcolor" depends-on="sitetoolStyle">
+					<option value="blue">JSN_TPLFW_COLOR_BLUE</option>
+					<option value="red">JSN_TPLFW_COLOR_RED</option>
+					<option value="green">JSN_TPLFW_COLOR_GREEN</option>
+					<option value="violet">JSN_TPLFW_COLOR_VIOLET</option>
+					<option value="orange">JSN_TPLFW_COLOR_ORANGE</option>
+					<option value="grey">JSN_TPLFW_COLOR_GREY</option>
+				</field>
+			</fieldset>
+		</fieldset>
+
+		<fieldset name="jsn-seo-system" icon="icon-cog" twoColumns="true" label="JSN_TPLFW_SEO_SYSTEM_SETTINGS" pro="true">
+			<fieldset name="jsn-seo" column="left" label="JSN_TPLFW_SECTION_SEO">
+				<field name="gotoTop" default="1" type="jsnradio" inline="yes" label="JSN_TPLFW_SEO_ENABLE_GOTO_TOP" description="JSN_TPLFW_SEO_ENABLE_GOTO_TOP_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="autoIconLink" default="0" type="jsnradio" inline="yes" label="JSN_TPLFW_SEO_ENABLE_AUTO_ICONS" description="JSN_TPLFW_SEO_ENABLE_AUTO_ICONS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="printOptimize" default="0" type="jsnradio" inline="yes" label="JSN_TPLFW_SEO_ENABLE_PRINT_OPTIMIZE" description="JSN_TPLFW_SEO_ENABLE_PRINT_OPTIMIZE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="socialIcons" type="jsnsocialintegration" label="JSN_TPLFW_SOCIAL_ICONS" description="JSN_TPLFW_SOCIAL_ICONS_DESC">
+					<option name="facebook" placeholder="http://www.facebook.com/your_user_name" value="http://www.facebook.com/joomlashine">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_FACEBOOK</option>
+					<option name="twitter" placeholder="http://www.twitter.com/your_user_name" value="http://www.twitter.com/joomlashine">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_TWITTER</option>
+					<option name="youtube" placeholder="http://www.youtube.com/your_user_name" value="http://www.youtube.com/joomlashine">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_YOUTUBE</option>
+					<option name="googleplus" placeholder="http://plus.google.com/your_user_id" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_GOOGLEPLUS</option>
+					<option name="linkedin" placeholder="http://www.linkedin.com/in/your_name" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_LINKEDIN</option>
+					<option name="pinterest" placeholder="http://www.pinterest.com/your_user_name" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_PINTEREST</option>
+					<option name="myspace" placeholder="http://www.myspace.com/your_user_name" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_MYSPACE</option>
+					<option name="flickr" placeholder="http://www.flickr.com/people/your_user_name" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_FLICKR</option>
+					<option name="dribble" placeholder="http://www.dribble.com/your_user_name" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_DRIBBLE</option>
+					<option name="stumbleupon" placeholder="http://your_user_name.stumbleupon.com" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_STUMBLEUPON</option>
+					<option name="yahoo" placeholder="ymsgr:sendim?your_user_name" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_YAHOO</option>
+					<option name="skype" placeholder="skype:your_user_name?call" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_SKYPE</option>
+					<option name="rss" placeholder="http://your_joomla_site_url/index.php?format=feed&amp;type=rss" value="">JSN_TPLFW_SOCIAL_NETWORK_INTEGRATION_RSS</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="jsn-compression" column="left" label="JSN_TPLFW_SECTION_COMPRESSION">
+				<field name="compression" default="1" type="list" label="JSN_TPLFW_SYSTEM_COMPRESSION" description="JSN_TPLFW_SYSTEM_COMPRESSION_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JSN_TPLFW_SYSTEM_COMPRESS_BOTH</option>
+					<option value="2">JSN_TPLFW_SYSTEM_COMPRESS_CSS_ONLY</option>
+					<option value="3">JSN_TPLFW_SYSTEM_COMPRESS_JS_ONLY</option>
+				</field>
+
+				<field name="maxCompressionSize" type="jsntext" dataType="number" default="100" suffix="KB" class="input-mini" label="JSN_TPLFW_COMPRESSION_MAX_SIZE" description="JSN_TPLFW_COMPRESSION_MAX_SIZE_DESC" validate="positive-number" />
+
+				<field name="compressionExclude" type="textarea" rows="5" class="jsn-input-xlarge-fluid" label="JSN_TPLFW_SYSTEM_EXLUCDE_FROM_COMPRESSION" description="JSN_TPLFW_SYSTEM_EXLUCDE_FROM_COMPRESSION_DESC" />
+
+				<field name="cacheDirectory" type="jsnfolder" default="cache/" class="input-large" label="JSN_TPLFW_SYSTEM_CACHE_DIRECTORY" description="JSN_TPLFW_SYSTEM_CACHE_DIRECTORY_DESC" />
+			</fieldset>
+
+			<fieldset name="jsn-system" column="right" label="JSN_TPLFW_SECTION_SYSTEM">
+				<field name="codePosition" default="0" type="list" label="JSN_TPLFW_SYSTEM_ANALYTICS_CODE_POSITION" description="JSN_TPLFW_SYSTEM_ANALYTICS_CODE_POSITION_DESC">
+					<option value="0">JSN_TPLFW_SYSTEM_ANALYTICS_CODE_BEFORE_HEAD_ENDING</option>
+					<option value="1">JSN_TPLFW_SYSTEM_ANALYTICS_CODE_BEFORE_BODY_ENDING</option>
+				</field>
+
+				<field name="codeAnalytic" type="textarea" rows="5" class="jsn-input-xlarge-fluid" label="JSN_TPLFW_SYSTEM_ANALYTICS_CODE" description="JSN_TPLFW_SYSTEM_ANALYTICS_CODE_DESC" />
+
+				<field name="cssFiles" type="textarea" rows="5" class="jsn-input-xlarge-fluid  validate-asset-file-list" label="JSN_TPLFW_SYSTEM_CUSTOM_ASSETS" description="JSN_TPLFW_SYSTEM_CUSTOM_ASSETS_DESC" />
+
+				<field name="useSqueezeBox" default="0" type="jsnradio" inline="yes" label="JSN_TPLFW_SYSTEM_ENABLE_SQUEEZEBOX" description="JSN_TPLFW_SYSTEM_ENABLE_SQUEEZEBOX_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="scriptMovement" default="0" type="jsnradio" inline="yes" label="JSN_TPLFW_SYSTEM_SCRIPT_MOVEMENT" description="JSN_TPLFW_SYSTEM_SCRIPT_MOVEMENT_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fieldset>
+	</fields>
+</form>

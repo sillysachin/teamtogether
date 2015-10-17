@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,800);
+body {
+  font-size: 0.9rem;
+  line-height: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#KjfaqNav {
+  max-width: 700px;
+  width: 95%;
+  margin: 15px auto;
+}
+
+.toggleAnswers {
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+  padding: 0px 15px 0px 15px;
+  border-radius: 5px 5px 0px 5px;
+}
+
+.simple_Kjfaq, span.KjCOntent {
+  display: block;
+}
+
+span.KjCOntent {
+  margin-left: 25px;
+}
+
+dt span.plus {
+  background: url("http://www.kenjiro.nl/scripts/kjfaq/images/plus.png") no-repeat top left;
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-top: -25px;
+  margin-left: -10px;
+  float: left;
+}
+dt span.minus {
+  background: url("http://www.kenjiro.nl/scripts/kjfaq/images/minus.png") no-repeat;
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-top: -25px;
+  margin-left: -10px;
+  float: left;
+}
+
+.Kjfaq dt, .Kjfaq dd {
+  margin-bottom: 2px;
+}
+.Kjfaq dt {
+  padding: 20px;
+  cursor: pointer;
+  color: #eee;
+  font-family: 'Open Sans';
+  font-size: 1.3em;
+}
+.Kjfaq dd {
+  display: block;
+  padding: 10px;
+  margin-left: 0px;
+  color: #222;
+  background: #999;
+  font-family: 'Open Sans';
+  font-size: 1.3em;
+}
+
+.Kjfaq dt {
+  background: #8FBC8F;
+  /* IE6-8 */
+}

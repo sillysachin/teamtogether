@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field
+                name="data_id" type="hidden" default="0"
+                label="JSN_UNIFORM_SUBMISSION_ID"
+                />
+        <field
+                name="submission_id" type="hidden" default="0"
+                label="JSN_UNIFORM_DATA_ID"
+                />
+        <field
+                name="form_id"
+                type="text"
+                label="JSN_UNIFORM_FORM_ID"
+                description="JSN_UNIFORM_FORM_ID_DES"
+                class="inputbox"
+                size="110"
+                />
+        <field
+                name="field_id" type="hidden" default="0"
+                label="JSN_UNIFORM_FIELD_ID"
+                />
+        <field
+                name="field_type" type="hidden" default="0"
+                label="JSN_UNIFORM_FIELD_TYPE"
+                />
+        <field
+                name="data_value" type="hidden" default="0"
+                label="JSN_UNIFORM_SUBMISSION_VALUE"
+                />
+    </fieldset>
+</form>

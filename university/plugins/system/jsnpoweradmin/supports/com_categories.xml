@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preview>
+	<map params="view=category&amp;layout=edit&amp;extension=com_content" link="option={@extension}&amp;view=category&amp;layout=blog&amp;id={@id}" />
+	<map params="view=category&amp;layout=edit&amp;extension=com_contact" link="option={@extension}&amp;view=category&amp;id={@id}" />
+	<map params="view=category&amp;layout=edit&amp;extension=com_newsfeeds" link="option={@extension}&amp;view=category&amp;id={@id}" />
+	<map params="view=category&amp;layout=edit&amp;extension=com_weblinks" link="option={@extension}&amp;view=category&amp;id={@id}" />
+</preview>

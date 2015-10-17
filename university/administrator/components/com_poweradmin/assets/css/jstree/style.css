@@ -1,0 +1,227 @@
+/*
+ * jsTree jsnpa theme 1.0
+ * Supported features: dots/no-dots, icons/no-icons, focused, loading
+ * Supported plugins: ui (hovered, clicked), checkbox, contextmenu, search
+ */
+/* ============================== TREE MENU ============================== */
+
+.jsn-master .jstree-jsnpa li,
+.jsn-master .jstree-jsnpa ins {
+	background-image: url(jstree-icons.png);
+	background-repeat: no-repeat;
+}
+.jsn-master .jstree-jsnpa ins {
+	width: 18px;
+	height: 18px;
+	text-decoration: none;
+	display: inline-block;
+}
+.jsn-master .jstree-jsnpa li {
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+	background-position: -333px 0px;
+	background-repeat: repeat-y;
+	font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.jsn-master .jstree-jsnpa .jstree-last {
+	background: none;
+}
+.jsn-master .jstree-jsnpa .jstree-leaf > ins {
+	background-position: -163px -6px;;
+}
+.jsn-master .jstree-jsnpa .jstree-last > ins {
+	padding-top: 4px;
+	background-position: -245px -15px;;
+}
+.jsn-master .jstree-jsnpa .jstree-open > ins,
+.jsn-master .jstree-jsnpa .jstree-closed > ins {
+	padding: 0;
+	cursor: pointer;
+}
+.jsn-master .jstree-jsnpa .jstree-open > ins {
+	background-position: 0px -6px;
+}
+.jsn-master .jstree-jsnpa .jstree-closed > ins {
+	background-position: -77px -6px;
+}
+.jsn-master .jstree-jsnpa li a {
+	color: #333;
+	margin: 2px 0px;
+	padding: 3px 5px;
+	cursor: pointer;
+	text-decoration: none;
+	border: 1px solid #fff;
+	display: inline-block;
+}
+.jsn-master .jstree-jsnpa li a:hover {
+	border-color: #999999;
+	background-color: #EFEFEF;
+}
+
+
+.jsn-master .jstree-jsnpa li > a > ins.jstree-icon {
+	display: inline-block;
+	background: url(../../images/icons-16/icon-drag-anchor-mini.png) -2px center no-repeat;
+	cursor: move;
+}
+.jsn-master .jstree-jsnpa .jstree-clicked {
+	padding: 3px 5px;
+	background-color: #FFE3AA;
+	border: 1px solid #FFCC00;
+}
+.jsn-master .jstree-jsnpa .drag-inside,
+.jsn-master .jstree-jsnpa .drag-inside:hover {
+	padding: 2px;
+	border:1px dashed #999999;
+	background:#CCCCCC;
+}
+.jsn-master .jstree-jsnpa li.unpublish .drag-inside:hover {
+	color: #333333;
+}
+.jsn-master .jstree-jsnpa li.default .drag-inside:hover {
+	padding-right: 21px;
+}
+.jsn-master .jstree-jsnpa .unpublish {
+	display: none;
+}
+.jsn-master .jstree-jsnpa .unpublish > a {
+	color: #CCC;
+}
+.jsn-master .jstree-jsnpa li input {
+	margin: 0 2px 0 5px;
+	vertical-align: text-top;
+}
+.jsn-master .jstree-jsnpa li .jstree-loading .jstree-icon {
+	background: url(throbber.gif) center center no-repeat;
+}
+.jsn-master .jstree-jsnpa.jstree-focused {
+	background: none;
+}
+.jsn-master .jstree-jsnpa .jstree-no-dots li,
+.jsn-master .jstree-jsnpa .jstree-no-dots li.jstree-leaf > ins {
+	background: transparent;
+}
+.jsn-master .jstree-jsnpa .jstree-no-dots li.jstree-open > ins {
+	background-position: -18px 0;
+}
+.jsn-master .jstree-jsnpa .jstree-no-dots li.jstree-closed > ins {
+	background-position: 0 0;
+}
+.jsn-master .jstree-jsnpa .jstree-no-icons a ins.jstree-icon {
+	display: none;
+}
+.jsn-master .jstree-jsnpa .jstree-search {
+	font-style: italic;
+}
+.jsn-master .jstree-jsnpa .jstree-no-icons .jstree-checkbox {
+	display: inline-block;
+}
+.jsn-master .jstree-jsnpa .jstree-no-checkboxes .jstree-checkbox {
+	display: none !important;
+}
+.jsn-master .jstree-jsnpa .jstree-checked > a > .jstree-checkbox {
+	background-position: -38px -19px;
+}
+.jsn-master .jstree-jsnpa .jstree-unchecked > a > .jstree-checkbox {
+	background-position: -2px -19px;
+}
+.jsn-master .jstree-jsnpa .jstree-undetermined > a > .jstree-checkbox {
+	background-position: -20px -19px;
+}
+.jsn-master .jstree-jsnpa .jstree-checked > a > .jstree-checkbox:hover {
+	background-position: -38px -37px;
+}
+.jsn-master .jstree-jsnpa .jstree-unchecked > a > .jstree-checkbox:hover {
+	background-position: -2px -37px;
+}
+.jsn-master .jstree-jsnpa .jstree-undetermined > a > .jstree-checkbox:hover {
+	background-position: -20px -37px;
+}
+.jsn-master .jstree-jsnpa a.jstree-search {
+	color: aqua;
+}
+.jsn-master .jstree-jsnpa .jstree-locked a {
+	color: silver;
+	cursor: default;
+}
+.jsn-master .jstree-jsnpa .jstree-closed ul {
+	display: none;
+}
+.jsn-master .jstree-jsnpa ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.jsn-master .jstree-jsnpa > ul{
+	margin: 50px 10px 10px 10px;
+}
+.jsn-master .jstree-jsnpa ul ul li {
+	margin: 0 0 0 18px;
+}
+.jsn-master .jstree-jsnpa > ul {
+	height: auto;
+	width: auto;
+	min-height: 50px;
+    background: url(jstree-icons.png) -333px -15px no-repeat;
+}
+
+#jstree-marker { background:url("tree-marker.png") no-repeat !important; text-indent:-100px; }
+
+.jsn-master .jstree-jsnpa li.default > a > ins.menu-default-indicator {
+	display: inline-block ;
+	background: url(icon-star-16.png) center center no-repeat;
+	height: 15px;
+	margin-bottom: -3px
+}
+/* =============== CUSTOM STYLE IN CONTEXT MENU =============== */
+#vakata-dragged.jstree-jsnpa {
+	text-align: center;
+	background: #EFEFEF;
+	border: 1px solid #999999;
+}
+#vakata-dragged.jstree-jsnpa ins {
+	background: transparent !important;
+}
+#vakata-dragged.jstree-jsnpa .jstree-ok {
+	width: 0;
+}
+#vakata-dragged.jstree-jsnpa .jstree-invalid {
+	width: 0;
+}
+/* =============== CUSTOM STYLE IN RAW MODE =============== */
+#jsn-rawmode-layout .jsn-rawmode-dragging li a.drag-inside,
+#jsn-rawmode-layout .jsn-rawmode-dragging li > a:hover{
+	padding: 2px;
+	border: 1px dashed #999999;
+	background: #CCCCCC;
+}
+
+
+/* ============================== CONTENXT MENU ============================== */
+#vakata-contextmenu.jstree-jsn-context li.jstree-contextmenu-disabled a,
+#vakata-contextmenu.jstree-jsn-context li.jstree-contextmenu-disabled a:hover {
+	border: 0;
+	color: silver;
+	padding: 1px 4px;
+	background: transparent;
+}
+#jstree-marker-line {
+	height: 2px;
+	background-color: #999;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	border-radius: none;
+	-moz-border-radius: none;
+	-webkit-border-radius: none;	
+}
+#jstree-marker {
+	background: none;
+}
+
+.jstree-jsnpa-context.jsnpw-submenu .disable a{
+	color: #cccccc
+}

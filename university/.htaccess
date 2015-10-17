@@ -1,0 +1,11 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^tap\-info\.notifoid\.net$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.tap\-info\.notifoid\.net$
+RewriteRule ^/?$ "http\:\/\/notifoid\.net\/tap\-info\/index\.php\/forum\/placement\/2\-welcome" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^mce\.notifoid\.net$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.mce\.notifoid\.net$
+RewriteRule ^/?$ "http\:\/\/notifoid\.net\/mce" [R=301,L]
+

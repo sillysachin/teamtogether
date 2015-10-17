@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^test\.notifoid\.net$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.test\.notifoid\.net$
+RewriteRule ^/?$ "http\:\/\/www\.facebook\.com" [R=301,L]
+

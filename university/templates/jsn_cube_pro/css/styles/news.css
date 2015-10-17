@@ -1,0 +1,38 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   JoomlaShine.com Proprietary License
+*/
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:regular,bold);
+
+body {
+	font-family: "Times New Roman", Times, serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#jsn-gotoplink,
+.page-header,
+.subheading-category,
+#jsn-menu a,
+#jsn-menu span,
+.componentheading,
+.contentheading {
+	font-family: Vollkorn, "Palatino Linotype", Palatino, serif;
+}
+
+body.jsn-textstyle-news ul.menu-mainmenu li a {
+	font-size: 1em;
+}
+body.jsn-textstyle-news ul.menu-topmenu > li > a {
+	text-transform: uppercase;
+}
+body.jsn-textstyle-news ul.menu-mainmenu > li > a {
+	text-transform: uppercase;
+}
+body.jsn-textstyle-news h3.jsn-moduletitle {
+	text-transform: uppercase;
+}

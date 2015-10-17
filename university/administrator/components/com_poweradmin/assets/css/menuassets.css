@@ -1,0 +1,36 @@
+#jsn-menu-assets .jsn-asset-item-edit{
+	width: 642px !important;
+	height: 138px !important;	
+	padding: 12px !important;
+}
+
+.control-group{
+	position: relative;
+}
+
+.jsn-buttonbar {
+	position: absolute;
+    right: -1px;
+    top: -6px;
+}
+
+#jsn-menu-assets .jsn-editor-label{
+	float: left;
+	width: 300px;
+    margin: 5px;
+}
+
+#jsn-menu-assets .jsn-items-list .jsn-menuassets-loading-ind{
+	background-image: url("../images/icons-16/icon-16-loading-circle.gif");
+	width: 16px;
+	height: 16px;	
+	margin: 0 4px 0 2px;
+	float: left;
+	position: absolute;
+	left: 6px;
+	top: 12px;
+}
+
+.jsn-items-list {
+	height: 145px !important;
+}

@@ -1,0 +1,40 @@
+body {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#profile-form .width-60  {
+	width: 45%;
+}
+#profile-form .width-60 fieldset.adminform {
+	padding-bottom: 5px;
+}
+#profile-form .width-40 fieldset {
+	padding-bottom: 0px;
+}
+#profile-form .width-40 {
+	width: 54%;
+	margin-right: 10px;
+	margin-left: -10px;
+}
+#profile-form #sliders {
+	margin-top: 17px;
+}
+#profile-form input,
+#profile-form select {
+	padding: 3px;
+	font-size: 1.1em;
+}
+#profile-form input {
+	width: 200px;
+	margin-right: 0;
+}
+#profile-form input#jform_username,
+#profile-form input#jform_username:focus,
+#profile-form input#jform_username:hover {
+	background: #eee;
+}
+
+#profile-form label {
+	padding-top: 3px;
+}

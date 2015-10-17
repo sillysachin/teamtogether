@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layout>
+<name>Default</name>
+<description>Default layout</description>
+<structure>
+    <row columnSize="1-1">
+        <column name="left" default="true" />
+    </row>
+</structure>
+</layout>

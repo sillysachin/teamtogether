@@ -1,0 +1,44 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: SHESHA
+ * Date: 14-07-2015
+ * Time: 08:17 PM
+ */
+//Includes
+require_once("./dbconnect.php");
+$dbobj=new dbconnect();
+//Check for all required post params
+$isValidPost=$dbobj->validatePost(array("mid","attach"));
+
+if ($isValidPost) {
+    $connection=$dbobj->getDB();
+    $epost=$dbobj->escapePost(array("mid","attach"),$connection);
+    $get_query="SELECT message FROM rnbje_kunena_messages_text WHERE mesid='{$epost["mid"]}'";
+    $get_res=mysqli_query($connection,$get_query);
+   if($get_res->num_rows>0)
+   {
+       $data['message']=mysqli_fetch_assoc($get_res)['message'];
+       if($epost["attach"]==1)
+       {
+           $attach_query="SELECT size,folder,filename FROM rnbje_kunena_attachments WHERE mesid='{$epost["mid"]}'";
+           $attachres=mysqli_query($connection,$attach_query);
+           if($attachres->num_rows>0)
+           {
+               while($row=mysqli_fetch_assoc($attachres))
+               {
+                   $data['size']=$row['size'];
+                   $folder=$row['folder'];
+                   $filename=$row['filename'];
+               }
+                $data['link']="http://notifoid.net/mce/".$folder.$filename;
+
+           }
+
+       }
+       echo json_encode($data);
+   }
+    else
+        die("{\"status\":\"0\"}");
+} else
+    die("{\"status\":\"0\"}");

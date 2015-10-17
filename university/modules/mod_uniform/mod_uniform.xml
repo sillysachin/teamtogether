@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="module" client="site" method="upgrade">
+    <name>JSN UniForm</name>
+    <version>3.0.3</version>
+    <creationDate>03/04/2014</creationDate>
+    <author>JoomlaShine.com</author>
+    <authorEmail>admin@joomlashine.com</authorEmail>
+    <authorUrl>www.joomlashine.com</authorUrl>
+    <copyright>Copyright (C) 2012 JoomlaShine.com. All Rights Reserved.</copyright>
+    <license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <description>JSN_UNIFORM_MODULE_DES</description>
+    <files>
+        <filename module="mod_uniform">mod_uniform.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset addfieldpath="/administrator/components/com_uniform/elements" name="basic">
+                <field
+                        name="uniform_top_content"
+                        type="editor"
+                        label="JSN_UNIFORM_MODULE_TOP_CONTENT_DES"
+                        description="JSN_UNIFORM_MODULE_TOP_CONTENT_DES"
+                        filter="JComponentHelper::filterText" height="280px" hide="readmore,pagebreak,image,article,uniform"
+                        />
+                <field name="form_id" type="jsnlistform" section="com_uniform" default="0"
+                       label="JSN_UNIFORM_MODULE_LIST_FORM" description="JSN_UNIFORM_MODULE_LIST_FORM_DES"/>
+                <field
+                        name="uniform_bottom_content"
+                        type="editor"
+                        label="JSN_UNIFORM_MODULE_BOTTOM_CONTENT_DES"
+                        description="JSN_UNIFORM_MODULE_BOTTOM_CONTENT_DES"
+                        filter="JComponentHelper::filterText" height="280px" hide="readmore,pagebreak,image,article,uniform,mceToggleEditor"
+                        />
+                <field name="show_form_title" type="jsnradio" label="JSN_UNIFORM_SHOW_FORM_TITLE" default="0"
+                       description="JSN_UNIFORM_SHOW_FORM_TITLE_DES">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="show_form_description" type="jsnradio" label="JSN_UNIFORM_SHOW_FORM_DESCRIPTION" default="0"
+                       description="JSN_UNIFORM_SHOW_FORM_DESCRIPTION_DES">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>
+            <fieldset name="advanced">
+                <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                       description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+                <field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL"
+                       description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                       description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="jsnpoweradmin" method="upgrade">
+	<name>JSN PowerAdmin extended - com_contact</name>
+	<author>JoomlaShine.com</author>
+	<creationDate>02/18/2014</creationDate>
+	<authorEmail>support@joomlashine.com</authorEmail>
+	<authorUrl>http://www.joomlashine.com</authorUrl>
+	<copyright>Copyright (c) 2012 - JoomlaShine.com</copyright>
+	<license>GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>2.1.4</version>
+	<description>Support view for com_contact in site manager (from PowerAdmin 2.0)</description>
+	<files>
+		<filename plugin="contact">contact.php</filename>
+		<filename>index.html</filename>		
+		<folder>assets</folder>
+		<folder>views</folder>
+		<folder>models</folder>		
+	</files>	
+</extension>

@@ -1,0 +1,236 @@
+/* -- BASIC MENU STYLES ----------------------------- */
+
+#menu,
+#menu ul,
+#menu li {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 none;
+}
+
+#menu {
+	position: relative;
+	z-index: 100;
+}
+
+#menu li {
+	float: left;
+	position: relative;
+	list-style: none;
+	display: inline;
+}
+
+#menu li:hover {
+	background-color: #dbe4e9 !important;
+}
+
+#menu li a {
+	display: block;
+	white-space: nowrap;
+}
+
+#menu li ul {
+	visibility: hidden;
+	position: absolute;
+}
+
+#menu li li ul {
+	top: 0;
+	left: 0;
+}
+
+#menu li:hover ul {
+	visibility: visible;
+}
+
+#menu li:hover ul li ul {
+	visibility: hidden;
+}
+
+#menu li:hover li:hover ul {
+	visibility: visible;
+	left: 100%;
+}
+
+/* ---- Menu layout -------------------------- */
+#menu li {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #d8d8d8;
+}
+
+#menu li li {
+	border: 0;
+	display: block;
+	float: none;
+}
+
+#menu ul {
+	border: 0.1em solid #ccc;
+	background: #f6f6f6 url(../images/bg-menu.gif) repeat-y left;
+}
+
+#menu ul li.has-child {
+	background: transparent url(../images/j_arrow.png) no-repeat right 50%;
+}
+
+#menu ul li.separator {
+	background: #DDE1E6 url(../images/bg-menu.gif);
+	height: 1px ;
+}
+
+#menu a,
+#menu div {
+	padding: 0.35em 1em 0.35em;
+	margin: 0 1px 0 1px;
+	color: #333333;
+	line-height: 1.6em;
+	vertical-align: middle;
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: default;
+	background-repeat: no-repeat;
+	background-position: left 50%;
+}
+
+#menu li.disabled a,
+#menu li.disabled:hover a {
+	color: gray;
+	background-color: transparent;
+	margin: 0 1px;
+	border-left-width: 0;
+	border-right-width: 0;
+}
+
+#menu ul a {
+	font-size: 1em;
+	font-weight: normal;
+	padding-left: 25px;
+	padding-right: 20px;
+	line-height: 1.2em;
+}
+
+/* 1 level - hover */
+#menu li:hover a {
+	background-color: #dbe4e9;
+	border-left: 1px solid #025a8d;
+	border-right: 1px solid #025a8d;
+	margin: 0;
+}
+
+/* 2 level - normal */
+#menu li:hover li a {
+	background-color: transparent;
+	border: 1px solid transparent;
+	margin: 1px;
+}
+
+/* 2 level - hover */
+#menu li:hover li:hover a {
+	/*background-color: #dbe4e9;*/
+	border-color: #025a8d;
+}
+
+/* 3 level - normal */
+#menu li:hover li:hover li a {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+/* 3 level - hover */
+#menu li:hover li:hover li a:hover {
+	background-color: #dbe4e9;
+	border-color: #025a8d;
+}
+
+a.icon-16-menu span img {
+	vertical-align: bottom;
+}
+
+/* -- ICON STYLES ----------------------------- */
+#jsn-adminbar #menu a.icon-16-alert						{	background: url(../images/menu/icon-16-alert.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-archive					{	background: url(../images/menu/icon-16-archive.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-article					{	background: url(../images/menu/icon-16-article.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-banners					{	background: url(../images/menu/icon-16-banner.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-banners-clients			{	background: url(../images/menu/icon-16-banner-client.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-banners-tracks				{	background: url(../images/menu/icon-16-banner-tracks.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-banners-cat				{	background: url(../images/menu/icon-16-banner-categories.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-category					{	background: url(../images/menu/icon-16-category.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-checkin					{	background: url(../images/menu/icon-16-checkin.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-clear						{	background: url(../images/menu/icon-16-clear.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-component					{	background: url(../images/menu/icon-16-component.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-config						{	background: url(../images/menu/icon-16-config.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-content					{	background: url(../images/menu/icon-16-content.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-contact					{	background: url(../images/menu/icon-16-contacts.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-contact-cat				{	background: url(../images/menu/icon-16-contacts-categories.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-cpanel						{	background: url(../images/menu/icon-16-cpanel.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-default					{	background: url(../images/menu/icon-16-default.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-featured					{	background: url(../images/menu/icon-16-featured.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-groups						{	background: url(../images/menu/icon-16-groups.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-help						{	background: url(../images/menu/icon-16-help.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-help-this					{	background: url(../images/menu/icon-16-help-this.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-help-forum					{	background: url(../images/menu/icon-16-help-forum.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-help-docs					{	background: url(../images/menu/icon-16-help-docs.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-help-jed					{	background: url(../images/menu/icon-16-help-jed.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-help-jrd					{	background: url(../images/menu/icon-16-help-jrd.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-help-trans					{	background: url(../images/menu/icon-16-help-trans.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-help-community				{	background: url(../images/menu/icon-16-help-community.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-help-security				{	background: url(../images/menu/icon-16-help-security.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-help-dev					{	background: url(../images/menu/icon-16-help-dev.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-help-shop					{	background: url(../images/menu/icon-16-help-shop.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-info						{	background: url(../images/menu/icon-16-info.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-install					{	background: url(../images/menu/icon-16-install.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-language					{	background: url(../images/menu/icon-16-language.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-levels						{	background: url(../images/menu/icon-16-levels.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-logout						{	background: url(../images/menu/icon-16-logout.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-maintenance				{	background: url(../images/menu/icon-16-maintenance.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-massmail					{	background: url(../images/menu/icon-16-massmail.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-media						{	background: url(../images/menu/icon-16-media.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-menu						{	background: url(../images/menu/icon-16-menu.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-menumgr					{	background: url(../images/menu/icon-16-menumgr.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-messages					{	background: url(../images/menu/icon-16-messaging.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-messages-add				{	background: url(../images/menu/icon-16-new-privatemessage.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-messages-read				{	background: url(../images/menu/icon-16-messages.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-module						{	background: url(../images/menu/icon-16-module.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-newarticle					{	background: url(../images/menu/icon-16-newarticle.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-newcategory				{	background: url(../images/menu/icon-16-newcategory.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-newgroup					{	background: url(../images/menu/icon-16-newgroup.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-newlevel					{	background: url(../images/menu/icon-16-newlevel.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-newuser					{	background: url(../images/menu/icon-16-newuser.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-nopreview					{	background: url(../images/menu/icon-16-nopreview.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-plugin						{	background: url(../images/menu/icon-16-plugin.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-profile					{	background: url(../images/menu/icon-16-user.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-preview					{	background: url(../images/menu/icon-16-preview.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-purge						{	background: url(../images/menu/icon-16-purge.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-readmess					{	background: url(../images/menu/icon-16-readmess.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-redirect					{	background: url(../images/menu/icon-16-redirect.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-search						{	background: url(../images/menu/icon-16-search.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-finder						{	background: url(../images/menu/icon-16-search.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-section					{	background: url(../images/menu/icon-16-section.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-static						{	background: url(../images/menu/icon-16-static.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-stats						{	background: url(../images/menu/icon-16-stats.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-themes						{	background: url(../images/menu/icon-16-themes.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-trash						{	background: url(../images/menu/icon-16-trash.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-user						{	background: url(../images/menu/icon-16-user.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-user-note					{	background: url(../images/menu/icon-16-user-note.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-back-user					{	background: url(../images/menu/icon-16-back-user.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-writemess					{	background: url(../images/menu/icon-16-writemess.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-newsfeeds					{	background: url(../images/menu/icon-16-newsfeeds.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-newsfeeds-cat				{	background: url(../images/menu/icon-16-newsfeeds-cat.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-weblinks					{	background: url(../images/menu/icon-16-links.png) no-repeat !important;	}
+#jsn-adminbar #menu a.icon-16-weblinks-cat				{	background: url(../images/menu/icon-16-links-cat.png) no-repeat !important;	}
+
+#jsn-adminbar #menu a[class^=icon] {
+	background-position-y: center !important;
+	background-repeat: no-repeat !important;
+}
+
+#jsn-adminbar-menu ul li.node,
+#jsn-adminbar-menu ul li.has-child {
+	background: transparent url(../images/j_arrow.png) no-repeat right 50%;
+}
+
+#jsn-adminbar-menu ul li.node:hover,
+#jsn-adminbar-menu ul li.has-child:hover {
+	background-color: #dbe4e9 !important;
+}

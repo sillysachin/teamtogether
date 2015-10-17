@@ -1,0 +1,71 @@
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+body {
+  background: transparent;
+}
+.menu__activator {
+  padding: 22px;
+  width: 68px;
+  height: 54px;
+  background-color: #8e44ad;
+  color: white;
+  display: inline-block;
+  transition: color, background-color 0.28s ease;border-radius:7px;
+}
+.menu__activator + #menu__activator-toggle:checked ~ .off-canvas-menu {
+  top: 0;
+}
+.menu__activator:hover {
+  color: #8e44ad;
+  background-color: white;
+}
+.menu__activator:before {
+  content: "MENU";
+  display: block;
+top:17px;
+margin-left:6px;
+  position: absolute;
+  left: -1px;
+  bottom: 11px;
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+}
+/* Off-Canvas Menu */
+.off-canvas-menu {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+  top: -100px;
+  transition: top 0.4s ease-in-out;
+}
+.off-canvas-menu a.menu__item {
+  display: inline-block;
+  color: #8e44ad;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Asap", sans-serif;
+  font-weight: 400;
+  padding: 15px 24px;
+  background-color: white;
+  transition: background-color 0.28s ease, color 0.28s ease;
+}
+.off-canvas-menu a.menu__item:hover {
+  color: white;
+  background-color: #8e44ad;
+}
+/* Label */
+#label_tap {
+  cursor: pointer;
+}
+/* Helper Classes */
+.hidden {
+  display: none;
+}
+

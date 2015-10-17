@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>plg_sys_topofthepage</name>
+	<author>Michael Richey</author>
+	<creationDate>April 2011</creationDate>
+	<copyright>Copyright (C) 2005 - 2011 Michael Richey. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>topofthepage@richeyweb.com</authorEmail>
+	<authorUrl>www.richeyweb.com</authorUrl>
+	<version>2.0</version>
+	<description>PLG_SYS_TOPOFTHEPAGE_XML_DESCRIPTION</description>
+	<files>
+                <folder>fields</folder>
+		<filename plugin="topofthepage">topofthepage.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<media destination="plg_system_topofthepage" folder="media">
+	      <filename>admin.js</filename>
+	      <filename>index.html</filename>
+	      <filename>jqtopofthepage.js</filename>
+	      <filename>jqtopofthepage.min.js</filename>
+	      <filename>jquery.easing.js</filename>
+	      <filename>jquery.easing.min.js</filename>
+	      <filename>ScrollSpy.js</filename>
+	      <filename>ScrollSpy.min.js</filename>
+	      <filename>topofthepage.js</filename>
+	      <filename>topofthepage.min.js</filename>
+	</media>
+        <languages folder="language">
+                <language tag="en-GB">en-GB/en-GB.plg_system_topofthepage.ini</language>
+                <language tag="en-GB">en-GB/en-GB.plg_system_topofthepage.sys.ini</language>
+        </languages>
+        <config>
+	  <fields name="params">
+	    <fieldset name="basic">
+                <field type="radio" class="radio btn-group" name="runinadmin" default="0"
+                    label="PLG_SYS_TOPOFTHEPAGE_RUNINADMIN_LABEL"
+                    description="PLG_SYS_TOPOFTHEPAGE_RUNINADMIN_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field type="radio" name="omittext" class="radio btn-group" default="0"
+                    label="PLG_SYS_TOPOFTHEPAGE_OMITTEXT_LABEL"
+                    description="PLG_SYS_TOPOFTHEPAGE_OMITTEXT_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field type="spacer" name="translatedesc" class="omittext" label="PLG_SYS_TOPOFTHEPAGE_TRANSLATEDESC"/>
+            </fieldset>
+	    <fieldset name="javascript">
+                <field type="radio" class="radio btn-group" name="jsframework" default="mootools"
+                    label="PLG_SYS_TOPOFTHEPAGE_JSFRAMEWORK_LABEL"
+                    description="PLG_SYS_TOPOFTHEPAGE_JSFRAMEWORK_DESC">
+                    <option value="jquery">jQuery</option>
+                    <option value="mootools">MooTools</option>
+                </field>
+                <field type="spacer" name="jquery25" label="PLG_SYS_TOPOFTHEPAGE_JQUERY25" class="jquery"/>
+                <field type="radio" class="radio btn-group" name="loadjsframework" default="1"
+                    label="PLG_SYS_TOPOFTHEPAGE_LOADJSFRAMEWORK_LABEL"
+                    description="PLG_SYS_TOPOFTHEPAGE_LOADJSFRAMEWORK_DESC">
+                    <option value="0">JNo</option>
+                    <option value="1">JYes</option>
+                </field>
+            </fieldset>
+	    <fieldset name="button">
+                <field type="text" name="visibleopacity" default="100" class="validate-numeric"
+                    label="PLG_SYS_TOPOFTHEPAGE_VISIBLEOPACITY_LABEL"
+                    description="PLG_SYS_TOPOFTHEPAGE_VISIBLEOPACITY_DESC" />
+                <field type="text" name="displaydur" default="250" class="validate-numeric"
+                    label="PLG_SYS_TOPOFTHEPAGE_DISPLAYDUR_LABEL"
+                    description="PLG_SYS_TOPOFTHEPAGE_DISPLAYDUR_DESC" />
+                <field type="radio" name="slidein" default="0" class="radio btn-group"
+                    label="PLG_SYS_TOPOFTHEPAGE_SLIDEIN_LABEL"
+                    description="PLG_SYS_TOPOFTHEPAGE_SLIDEIN_DESC" >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field type="radio" name="slideindir" default="top" class="radio btn-group slidein"
+                    label="PLG_SYS_TOPOFTHEPAGE_SLIDEINDIR_LABEL"
+                    description="PLG_SYS_TOPOFTHEPAGE_SLIDEINDIR_DESC" >
+                    <option value="top">PLG_SYS_TOPOFTHEPAGE_TOP</option>
+                    <option value="right">PLG_SYS_TOPOFTHEPAGE_RIGHT</option>
+                    <option value="bottom">PLG_SYS_TOPOFTHEPAGE_BOTTOM</option>
+                    <option value="left">PLG_SYS_TOPOFTHEPAGE_LEFT</option>
+                </field>
+                <field type="radio" name="zindex" default="0" class="radio btn-group slidein"
+                    label="PLG_SYS_TOPOFTHEPAGE_ZINDEX_LABEL"
+                    description="PLG_SYS_TOPOFTHEPAGE_ZINDEX_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>                    
+                </field>
+                <field type="radio" name="linklocation" class="radio btn-group" default="bottom_right"
+                    label="PLG_SYS_TOPOFTHEPAGE_LINKLOCATION_LABEL"
+                    description="PLG_SYS_TOPOFTHEPAGE_LINKLOCATION_DESC">
+                    <option value="top_left">PLG_SYS_TOPOFTHEPAGE_TOP_LEFT</option>
+                    <option value="top_center">PLG_SYS_TOPOFTHEPAGE_TOP_CENTER</option>
+                    <option value="top_right">PLG_SYS_TOPOFTHEPAGE_TOP_RIGHT</option>
+                    <option value="bottom_left">PLG_SYS_TOPOFTHEPAGE_BOTTOM_LEFT</option>
+                    <option value="bottom_center">PLG_SYS_TOPOFTHEPAGE_BOTTOM_CENTER</option>
+                    <option value="bottom_right">PLG_SYS_TOPOFTHEPAGE_BOTTOM_RIGHT</option>
+                </field>
+                <field type="text" name="icon" default=""
+                    label="PLG_SYS_TOPOFTHEPAGE_ICON_LABEL"
+                    description="PLG_SYS_TOPOFTHEPAGE_ICON_DESC"
+                />
+            </fieldset>
+	    <fieldset name="page">
+                <field type="text" name="spyposition" default="200" class="validate-numeric"
+                    label="PLG_SYS_TOPOFTHEPAGE_SPYPOSITION_LABEL"
+                    description="PLG_SYS_TOPOFTHEPAGE_SPYPOSITION_DESC" />
+                <field type="radio" name="topalways" class="radio btn-group" default="0"
+                    label="PLG_SYS_TOPOFTHEPAGE_TOPALWAYS_LABEL"
+                    description="PLG_SYS_TOPOFTHEPAGE_TOPALWAYS_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field type="text" name="smoothscrollduration" default="500" class="validate-numeric"
+                    label="PLG_SYS_TOPOFTHEPAGE_SMOOTHSCROLL_DURATION_LABEL"
+                    description="PLG_SYS_TOPOFTHEPAGE_SMOOTHSCROLL_DURATION_DESC" />
+                <field type="list" name="smoothscrolltransition" default="linear"
+                    class="chzn-done"
+                    label="PLG_SYS_TOPOFTHEPAGE_SMOOTHSCROLL_TRANSITION_LABEL"
+                    description="PLG_SYS_TOPOFTHEPAGE_SMOOTHSCROLL_TRANSITION_DESC">
+                    <option value="linear">linear</option>
+                    <option value="Quad">Quad</option>
+                    <option value="Cubic">Cubic</option>
+                    <option value="Quart">Quart</option>
+                    <option value="Quint">Quint</option>
+                    <option value="Pow">Pow (MooTools only)</option>
+                    <option value="swing">Swing (jQuery only)</option>
+                    <option value="Expo">Expo</option>
+                    <option value="Circ">Circ</option>
+                    <option value="Sine">Sine</option>
+                    <option value="Back">Back</option>
+                    <option value="Bounce">Bounce</option>
+                    <option value="Elastic">Elastic</option>
+                </field>
+                <field type="radio" name="smoothscrolleasing" class="radio btn-group smoothscrolltransition" default="easeInOut"
+                    label="PLG_SYS_TOPOFTHEPAGE_SMOOTHSCROLL_EASING_LABEL"
+                    description="PLG_SYS_TOPOFTHEPAGE_SMOOTHSCROLL_EASING_DESC">
+                    <option value="easeIn">easeIn</option>
+                    <option value="easeOut">easeOut</option>
+                    <option value="easeInOut">easeInOut</option>
+                </field>
+            </fieldset>
+            <fieldset name="css" addfieldpath="plugins/system/topofthepage/fields">
+                <field type="radio" name="usestyle" class="radio btn-group" default="1"
+                    label="PLG_SYS_TOPOFTHEPAGE_USESTYLE_LABEL"
+                    description="PLG_SYS_TOPOFTHEPAGE_USESTYLE_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field type="textarea" name="linkstyle" rows="20" cols="60" class="usestyle"
+                    default="#gototop{border:1px solid #000;margin:5px;padding:5px;background-color:#ff0;color:#000;}
+#gototop:hover{background-color:#000;color:#ff0;}"
+                    label="PLG_SYS_TOPOFTHEPAGE_LINKSTYLE_LABEL"
+                    description="PLG_SYS_TOPOFTHEPAGE_LINKSTYLE_DESC" />
+                <field type="hidden" name="smoothscroll" default="1" />
+                <field type="javascript" />
+            </fieldset>
+            <fieldset name="language">
+                <field type="spacer" label="PLG_SYS_TOPOFTHEPAGE_LANGUAGE_LABEL"/>
+            </fieldset>
+          </fields>
+        </config>
+</extension>

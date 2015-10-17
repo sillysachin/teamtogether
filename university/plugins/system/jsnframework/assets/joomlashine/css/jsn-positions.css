@@ -1,0 +1,74 @@
+/**
+ * @version    $Id$
+ * @package    JSN_Framework
+ * @author     JoomlaShine Team <support@joomlashine.com>
+ * @copyright  Copyright (C) 2012 JoomlaShine.com. All Rights Reserved.
+ * @license    GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Websites: http://www.joomlashine.com
+ * Technical Support:  Feedback - http://www.joomlashine.com/contact-us/get-support.html
+ */
+
+#jsn-page-container div.jsn-element-container_inner {
+	padding: 3px;
+}
+#jsn-page-container div.jsn-position,
+#jsn-page-container div.jsn-component-container {
+	color: #666;
+	font-size: 14px;
+	cursor: pointer;
+	padding: 6px 8px;
+	font-weight: bold;
+	background: #CCC;
+	border: 1px solid #FF9900;
+}
+#jsn-page-container div.jsn-component-container {
+	color: #CCCCCC;
+	border: none;
+	cursor: default;
+	background: none;
+	text-align: center;
+}
+
+#jsn-page-container div.active-position,
+#jsn-page-container div.active-position:hover {
+	color: #000;
+	cursor: default;
+	background-color: #FF9900;
+}
+
+#jsn-page-container div.jsn-position:hover {
+	background-color: #EFEFEF;
+}
+#jsn-page-container div.jsn-position p,
+#jsn-page-container div.jsn-component-container p {
+	margin: 0;
+}
+#jsn-page-container.jsn-position-listing div.jsn-position,
+#jsn-page-container.jsn-position-listing div.jsn-position:hover{
+	cursor: default;
+	background: #CCC;
+}
+#jsn-page-container.jsn-position-listing div.active-position,
+#jsn-page-container.jsn-position-listing div.active-position:hover{
+	color: #000;
+	cursor: default;
+	background: #FF9900;
+}
+
+#jsn-page-container .mod-preview {
+	cursor: pointer;
+	background: #CCC;
+	border: 1px solid #FF9900;
+}
+
+#jsn-page-container .mod-preview:hover {
+	color: #000;
+	cursor: pointer;
+	background: #FF9900;
+}
+
+#jsn-page-container .mod-preview .mod-preview-wrapper{
+	opacity:0;
+	filter:alpha(opacity=0);
+}

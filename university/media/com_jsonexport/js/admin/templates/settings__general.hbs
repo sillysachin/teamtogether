@@ -1,0 +1,41 @@
+<div class="well row">
+  <div class="span6">
+
+    <div class="control-group">
+      <div class="control-label">
+        <label
+          id="jform_info_block_position-lbl"
+          for="jform_info_block_position"
+          class="hasTooltip"
+          title="If yes, the following username and password must be set as query parameters, otherwise no results will be shown">
+          Require authentication <span class="icon-question-sign"></span>
+        </label>
+      </div>
+      <div class="controls">
+        {{view Ember.Select
+          contentBinding="view.selectValues.yesOrNo"
+          optionValuePath="content.value"
+          optionLabelPath="content.label"
+          valueBinding="App.settings.general.requireAuthentication"}}
+      </div>
+    </div>
+
+    <div class="control-group">
+      <div class="control-label">
+        <label>Username</label>
+      </div>
+      <div class="controls">
+        {{view Ember.TextField valueBinding="App.settings.general.requiredUsername"}}
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="control-label">
+        <label>Password</label>
+      </div>
+      <div class="controls">
+        {{view Ember.TextField valueBinding="App.settings.general.requiredPassword"}}
+      </div>
+    </div>
+
+  </div>
+</div>

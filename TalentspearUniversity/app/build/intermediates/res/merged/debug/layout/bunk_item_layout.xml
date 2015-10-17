@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/cardMarginVertical"
+        android:layout_marginLeft="@dimen/cardMarginHorizontal"
+        android:layout_marginRight="@dimen/cardMarginHorizontal"
+        android:layout_marginTop="@dimen/cardMarginVertical"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_post_items">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="22dp"
+                android:paddingStart="22dp"
+                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
+                android:id="@+id/title_and_credit">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:paddingTop="10dp"
+                    android:layout_toLeftOf="@+id/credit_bunk_text"
+                    android:paddingBottom="5dp"
+                    android:layout_toStartOf="@+id/credit_bunk_text"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:ellipsize="end"
+                    android:textColor="@color/primaryColor"
+                    android:lines="1"
+                    android:gravity="start"
+                    android:id="@+id/bunk_course_title"
+                    android:textSize="17sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Credits: "
+                    android:layout_alignBaseline="@+id/bunk_course_title"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/credit_bunk_text"
+                    android:textColor="@color/primaryColor"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/primaryColorDark"
+                android:layout_below="@+id/title_and_credit"
+                android:layout_marginTop="4dp"
+                android:id="@+id/view" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingTop="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:textSize="17sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:maxLines="4"
+                android:textColor="#607D8B"
+                android:paddingBottom="6dp"
+                android:text="Total Bunks: "
+                android:gravity="center"
+                android:id="@+id/total_bunks"
+                android:layout_below="@+id/view"
+                android:ellipsize="end" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/total_bunks"
+                android:weightSum="100"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:padding="10dp"
+                    android:lines="1"
+                    android:textColor="@color/primaryColorDark"
+                    android:textSize="15sp"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:text="Add Bunk"
+                    android:background="#EEEEEE"
+                    android:id="@+id/add_bunk"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:padding="10dp"
+                    android:lines="1"
+                    android:textColor="@color/primaryColorDark"
+                    android:textSize="15sp"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:text="View Bunks"
+                    android:background="#EEEEEE"
+                    android:id="@+id/view_bunk"
+                    android:ellipsize="end" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:id="@+id/load_post_layout">
+            <com.rey.material.widget.ProgressView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/load_post_pd"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                app:pv_autostart="false"
+                app:pv_circular="true"
+                app:pv_progressMode="indeterminate"
+                app:pv_progressStyle="@style/ColorsCircularProgressDrawableStyle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/load_post_pd"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:lines="1"
+                android:textColor="@color/primaryColorDark"
+                android:text="@string/post_icon_text"
+                android:id="@+id/load_post_text"
+                android:ellipsize="end" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:id="@+id/connect_internet_layout">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/net_disconnect"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/disconnected_icon_list"
+                android:contentDescription="Not connected to internet."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/disconnected_icon_list"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:lines="1"
+                android:textColor="@color/primaryColorDark"
+                android:text="Network error. Tap to retry."
+                android:id="@+id/internet_disconnect_text"
+                android:ellipsize="end" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout><!-- From: file:/S:/Dedication/Droidstudio/TalentspearUniversity/app/src/main/res/layout/bunk_item_layout.xml -->

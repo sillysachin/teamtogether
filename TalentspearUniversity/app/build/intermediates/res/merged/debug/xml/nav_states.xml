@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<state-list>
+    
+    <state>				
+        <points>
+        	<item>0</item>    
+        	<item>0.1</item>
+        	<item>1</item>
+        	<item>0.1</item>
+        	<item>0</item>
+        	<item>0.5</item>
+        	<item>1</item>
+        	<item>0.5</item>
+        	<item>0</item>
+        	<item>0.9</item>
+        	<item>1</item>        	
+        	<item>0.9</item>
+        </points>        
+    </state>
+    
+    <state>        
+        <points>
+        	<item>0.5</item>    
+        	<item>0</item>
+        	<item>1</item>
+        	<item>0.5</item>
+        	<item>0</item>
+        	<item>0.5</item>
+        	<item>1</item>
+        	<item>0.5</item>
+        	<item>0.5</item>
+        	<item>1</item>
+        	<item>1</item>        	
+        	<item>0.5</item>
+        </points>
+        
+        <links>
+            <item>0</item>        	
+        	<item>2</item>
+        </links>        
+    </state>
+
+</state-list>
+<!-- From: file:/D:/vietph/project/github/Material/lib/src/main/res/xml/nav_states.xml --><!-- From: file:/S:/Dedication/Droidstudio/TalentspearUniversity/app/build/intermediates/exploded-aar/com.github.rey5137/material/1.1.1/res/xml/nav_states.xml -->

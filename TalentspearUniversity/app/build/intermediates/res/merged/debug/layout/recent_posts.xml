@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v7.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recyclerView_recentposts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     />
+<RelativeLayout
+android:layout_width="match_parent"
+android:id="@+id/no_post_layout"
+android:layout_marginBottom="20dp"
+    android:visibility="invisible"
+android:layout_height="match_parent">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/no_post"
+    android:id="@+id/no_post_image"
+    android:contentDescription="No Posts"
+    android:layout_centerInParent="true"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxLines="2"
+    android:ellipsize="end"
+    android:id="@+id/no_post_text"
+    android:layout_below="@+id/no_post_image"
+    android:layout_marginTop="5dp"
+    android:textColor="#76b0a0"
+    android:gravity="center"
+    android:layout_centerHorizontal="true"
+    android:text="No Recent Posts"/>
+
+
+
+</RelativeLayout>
+</RelativeLayout><!-- From: file:/S:/Dedication/Droidstudio/TalentspearUniversity/app/src/main/res/layout/recent_posts.xml -->

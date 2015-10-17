@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/login_toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/DrawerArrowStyle" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_toolbar"
+        android:layout_centerVertical="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/login_toolbar"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <ImageView
+                android:id="@+id/logImg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo_hd" />
+
+            <com.github.jorgecastilloprz.FABProgressCircle
+                android:id="@+id/fabProgressCircle_login"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/usn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                app:arcColor="@color/primaryColorDark">
+
+                <com.melnykov.fab.FloatingActionButton
+                    android:id="@+id/fab_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/tick_white"
+                    app:fab_colorNormal="@color/primaryColor"
+                    app:fab_colorPressed="@color/primaryColorDark"
+                    app:fab_colorRipple="@color/white" />
+            </com.github.jorgecastilloprz.FABProgressCircle>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/logImg"
+                android:hint="@string/name"
+                app:met_baseColor="@color/primaryColor"
+                android:singleLine="true"
+                app:met_errorColor="#f00"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/name"
+                app:met_primaryColor="@color/primaryColor" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/usn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:singleLine="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="42dp"
+                android:hint="@string/usn"
+                app:met_baseColor="@color/primaryColor"
+                app:met_errorColor="#f00"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/usn"
+                app:met_primaryColor="@color/primaryColor" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/S:/Dedication/Droidstudio/TalentspearUniversity/app/src/main/res/layout/activity_welcome.xml -->

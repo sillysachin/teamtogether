@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/jorge/android/StudioProjects/FABProgressCircle/library/src/main/res/values/color.xml -->
+    <eat-comment/>
+    <color name="blue">#0000ff</color>
+    <color name="fab_orange_bright">#FFC674</color>
+    <color name="fab_orange_dark">#f97910</color>
+    <color name="fab_orange_light">#ffb54c</color>
+    <color name="white">#FFFFFF</color>
+    <declare-styleable name="FABProgressCircle"><attr format="color" name="arcColor"/><attr format="dimension" name="arcWidth"/><attr format="reference" name="finalIcon"/><attr format="enum" name="circleSize"><enum name="normal" value="1"/><enum name="mini" value="2"/></attr><attr format="boolean" name="roundedStroke"/><attr format="boolean" name="reusable"/></declare-styleable>
+    <!-- From: file:/home/jorge/android/StudioProjects/FABProgressCircle/library/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="fab_content_size">24dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_translation_z_pressed">6dp</dimen>
+    <dimen name="futuresimple_fab_shadow_offset">3dp</dimen>
+    <dimen name="half_fab_content_size">12dp</dimen>
+    <dimen name="progress_arc_stroke_width">2dp</dimen>
+    <integer name="default_cycle_duration">2000</integer>
+    <!-- From: file:/home/jorge/android/StudioProjects/FABProgressCircle/library/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">library</string>
+    <string name="child_count_error">FABProgressCircle layout must only contain one child.</string>
+</resources>

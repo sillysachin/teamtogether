@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="package.NavActivity" >
+    <item android:id="@+id/action_reload"
+        android:icon="@drawable/sync"
+        android:title="Reload"
+        app:showAsAction="always"
+        android:orderInCategory="1"
+        android:menuCategory="secondary"/>
+
+</menu><!-- From: file:/S:/Dedication/Droidstudio/TalentspearUniversity/app/src/main/res/menu/menu_academics.xml -->

@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="net.notifoid.mcestraddler.ManageBunks">
+    <item android:id="@+id/action_delete" android:title="CLEAR DATA"
+        android:orderInCategory="100" app:showAsAction="always" />
+</menu>
+<!-- From: file:/S:/Dedication/Droidstudio/TalentspearUniversity/app/src/main/res/menu/menu_manage_bunks.xml -->

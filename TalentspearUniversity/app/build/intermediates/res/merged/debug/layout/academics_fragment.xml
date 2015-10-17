@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/webview_container">
+    <WebView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/webview_contineo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/internet_error"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sad"
+            android:id="@+id/sad_image"
+            android:contentDescription="No internet"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:ellipsize="end"
+            android:id="@+id/no_post_text"
+            android:layout_below="@+id/sad_image"
+            android:layout_marginTop="5dp"
+            android:textColor="#76b0a0"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="Lost connectivity.\n Are you sure your internet is working?"/>
+
+    </RelativeLayout>
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/fab_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sync"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            app:fab_colorNormal="@color/primaryColor"
+            app:fab_colorPressed="@color/primaryColorDark"
+            app:fab_colorRipple="@color/white"
+            app:fab_type="mini"/>
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/fab_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/log_off"
+            app:fab_colorNormal="@color/primaryColor"
+            app:fab_colorPressed="@color/primaryColorDark"
+            app:fab_colorRipple="@color/white"
+            app:fab_type="mini"/>
+
+    <com.rey.material.widget.ProgressView
+        android:layout_width="30dp"
+        android:id="@+id/progress_contineo_login"
+        android:layout_height="30dp"
+        app:pv_autostart="false"
+        app:pv_circular="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        app:pv_progressMode="indeterminate"
+        android:layout_gravity="end"
+        app:pv_progressStyle="@style/Material.Drawable.CircularProgress"
+        app:cpd_strokeColor="@color/primaryColor"/>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contineo_login_layout"
+            android:layout_centerVertical="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/login_toolbar"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <ImageView
+                    android:id="@+id/logImg_contineo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/straddler_icon" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/contineo_usn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/logImg_contineo"
+                    android:hint="USN"
+                    app:met_baseColor="@color/primaryColor"
+                    app:met_errorColor="#f00"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="USN"
+                    app:met_primaryColor="@color/primaryColor" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/contineo_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contineo_usn"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="42dp"
+                    android:hint="YYYY-MM-DD"
+                    app:met_baseColor="@color/primaryColor"
+                    app:met_errorColor="#f00"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="Eg: 1995-02-20"
+                    app:met_primaryColor="@color/primaryColor" />
+                <com.github.jorgecastilloprz.FABProgressCircle
+                    android:id="@+id/fabProgressCircle_contineo_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/contineo_pass"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    app:arcColor="@color/primaryColorDark">
+
+                    <com.melnykov.fab.FloatingActionButton
+                        android:id="@+id/fab_contineo_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:scaleType="center"
+                        android:src="@mipmap/tick_white"
+                        app:fab_colorNormal="@color/primaryColor"
+                        app:fab_colorPressed="@color/primaryColorDark"
+                        app:fab_colorRipple="@color/white" />
+                </com.github.jorgecastilloprz.FABProgressCircle>
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+</RelativeLayout>
+<!-- From: file:/S:/Dedication/Droidstudio/TalentspearUniversity/app/src/main/res/layout/academics_fragment.xml -->

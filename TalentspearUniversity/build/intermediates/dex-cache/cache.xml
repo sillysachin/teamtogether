@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-b271b3153b0123e7d628edac40ebbaff2f32a62c.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.mikepenz\iconics\1.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="720dcbcd8744b145da58d835d7e4dbc546886df7">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-22dcf737d2f2e5031a4f969d2a034122839a82c5.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-05a8caf4febff0a5e5379d4a298391a40f9bbdd1.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.mcxiaoke.volley\library\1.0.16\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9313a30b510316c732b53064a86a2a4a12088d06">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-75a17a80674997e437519e6d6722191d2ed3e6ff.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="02bac2dc792d78241077861566f2c82da955e7fa">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-ce0feb81b0ec1ce2d4a58df2eb91400803c96ee4.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-1ae5ba6218a5fe16c26f07f15023da4f7d1d79a5.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-d503106bbc57fa7557058087ad2afeb2b628cd79.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-55b440e96f65cc2f5c490f74ea9636dfefe1a599.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="272bc5d7063f24bc3a33ea1d318cde8f31f5ec4c">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-8e500b7536d983f007b469a00ac6e4a17d342a41.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e1fa5e1123997a55e3ed65b44892993ff4b58cfe">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-52a5c55c42dfca4bc2c9303fdae08b7bfd84dd58.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-54c0f9a01ea6f2a7fac0f510cf975002a5a765db.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-f78c10adc5e68b632a2f8b71c380996f963fffdc.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.melnykov\floatingactionbutton\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8c6ebb7d087d1a30bf84356bd2aecf85309fc024">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-efc93b4727bea73767c00174d75d3c590cf2b4b9.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3abb4b88f5a8a0584a9b01d3170d7165f12f8588">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-6db8c4c9fdbe7f0eaaf5d87ce22643fe18e8bcfc.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-868a5ccba50781359fdf04b315ea88f5ab1eaec4.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-dff8193fa3a9553c2a74e22dfacc478ad7fed90f.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.github.ksoichiro\android-observablescrollview\1.5.2\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="256c2cf84542c459927ed4aa5f99a9b47855c071">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-eaaead61eedb33ffce7a5c34ded019d6da58b478.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.github.florent37\materialviewpager\1.0.8\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c4861d115bcce12211b3ecde2f394bb9c03133a6">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-28903683816654791dfedd359cb9ae7b96e31256.jar" />
+    </item>
+    <item
+        jar="C:\Users\BDCH_CHINMAY\.gradle\caches\modules-2\files-2.1\com.flaviofaria\kenburnsview\1.0.6\65dcd9c03096b73f4740d63cf93d30a692fe52b5\kenburnsview-1.0.6.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="65dcd9c03096b73f4740d63cf93d30a692fe52b5">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\kenburnsview-1.0.6-b5eaa611c0216489abf246aa80124ceb728c1a0a.jar" />
+    </item>
+    <item
+        jar="C:\Users\BDCH_CHINMAY\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\library-2.4.0-1814b4455d846889f9e36f1db1371d5d14708b77.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-1dd6b9c6015bcb774d9e2cfbcd5bb16a770f439a.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-bb788408218a0bf809cf9f17848caea0aa8b15bc.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.mikepenz\materialdrawer\3.1.2\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c9b5ab5d31472e2edec0b741355aa2fc18d16a0c">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-0dba393ec5ebbe02b03634239455efca03f84921.jar" />
+    </item>
+    <item
+        jar="C:\Users\BDCH_CHINMAY\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.1.0\ec46f9251e1e0ee60e1b6beae8b16f2e0fdee474\MPAndroidChart-v2.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ec46f9251e1e0ee60e1b6beae8b16f2e0fdee474">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\MPAndroidChart-v2.1.0-dad366767bd57dc46afbd4c289a6504202b39ff7.jar" />
+    </item>
+    <item
+        jar="C:\Users\BDCH_CHINMAY\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-0ce880ef0641dbc930a551b2e44d138b90f36b21.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-e1410bba1ff378b9369cc9fa798b3d3ab6cac1b1.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-236b416c63195190b21890d2dda88932c717b9ec.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-fe6bd852c0460149b10763ab28f8c1970da5f7e3.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.github.rey5137\material\1.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="60dee46bb1ba50fb53b5d064694dc849246596fd">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-770920cbd01cb77a7fcd9c860968a5efda64cf18.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-62233d0f5058f76f19abeba82edd9a88455ed610.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d405025c600055237c171a0bbabaa49d69696573">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-8e53ed7a730328f63dc89e25b5f347cd8ecafb96.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.github.jorgecastilloprz\fabprogresscircle\1.01\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9abc58346d8519a4be59cdf0f9fe3eb52dd9c8ac">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-621d1e0c89bbab34fad1063cdc5f2914cc79bbad.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.daimajia.androidanimations\library\1.0.8\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="46d64f526d8ff0ebc04bf2918b52987622b068ae">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-07b325012da6d4207c2f781be8def1db73330edf.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.daimajia.easing\library\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e88a9ed27f98f8c0701d03d5553ce6111ca34a5b">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-5e68e2db23723aa2ed268e03c2a2593574d6a3bb.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-95f77cad50d3e0c54a59e871997a1b6541bac8f4.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-ba1f8015da4914c2d5f4c5f974bf7f1d806cd6f8.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.jpardogo.materialtabstrip\library\1.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="611c7708cd3df0d7ae99105d4df5af8eb25c4b32">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-f857d9baad3bafe83c71242089e8a708a7f645ae.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-faa5d67b3aef9f96c052ff1aa8af8b9b343234e5.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-f9188cae0f2226504832ae6586cbd9066167c3f3.jar" />
+    </item>
+    <item
+        jar="C:\Users\BDCH_CHINMAY\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\picasso-2.5.2-7e64b56844a1d4e94af5f70694f21bfd0a27bcfb.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-c3fc4faf426585128476e7971446a5d3868835a9.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-26bdcbac16a519451e9036f044c851ff83449319.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.rengwuxian.materialedittext\library\2.1.4\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="288913b440a3c61c30aa171095453a605432277a">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-9fda2fab02b31fad97eb9decdf03216e838d2126.jar" />
+    </item>
+    <item
+        jar="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
+        <dex dex="S:\Dedication\Droidstudio\TalentspearUniversity\app\build\intermediates\pre-dexed\debug\classes-36f7ae6e67db2aa6c2773665b766515e0124ef15.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/no_post_layout"
+        android:layout_marginBottom="20dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_post"
+            android:id="@+id/no_post_image"
+            android:contentDescription="No Posts"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:id="@+id/no_post_text"
+            android:layout_below="@+id/no_post_image"
+            android:layout_marginTop="5dp"
+            android:textColor="#76b0a0"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="No Posts to display. Swipe down to reload."/>
+
+
+
+    </RelativeLayout>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipePostRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+
+    android:id="@+id/recyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#D9FFFFFF"
+        android:id="@+id/loading_pager_layout">
+        <com.rey.material.widget.ProgressView
+            android:id="@+id/load_post_progress"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            app:pv_autostart = "false"
+            app:pv_circular="false"
+            android:layout_alignParentTop="true"
+            app:pv_progressStyle="@style/ColorsLinearProgressDrawableStyle"
+            app:pv_progressMode="indeterminate"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/primaryColorDark"
+            android:textSize="16sp"
+            android:text="@string/loading_post_text"
+            android:id="@+id/load_progress_text"/>
+
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
+<!-- From: file:/S:/Dedication/Droidstudio/TalentspearUniversity/app/src/main/res/layout/fragment_recyclerview.xml -->
